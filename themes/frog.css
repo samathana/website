@@ -1,0 +1,40 @@
+body {
+  background-color: #0a958e;
+}
+
+header, main, #Img, footer {
+  background: linear-gradient(to right, #0ecca2, #0dbab1);
+}
+
+nav {
+  background-color: #0ecca2;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: lightblue;
+}
+
+a:hover {
+    color: black;
+}
+
+#Img {
+  background-image: url(https://cdn.pixabay.com/photo/2014/11/21/17/27/frog-540812_960_720.jpg);
+}
+
+//cursors
+.default {
+  cursor: url('cursors/frog/01NormalSelect.ani');
+}
+
+.text {
+  cursor: url('cursors/frog/06Text.ani');
+}
+
+.pointer {
+  cursor: url('cursors/frog/15LinkSelect.ani');
+}
