@@ -27,7 +27,7 @@ a:hover {
 }
 
 //cursors
-* {
+body {
   cursor: url('../cursors/frog/select1.png'), auto;
   -webkit-animation: cursor 400ms infinite;
   animation: cursor 400ms infinite;
