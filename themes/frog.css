@@ -28,13 +28,57 @@ a:hover {
 
 //cursors
 * {
-  cursor: url('../cursors/frog/select.gif'), auto;
+  cursor: url('../cursors/frog/select1.png'), auto;
+  -webkit-animation: normal 400ms infinite;
+  animation: normal 400ms infinite;
+}
+
+@-webkit-keyframes normal {
+  0% {cursor: url('../cursors/frog/select1.png'), auto;}
+  100% {cursor: url('../cursors/frog/select2.png'), auto;}
+} 
+
+@keyframes normal {
+  0% {cursor: url('../cursors/frog/select1.png'), auto;}
+  100% {cursor: url('../cursors/frog/select2.png'), auto;}
 }
 
 p, h1, h2, h3, h4, h5 {
-  cursor: url('../cursors/frog/text.gif'), auto;
+  cursor: url('../cursors/frog/text1.png'), auto;
+  -webkit-animation: text 400ms infinite;
+  animation: text 400ms infinite;
+}
+
+@-webkit-keyframes text {
+  0% {cursor: url('../cursors/frog/text1.png'), auto;}
+  100% {cursor: url('../cursors/frog/text2.png'), auto;}
+} 
+
+@keyframes text {
+  0% {cursor: url('../cursors/frog/text1.png'), auto;}
+  100% {cursor: url('../cursors/frog/text2.png'), auto;}
 }
 
 a {
-  cursor: url('../cursors/frog/link.gif'), auto;
+  cursor: url('../cursors/frog/link1.png'), auto;
+  -webkit-animation: link 400ms infinite;
+  animation: link 400ms infinite;
+}
+
+@-webkit-keyframes link {
+  0% {cursor: url('../cursors/frog/link1.png'), auto;}
+  20% {cursor: url('../cursors/frog/link2.png'), auto;}
+  40% {cursor: url('../cursors/frog/link3.png'), auto;}
+  60% {cursor: url('../cursors/frog/link4.png'), auto;}
+  80% {cursor: url('../cursors/frog/link5.png'), auto;}
+  100% {cursor: url('../cursors/frog/link6.png'), auto;}
+} 
+
+@keyframes link {
+  0% {cursor: url('../cursors/frog/link1.png'), auto;}
+  20% {cursor: url('../cursors/frog/link2.png'), auto;}
+  40% {cursor: url('../cursors/frog/link3.png'), auto;}
+  60% {cursor: url('../cursors/frog/link4.png'), auto;}
+  80% {cursor: url('../cursors/frog/link5.png'), auto;}
+  100% {cursor: url('../cursors/frog/link6.png'), auto;}
 }
