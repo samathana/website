@@ -27,14 +27,14 @@ a:hover {
 }
 
 //cursors
-.default {
-  cursor: url('cursors/frog/01NormalSelect.ani');
+* {
+  cursor: url(cursors/frog/01NormalSelect.ani), auto;
 }
 
-.text {
-  cursor: url('cursors/frog/06Text.ani');
+p, h1, h2, h3, h4, h5 {
+  cursor: url(cursors/frog/06Text.ani), auto;
 }
 
-.pointer {
-  cursor: url('cursors/frog/15LinkSelect.ani');
+a {
+  cursor: url(cursors/frog/15LinkSelect.ani), auto;
 }
