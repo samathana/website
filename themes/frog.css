@@ -32,7 +32,7 @@ a:hover {
 }
 
 p, h1, h2, h3, h4, h5 {
-  cursor: url(cursors/frog/06Text.ani), auto;
+  color: blue;
 }
 
 a {
