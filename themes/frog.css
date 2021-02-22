@@ -27,18 +27,18 @@ a:hover {
 }
 
 //cursors
-main {
+* {
   cursor: url('../cursors/frog/link1.png'), auto;
-  -webkit-animation: cursor 400ms infinite;
-  animation: cursor 400ms infinite;
+  -webkit-animation: er 400ms infinite;
+  animation: er 400ms infinite;
 }
 
-@-webkit-keyframes cursor {
+@-webkit-keyframes er {
   0% {cursor: url('../cursors/frog/link1.png'), auto;}
   100% {cursor: url('../cursors/frog/link2.png'), auto;}
 } 
 
-@keyframes cursor {
+@keyframes er {
   0% {cursor: url('../cursors/frog/link1.png'), auto;}
   100% {cursor: url('../cursors/frog/link2.png'), auto;}
 }
