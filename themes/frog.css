@@ -28,19 +28,19 @@ a:hover {
 
 //cursors
 main {
-  cursor: url('../cursors/frog/select1.png'), auto;
+  cursor: url('../cursors/frog/link1.png'), auto;
   -webkit-animation: cursor 400ms infinite;
   animation: cursor 400ms infinite;
 }
 
 @-webkit-keyframes cursor {
-  0% {cursor: url('../cursors/frog/select1.png'), auto;}
-  100% {cursor: url('../cursors/frog/select2.png'), auto;}
+  0% {cursor: url('../cursors/frog/link1.png'), auto;}
+  100% {cursor: url('../cursors/frog/link2.png'), auto;}
 } 
 
 @keyframes cursor {
-  0% {cursor: url('../cursors/frog/select1.png'), auto;}
-  100% {cursor: url('../cursors/frog/select2.png'), auto;}
+  0% {cursor: url('../cursors/frog/link1.png'), auto;}
+  100% {cursor: url('../cursors/frog/link2.png'), auto;}
 }
 
 a {
