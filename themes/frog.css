@@ -28,13 +28,13 @@ a:hover {
 
 //cursors
 * {
-  cursor: url('https://github.com/undercovernyan/nyancom/blob/main/cursors/frog/01NormalSelect.ani?raw=true'), auto;
+  cursor: url('../cursors/frog/select.gif'), auto;
 }
 
 p, h1, h2, h3, h4, h5 {
-  cursor: url('https://github.com/undercovernyan/nyancom/blob/main/cursors/frog/06Text.ani?raw=true'), auto;
+  cursor: url('../cursors/frog/text.gif'), auto;
 }
 
 a {
-  cursor: url('https://github.com/undercovernyan/nyancom/blob/main/cursors/frog/15LinkSelect.ani?raw=true'), auto;
+  cursor: url('../cursors/frog/link.gif'), auto;
 }
