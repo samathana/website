@@ -1,4 +1,4 @@
-.flex_design{
+.flex_design {
   display: flex;
 }
 
@@ -7,12 +7,14 @@ header {
   text-align: center;
   margin: 15px;
   padding: 10px;
+  height: 10vh;
 }
 
 nav {
   border: 2px;
   width: 150px;
   margin: 15px;
+  height: 55vh;
 }
 
 nav ul {
@@ -41,6 +43,7 @@ main {
   padding: 10px;
   margin: 15px;
   overflow: auto; 
+  height: 55vh;
 }
 
 .link {
@@ -63,6 +66,7 @@ main section img {
   background-position: left center; 
   width: 60%;
   background-size: cover;
+  height: 55vh;
 }
 
 footer {
@@ -70,10 +74,5 @@ footer {
   text-align: right;
   padding: 10px;
   margin: 15px;
-}
-
-@media screen and (max-width:1100px) {
-  #Img {
-    display: none;
-  }
+  height: 10vh;
 }
