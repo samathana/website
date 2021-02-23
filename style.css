@@ -14,7 +14,7 @@ nav {
   border: 2px;
   width: 150px;
   margin: 15px;
-  height: 55vh;
+  height: 58vh;
 }
 
 nav ul {
@@ -50,7 +50,7 @@ main {
   display: inline block;
   margin: 2px;
   padding: 5px;
-  line-height: 250px;
+  line-height: 250%;
 }
 
 main section img {
