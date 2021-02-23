@@ -22,6 +22,20 @@ a:hover {
     color: black;
 }
 
+.link {
+  border: 1px solid white;
+  color: white;
+}
+
+.link:hover {
+  background-color: white;
+  color: #0ecca2;
+}
+
+.link:visited {
+  color: white;
+ )
+
 #Img {
   background-image: url(https://cdn.pixabay.com/photo/2014/11/21/17/27/frog-540812_960_720.jpg);
 }
