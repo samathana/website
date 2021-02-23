@@ -29,16 +29,16 @@ a:hover {
 //cursors
 p {
   cursor: url('../cursors/frog/select1.png'), auto;
-  -webkit-animation: cursor 400ms infinite;
-  animation: cursor 400ms infinite;
+  -webkit-animation: text 400ms infinite;
+  animation: text 400ms infinite;
 }
 
-@-webkit-keyframes cursor {
+@-webkit-keyframes text {
   0% {cursor: url('../cursors/frog/select1.png'), auto;}
   100% {cursor: url('../cursors/frog/select2.png'), auto;}
 } 
 
-@keyframes cursor {
+@keyframes text {
   0% {cursor: url('../cursors/frog/select1.png'), auto;}
   100% {cursor: url('../cursors/frog/select2.png'), auto;}
 }
