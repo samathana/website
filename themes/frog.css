@@ -23,24 +23,24 @@ a:hover {
 }
 
 #Img {
-  background-image: url('../cursors/frog/select1.png');
+  background-image: url(https://cdn.pixabay.com/photo/2014/11/21/17/27/frog-540812_960_720.jpg);
 }
 
 //cursors
-p {
-  cursor: url('../cursors/frog/link1.png'), auto;
+html {
+  cursor: url('../cursors/frog/select1.png'), auto;
   -webkit-animation: cursor 400ms infinite;
   animation: cursor 400ms infinite;
 }
 
 @-webkit-keyframes cursor {
-  0% {cursor: url('../cursors/frog/link1.png'), auto;}
-  100% {cursor: url('../cursors/frog/link2.png'), auto;}
+  0% {cursor: url('../cursors/frog/select1.png'), auto;}
+  100% {cursor: url('../cursors/frog/select2.png'), auto;}
 } 
 
 @keyframes cursor {
-  0% {cursor: url('../cursors/frog/link1.png'), auto;}
-  100% {cursor: url('../cursors/frog/link2.png'), auto;}
+  0% {cursor: url('../cursors/frog/select1.png'), auto;}
+  100% {cursor: url('../cursors/frog/select2.png'), auto;}
 }
 
 a {
