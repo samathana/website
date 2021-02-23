@@ -77,3 +77,10 @@ footer {
   margin: 15px;
   height: 10vh;
 }
+
+@media (max-width:50em){
+  .flex_design {
+    display: block;
+    width: 100%;
+  }
+}
