@@ -78,9 +78,30 @@ footer {
   height: 10vh;
 }
 
+
 @media (max-width:50em){
   .flex_design {
     display: block;
     width: 100%;
   }
+
+  nav {
+    width: 40%;
+  }
+
+  main {
+    width: 60%;
+  }
+
+  #Img {
+  border: 2px;
+  margin: 0px;
+  padding: 0px;
+  height: 10vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  
+  }
 }
+
