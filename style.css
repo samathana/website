@@ -50,6 +50,7 @@ main {
   display: inline block;
   margin: 2px;
   padding: 5px;
+  line-height: 250px;
 }
 
 main section img {
