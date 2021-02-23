@@ -27,13 +27,13 @@ a:hover {
   color: white;
 }
 
+.link:visited {
+  color: white;
+}
+
 .link:hover {
   background-color: white;
   color: #0ecca2;
-}
-
-.link:visited {
-  color: white;
 }
 
 #Img {
