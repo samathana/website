@@ -43,6 +43,12 @@ main {
   overflow: auto; 
 }
 
+.link {
+  display: inline block;
+  margin: 2px;
+  padding: 5px;
+}
+
 main section img {
   width: 80%;
   margin-top: 20px;
