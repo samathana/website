@@ -28,7 +28,7 @@ a:hover {
 
 //cursors
 p {
-  cursor: url('../cursors/frog/select1.png'), auto;
+  cursor: url('../cursors/frog/link1.png'), auto;
   -webkit-animation: text 400ms infinite;
   animation: text 400ms infinite;
 }
