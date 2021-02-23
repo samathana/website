@@ -27,20 +27,20 @@ a:hover {
 }
 
 //cursors
-* {
-  cursor: url('../cursors/frog/link1.png'), auto;
-  -webkit-animation: er 400ms infinite;
-  animation: er 400ms infinite;
+p {
+  cursor: url('../cursors/frog/select1.png'), auto;
+  -webkit-animation: cursor 400ms infinite;
+  animation: cursor 400ms infinite;
 }
 
-@-webkit-keyframes er {
-  0% {cursor: url('../cursors/frog/link1.png'), auto;}
-  100% {cursor: url('../cursors/frog/link2.png'), auto;}
+@-webkit-keyframes cursor {
+  0% {cursor: url('../cursors/frog/select1.png'), auto;}
+  100% {cursor: url('../cursors/frog/select2.png'), auto;}
 } 
 
-@keyframes er {
-  0% {cursor: url('../cursors/frog/link1.png'), auto;}
-  100% {cursor: url('../cursors/frog/link2.png'), auto;}
+@keyframes cursor {
+  0% {cursor: url('../cursors/frog/select1.png'), auto;}
+  100% {cursor: url('../cursors/frog/select2.png'), auto;}
 }
 
 a {
