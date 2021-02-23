@@ -27,12 +27,6 @@ a:hover {
 }
 
 //cursors
-html {
-  cursor: url('../cursors/frog/select1.png'), auto;
-  -webkit-animation: cursor 400ms infinite;
-  animation: cursor 400ms infinite;
-}
-
 @-webkit-keyframes cursor {
   0% {cursor: url('../cursors/frog/select1.png'), auto;}
   100% {cursor: url('../cursors/frog/select2.png'), auto;}
@@ -43,10 +37,10 @@ html {
   100% {cursor: url('../cursors/frog/select2.png'), auto;}
 }
 
-a {
-  cursor: url('../cursors/frog/link1.png'), auto;
-  -webkit-animation: link 400ms infinite;
-  animation: link 400ms infinite;
+html {
+  cursor: url('../cursors/frog/select1.png'), auto;
+  -webkit-animation: cursor 400ms infinite;
+  animation: cursor 400ms infinite;
 }
 
 @-webkit-keyframes link {
@@ -65,4 +59,10 @@ a {
   60% {cursor: url('../cursors/frog/link4.png'), auto;}
   80% {cursor: url('../cursors/frog/link5.png'), auto;}
   100% {cursor: url('../cursors/frog/link6.png'), auto;}
+}
+
+a {
+  cursor: url('../cursors/frog/link1.png'), auto;
+  -webkit-animation: link 400ms infinite;
+  animation: link 400ms infinite;
 }
