@@ -83,25 +83,31 @@ footer {
   .flex_design {
     display: block;
     width: 100%;
+    overflow: hidden;
   }
 
   nav {
     width: 40%;
+    height: 55vh;
   }
 
   main {
     width: 60%;
+    height: 52vh;
+  }
+
+  header, footer {
+    height: 8vh;
+    padding: 0px 10px;
+    line-height: 8vh;
   }
 
   #Img {
   border: 2px;
-  margin: 0px;
   padding: 0px;
   height: 10vh;
   width: 100%;
   overflow: hidden;
-  position: relative;
-  
   }
 }
 
