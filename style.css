@@ -59,13 +59,17 @@ main section img {
   margin-bottom: 0px;
 }
 
+imgWrap {
+  width: 60%;
+}
+
 #Img {
   border: 2px;
   padding: 10px;
   margin: 15px;
   background-repeat: no-repeat;
   background-position: left center; 
-  width: 60%;
+  width: 100%;
   background-size: cover;
   height: 55vh;
 }
@@ -79,7 +83,7 @@ footer {
 }
 
 
-@media (max-width:50em){
+@media only screen and (orientation: portrait) {
   .flex_design {
     display: block;
     width: 100%;
@@ -102,11 +106,23 @@ footer {
     line-height: 8vh;
   }
 
-  #Img {
+  #imgWrap {
   border: 2px;
   padding: 0px;
   height: 10vh;
+  margin: 0px 15px;
+  overflow: hidden;
+  }
+
+  #Img {
+      border: 0px;
+  padding: 0px;
+  margin: 0px;
+  background-repeat: no-repeat;
+  background-position: left center; 
   width: 100%;
+  background-size: cover;
+  height: 55vh;
   overflow: hidden;
   }
 }
