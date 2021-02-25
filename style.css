@@ -44,6 +44,7 @@ main {
   overflow: auto;
   height: 55vh;
   min-width: 300px;
+  width: 100%;
 }
 
 .link {
@@ -86,16 +87,17 @@ footer {
 @media only screen and (orientation: portrait) {
   .flex_design {
     display: block;
-    width: 100%;
     overflow: hidden;
   }
 
-  nav {
-    height: 55vh;
+  nav, main {
+    height: 350px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
-  main {
-    height: 52vh;
+  nav ul {
+    padding-top: 8px;
   }
 
   header, footer {
