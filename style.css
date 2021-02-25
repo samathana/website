@@ -96,6 +96,10 @@ footer {
     padding-bottom: 0;
   }
 
+  main {
+    min-width: 0;
+  }
+  
   nav ul {
     padding-top: 8px;
   }
