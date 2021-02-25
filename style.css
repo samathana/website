@@ -42,9 +42,8 @@ main {
   padding: 10px;
   margin: 15px;
   overflow: auto;
-  min-width: fit-content; 
-  max-width: 500px;
   height: 55vh;
+  min-width: 300px;
 }
 
 .link {
@@ -92,12 +91,10 @@ footer {
   }
 
   nav {
-    width: 40%;
     height: 55vh;
   }
 
   main {
-    width: 60%;
     height: 52vh;
   }
 
