@@ -88,34 +88,50 @@ footer {
   .flex_design {
     display: block;
     overflow: hidden;
+    margin: 0 15px;
+  }
+  
+  header, footer {
+    margin: 0 15px;
   }
 
-  main {
-    min-width: 0;
+  header, footer, nav, main {
+    font-size: 40px;
+  }
+
+  nav, main, #imgWrap, #Img {
+    margin: 40px 0;
   }
   
   nav ul {
-    width: 50%;
+    width: 100%;
     text-align: center;
-    line-height: 25px;
+    line-height: 50px;
+    padding-top: 20px;
   }
   
   nav ul li {
     display: inline;
     width: 100%;
+    margin: 15px;
+  }
+
+  main {
+    min-width: 0;
+    height: auto;
+    min-height: 48vh;
+    padding: 10px 10px 30px 50px;
   }
 
   header, footer, nav, #imgWrap, #Img {
-    height: 100px;
+    height: 150px;
     padding: 0px 20px;
-    line-height: 100px;
+    line-height: 150px;
   }
 
   #imgWrap {
     border: 2px;
     padding: 0px;
-    height: 10vh;
-    margin: 0px 15px;
     overflow: hidden;
   }
 
@@ -127,8 +143,11 @@ footer {
     background-position: left center; 
     width: 100%;
     background-size: cover;
-    height: 55vh;
     overflow: hidden;
+  }
+
+  footer h5 {
+    margin-top: 0;
   }
 }
 
