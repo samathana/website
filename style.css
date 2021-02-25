@@ -12,7 +12,6 @@ header {
 
 nav {
   border: 2px;
-  width: 150px;
   margin: 15px;
   height: 58vh;
 }
@@ -42,7 +41,9 @@ main {
   border: 2px;
   padding: 10px;
   margin: 15px;
-  overflow: auto; 
+  overflow: auto;
+  min-width: fit-content; 
+  max-width: 500px;
   height: 55vh;
 }
 
@@ -59,8 +60,9 @@ main section img {
   margin-bottom: 0px;
 }
 
-imgWrap {
-  width: 60%;
+#imgWrap {
+  overflow: hidden;
+  width: 100%;
 }
 
 #Img {
@@ -69,7 +71,6 @@ imgWrap {
   margin: 15px;
   background-repeat: no-repeat;
   background-position: left center; 
-  width: 100%;
   background-size: cover;
   height: 55vh;
 }
