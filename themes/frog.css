@@ -40,7 +40,12 @@ a:hover {
   background-image: url(https://cdn.pixabay.com/photo/2014/11/21/17/27/frog-540812_960_720.jpg);
 }
 
-//cursors
+/*mobile formatting*/
+@media only screen and (orientation: portrait) {
+    background: linear-gradient(to right, #0ecca2, #0dbab1);
+}
+
+/*cursors*/
 @-webkit-keyframes cursor {
   0% {cursor: url('../cursors/frog/select1.png'), auto;}
   100% {cursor: url('../cursors/frog/select2.png'), auto;}
