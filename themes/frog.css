@@ -42,7 +42,9 @@ a:hover {
 
 /*mobile formatting*/
 @media only screen and (orientation: portrait) {
+  nav {
     background: linear-gradient(to right, #0ecca2, #0dbab1);
+  }
 }
 
 /*cursors*/
