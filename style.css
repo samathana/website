@@ -110,6 +110,7 @@ footer {
   nav {
     overflow-y: visible;
     width: 100%;
+    padding-right: 15px;
   }
 
   nav ul {
