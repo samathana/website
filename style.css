@@ -83,7 +83,7 @@ footer {
   height: 10vh;
 }
 
-
+/*phone styling*/
 @media only screen and (orientation: portrait) {
   .flex_design {
     display: block;
@@ -118,8 +118,7 @@ footer {
 
   main {
     min-width: 0;
-    height: auto;
-    min-height: 48vh;
+    height: stretch;
     padding: 10px 10px 30px 50px;
   }
 
