@@ -2,7 +2,7 @@
 window.onload = function () {
   
 //set theme to frog by default
-var theme = "frog";
+var theme = "sheep";
 
 //set stylesheet to theme
 var link = document.getElementById("themeSheet");
