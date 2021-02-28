@@ -1,19 +1,20 @@
 body {
-  background: linear-gradient(to right, #ffbdc7, #ffccd4);
+  background: linear-gradient(to right, #ffbdc7, #ffdcd4);
 }
 
 header, nav, main, #Img, footer {
   background: rgba(255, 255, 255, 0.6);
-  radial-gradient(circle at 50% 0%, white 25%, #535353 26%, gray 40%);
-  color: #570029;
+  color: #c891a2;
+  box-shadow: 0 0 10px white;
+  border-radius: 10px;
 }
 
 a:link {
-    color: #a1caf1;
+    color: #91c8c8;
 }
 
 a:visited {
-    color: #ffbdc7;
+    color: #8891a2;
 }
 
 a:hover {
@@ -21,16 +22,16 @@ a:hover {
 }
 
 .link {
-  border: 1px solid #a1caf1;
-  color: #a1caf1;
+  border: 1px solid #91c8c8;
+  color: #91c8c8;
 }
 
 .link:visited {
-  color: #a1caf1;
+  color: #91c8c8;
 }
 
 .link:hover {
-  background-color: #a1caf1;
+  background-color: #91c8c8;
   color: white;
 }
 
