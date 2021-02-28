@@ -16,7 +16,7 @@ if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini
 //set attribution in footer
 switch (theme) {
   case "mobile":
-    document.getElementById("attrib").innerHTML = ", but it's better on desktop tbh"
+    document.getElementById("attrib").innerHTML = ", but it's better on desktop"
     break;
   case "frog":
     document.getElementById("attrib").innerHTML = ", cursor by <a href='http://www.rw-designer.com/user/90488'>dingdongdie</a>"
