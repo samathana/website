@@ -110,7 +110,6 @@ footer {
   nav {
     overflow-y: visible;
     width: 100%;
-    padding-right: 15px;
   }
 
   nav ul {
@@ -122,39 +121,27 @@ footer {
   
   nav ul li {
     display: inline;
-    width: 100%;
-    margin: 15px;
+    margin: 30px;
   }
 
   main {
-    min-width: 0;
-    height: stretch;
     padding: 10px 10px 30px 50px;
   }
 
   header, footer, nav, #imgWrap, #Img {
     height: 150px;
-    padding: 0px 20px;
     line-height: 150px;
   }
 
-  #imgWrap {
-    border: 2px;
-    padding: 0px;
-    overflow: hidden;
-  }
-
   #Img {
-    border: 0px;
     padding: 0px;
     margin: 0px;
-    background-repeat: no-repeat;
-    background-position: left center; 
-    width: 100%;
-    background-size: cover;
-    overflow: hidden;
   }
 
+  footer {
+    margin-bottom: 50px;
+  }
+  
   footer h5 {
     margin-top: 0;
   }
