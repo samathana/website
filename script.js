@@ -8,8 +8,16 @@ var theme = "frog";
 var link = document.getElementById("themeSheet");
 link.setAttribute("href", "themes/" + theme + ".css");
 
+//avoid cursor attribution on mobile (where cursors don't exist)
+if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ theme = "mobile";
+}
+  
 //set attribution in footer
 switch (theme) {
+  case "mobile":
+    document.getElementById("attrib").innerHTML = ", but it's better on desktop tbh"
+    break;
   case "frog":
     document.getElementById("attrib").innerHTML = ", cursor by <a href='http://www.rw-designer.com/user/90488'>dingdongdie</a>"
     break;
