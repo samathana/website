@@ -1,12 +1,12 @@
-//load JS after the page is loaded, to avoid issues with selecting elements that don't exist
-window.onload = function () {
-  
 //set theme to frog by default
 var theme = "sheep";
 
 //set stylesheet to theme
 var link = document.getElementById("themeSheet");
 link.setAttribute("href", "themes/" + theme + ".css");
+
+//load JS after the page is loaded, to avoid issues with selecting elements that don't exist
+window.onload = function () {
 
 //avoid cursor attribution on mobile (where cursors don't exist)
 if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
