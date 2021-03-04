@@ -17,10 +17,11 @@
     <link href="style.css" rel="stylesheet"/>
     <script src="script.js"></script>
     <script>
-      document.getElementById("game").onclick = function() {loadGame()};
-      function loadGame() {
-        document.getElementsByTagName("main").innerHTML = "hello";
-      };
+      document.getElementById("demo").onclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+}
     </script>
     <style>
 	main {
@@ -50,7 +51,7 @@
 	  </ul>
 	</nav>
 	<main>
-     		<div id="game">
+     		<div id="demo">
 			<img src="games/sheepy/sheepy.png" width="180">
 			<p><strong>Random Sheep Generator</strong></p>
 			<p>Generates a random sheep!</p>
