@@ -15,7 +15,13 @@
     <title>fun stuff!</title>
     <link href="themes/frog.css" rel="stylesheet" id="themeSheet"'/>
     <link href="style.css" rel="stylesheet"/>
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
+    <script>
+      document.getElementByClassName("game").onclick = function() {loadGame()};
+      function loadGame() {
+        document.getElementsByTagName("main").innerHTML = "hello"
+      }
+    </script>
     <style>
 	main {
 	  display: flex;
@@ -44,12 +50,12 @@
 	  </ul>
 	</nav>
 	<main>
-     		<div>
+     		<div class="game">
 			<img src="games/sheepy/sheepy.png" width="180">
 			<p><strong>Random Sheep Generator</strong></p>
 			<p>Generates a random sheep!</p>
 		</div>
-		<div>
+		<div class="game">
 			<img src="games/sheppy/sheppy.jpeg" width="180">
 			<p><strong>Surreal Sheep Generator</strong></p>
 			<p>The random sheep generator, but wacky</p>
