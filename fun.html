@@ -44,7 +44,7 @@
 	  </ul>
 	</nav>
 	<main>
-     		<div id="demo">
+     		<div class="game">
 			<img src="games/sheepy/sheepy.png" width="180">
 			<p><strong>Random Sheep Generator</strong></p>
 			<p>Generates a random sheep!</p>
@@ -64,11 +64,10 @@
       <h5>Website by me<span id="attrib"></span> :3</h5>
     </footer>
 	<script>
-      document.getElementById("demo").onclick = function() {myFunction()};
-
-function myFunction() {
-  document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-}
+      	  document.getElementsByClassName("game").onclick = function() {loadGame()};
+	  function loadGame() {
+  	  document.getElementsByTagName("main").innerHTML = "hello";
+	  }
     </script>							  
   </body>
 </html>
