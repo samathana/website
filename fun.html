@@ -17,7 +17,7 @@
     <link href="style.css" rel="stylesheet"/>
     <script src="script.js"></script>
     <script>
-      document.getElementByClassName("game").onclick = function() {loadGame()};
+      document.getElementsByClassName("game").onclick = function() {loadGame()};
       function loadGame() {
         document.getElementsByTagName("main").innerHTML = "hello";
       };
