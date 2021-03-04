@@ -17,7 +17,7 @@
     <link href="style.css" rel="stylesheet"/>
     <script src="script.js"></script>
     <script>
-      document.getElementsByClassName("game").onclick = function() {loadGame()};
+      document.getElementById("game").onclick = function() {loadGame()};
       function loadGame() {
         document.getElementsByTagName("main").innerHTML = "hello";
       };
@@ -50,7 +50,7 @@
 	  </ul>
 	</nav>
 	<main>
-     		<div class="game">
+     		<div id="game">
 			<img src="games/sheepy/sheepy.png" width="180">
 			<p><strong>Random Sheep Generator</strong></p>
 			<p>Generates a random sheep!</p>
