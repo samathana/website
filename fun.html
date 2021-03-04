@@ -43,7 +43,7 @@
 		<li><a href="merch.html">merch?</a></li>
 	  </ul>
 	</nav>
-	<main>
+	<main id="main">
      		<div id="game">
 			<img src="games/sheepy/sheepy.png" width="180">
 			<p><strong>Random Sheep Generator</strong></p>
@@ -66,7 +66,7 @@
 	<script>
       	  document.getElementById("game").onclick = function() {loadGame()};
 	  function loadGame() {
-  	  document.getElementById("game").innerHTML = "hello";
+  	  document.getElementById("main").innerHTML = "hello";
 	  }
     </script>							  
   </body>
