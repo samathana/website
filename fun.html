@@ -71,7 +71,9 @@
 	  }
 
 	  function loadGame() {
-  	    document.getElementById("main").innerHTML = '<canvas id="canvas" width="900" height="600"></canvas><scr'+'ipt src="games/sheepy/sheepy.js"></s'+'cript>';
+  	    document.getElementById("main").innerHTML = '<canvas id="canvas" width="600" height="600"></canvas>';
+	    import runGame from "games/sheepy/sheepy.js";
+	    runGame();
 	  }
     </script>							  
   </body>
