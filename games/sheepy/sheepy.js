@@ -1,3 +1,4 @@
+function runGame() {
 function init() {
   let c = document.getElementById("canvas");
   let ctx = c.getContext("2d");
@@ -219,3 +220,6 @@ function connect(ctx,x1,y1,x2,y2) {           //draw line between two points
 function controlRandom(input) {
   return 0.5 + (Math.random()-0.5)*input;
 }
+
+}
+export { runGame };
