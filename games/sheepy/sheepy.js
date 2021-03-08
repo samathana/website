@@ -1,4 +1,4 @@
-function runGame() {
+function sheepy() {
 function init() {
   let c = document.getElementById("canvas");
   let ctx = c.getContext("2d");
@@ -222,4 +222,3 @@ function controlRandom(input) {
 }
 
 }
-export { runGame };
