@@ -1,4 +1,3 @@
-function sheepy() {
 function init() {
   let c = document.getElementById("canvas");
   let ctx = c.getContext("2d");
@@ -219,6 +218,4 @@ function connect(ctx,x1,y1,x2,y2) {           //draw line between two points
 //1 is math.random, 0 is 0.5
 function controlRandom(input) {
   return 0.5 + (Math.random()-0.5)*input;
-}
-
 }
