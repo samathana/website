@@ -2,8 +2,8 @@ function init() {
   let c = document.getElementById("canvas");
   let ctx = c.getContext("2d");
   c.setAttribute("tabindex", 0);
-  c.width = window.innerWidth-25;
   c.height = window.innerHeight-25;
+  c.width = c.height;
 
 
   //weirdness
