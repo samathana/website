@@ -2,7 +2,8 @@ function init() {
   let c = document.getElementById("canvas");
   let ctx = c.getContext("2d");
   c.setAttribute("tabindex", 0);
-  c.height = 100%;
+  let main = document.getElementById("main");
+  c.height = main.offsetWidth;
   c.width = c.height;
 
 
