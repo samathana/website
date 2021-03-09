@@ -67,7 +67,7 @@ function init() {
   //reload button
   ctx.font = "30px Arial";
   ctx.fillText("reload", 10, 50);
-  ctx.onclick = init();
+  ctx.onclick = init;
 }
 
 function drawmouth(y, width, height, c, ctx) {
