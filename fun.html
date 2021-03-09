@@ -74,8 +74,8 @@
   	    document.getElementById("main").innerHTML = '<canvas id="canvas" width="600" height="600"></canvas>';
 	    var gameScript = document.createElement('script');
 	    gameScript.setAttribute('src','games/sheepy/sheepy.js');
+	    gameScript.setAttribute('onload','init()');
 	    document.head.appendChild(gameScript);
-	    init();
 	  }
     </script>							  
   </body>
