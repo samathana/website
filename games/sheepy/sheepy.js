@@ -2,7 +2,7 @@ function init() {
   let c = document.getElementById("canvas");
   let ctx = c.getContext("2d");
   c.setAttribute("tabindex", 0);
-  c.height = window.innerHeight-25;
+  c.height = 100%;
   c.width = c.height;
 
 
@@ -64,6 +64,10 @@ function init() {
   //mouth
   drawmouth(headaltitude - mouthlow, mouthwidth, mouthheight, c, ctx);
 
+  //reload button
+  ctx.font = "30px Arial";
+  ctx.fillText("reload", 10, 50);
+  ctx.onclick = init();
 }
 
 function drawmouth(y, width, height, c, ctx) {
