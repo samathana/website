@@ -44,12 +44,12 @@
 	  </ul>
 	</nav>
 	<main id="main">
-     		<div class="game">
+     		<div class="game" id="sheepy">
 			<img src="games/sheepy/sheepy.png" width="180">
 			<p><strong>Random Sheep Generator</strong></p>
 			<p>Generates a random sheep!</p>
 		</div>
-		<div class="game">
+		<div class="game" id="sheppy">
 			<img src="games/sheppy/sheppy.jpeg" width="180">
 			<p><strong>Surreal Sheep Generator</strong></p>
 			<p>The random sheep generator, but wacky</p>
@@ -73,7 +73,8 @@
 	  function loadGame() {
   	    document.getElementById("main").innerHTML = '<canvas id="canvas" width="600" height="600"></canvas>';
 	    var gameScript = document.createElement('script');
-	    gameScript.setAttribute('src','games/sheepy/sheepy.js');
+	    //the game's id is the same as the directory and js file name; this.id gets the id of the clicked element
+	    gameScript.setAttribute('src','games/'+this.id+'/'+this.id+'.js');
 	    gameScript.setAttribute('onload','init()');
 	    document.head.appendChild(gameScript);
 	  }
