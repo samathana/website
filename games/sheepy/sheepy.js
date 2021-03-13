@@ -4,10 +4,10 @@ function init() {
   c.setAttribute("tabindex", 0);
   let main = document.getElementById("main");
   if (main.offsetWidth < main.offsetHeight) {
-    c.height = main.offsetWidth;
+    c.height = main.offsetWidth-30;
     c.width = c.height;
   } else {
-    c.width = main.offsetHeight;
+    c.width = main.offsetHeight-30;
     c.height = c.width;
   }
 
