@@ -3,8 +3,13 @@ function init() {
   let ctx = c.getContext("2d");
   c.setAttribute("tabindex", 0);
   let main = document.getElementById("main");
-  c.height = main.offsetWidth;
-  c.width = c.height;
+  if (main.offsetWidth < main.offsetHeight) {
+    c.height = main.offsetWidth;
+    c.width = c.height;
+  } else {
+    c.width = main.offsetHeight;
+    c.height = c.width;
+  }
 
 
   //weirdness
@@ -66,9 +71,7 @@ function init() {
   drawmouth(headaltitude - mouthlow, mouthwidth, mouthheight, c, ctx);
 
   //reload button
-  ctx.font = "30px Arial";
-  ctx.fillText("reload", 10, 50);
-  ctx.onclick = init;
+  c.onclick = init;
 }
 
 function drawmouth(y, width, height, c, ctx) {
