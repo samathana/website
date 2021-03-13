@@ -44,12 +44,12 @@
 	  </ul>
 	</nav>
 	<main id="main">
-     		<div class="game" id="sheepy">
+     		<div id="sheepy" onclick="loadGame()">
 			<img src="games/sheepy/sheepy.png" width="180">
 			<p><strong>Random Sheep Generator</strong></p>
 			<p>Generates a random sheep!</p>
 		</div>
-		<div class="game" id="sheppy">
+		<div id="sheppy" onclick="loadGame()">
 			<img src="games/sheppy/sheppy.jpeg" width="180">
 			<p><strong>Surreal Sheep Generator</strong></p>
 			<p>The random sheep generator, but wacky</p>
@@ -64,20 +64,22 @@
       <h5>Website by me<span id="attrib"></span> :3</h5>
     </footer>
 	<script>
-      	  var game = document.getElementsByClassName("game");
-	  var i;
-	  for (i = 0; i < game.length; i++) {
-   	    game[i].addEventListener("click", loadGame);
-	  }
-
+	  //copy current main, so we can go back later
+	    var beforeMain = document.getElementById("main");
+            var beforeMain = beforeMain.cloneNode(true);
+								  
 	  function loadGame() {
-  	    document.getElementById("main").innerHTML = '<canvas id="canvas" width="600" height="600"></canvas>';
+	    document.getElementById("main").innerHTML = '<button type="button" onclick="goBack"></button><canvas id="canvas" width="600" height="600"></canvas>';
 	    var gameScript = document.createElement('script');
 	    //the game's id is the same as the directory and js file name; this.id gets the id of the clicked element
 	    gameScript.setAttribute('src','games/'+this.id+'/'+this.id+'.js');
 	    gameScript.setAttribute('onload','init()');
 	    document.head.appendChild(gameScript);
 	  }
+	
+	function goBack() {
+	    document.getElementById("main").innerHTML = beforeMain;
+	}
     </script>							  
   </body>
 </html>
