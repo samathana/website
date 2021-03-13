@@ -13,7 +13,7 @@ function init() {
 
   //click to reload text
   ctx.font = "10px Times New Roman";
-  ctx.fillText("click for new sheep", canvas.width-2, canvas.height-2);
+  ctx.fillText("click for new sheep", 2, canvas.height-10);
   
   //weirdness
   let randomlimit = 0.5;
