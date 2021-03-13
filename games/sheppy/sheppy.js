@@ -2,10 +2,19 @@ function init() {
   let c = document.getElementById("canvas");
   let ctx = c.getContext("2d");
   c.setAttribute("tabindex", 0);
-  c.width = window.innerWidth-25;
-  c.height = window.innerHeight-25;
+  let main = document.getElementById("main");
+  if (main.offsetWidth < main.offsetHeight) {
+    c.height = main.offsetWidth-30;
+    c.width = c.height;
+  } else {
+    c.width = main.offsetHeight-30;
+    c.height = c.width;
+  }
 
-
+  //click to reload text
+  ctx.font = "10px Times New Roman";
+  ctx.fillText("click for new \"sheep\"", 10, canvas.height-10);
+  
   //weirdness
   let randomlimit = 15;
   
@@ -64,6 +73,8 @@ function init() {
   //mouth
   drawmouth(headaltitude - mouthlow, mouthwidth, mouthheight, c, ctx);
 
+  //reload button
+  c.onclick = init;
 }
 
 function drawmouth(y, width, height, c, ctx) {
