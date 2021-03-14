@@ -81,8 +81,7 @@
 	  }
 	
 	function goBack() {
-	    document.getElementById("main").remove();
-	    console.log("hello");
+	    document.getElementById("main").parentNode.removeChild();
 	    document.getElementById("nav").insertAdjacentElement("afterend", beforeMain);
 	    document.getElementById("intStyle").appendChild(beforeStyle);
 	}
