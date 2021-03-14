@@ -87,10 +87,10 @@ function drawmouth(y, width, height, c, ctx) {
   //draw the two things
 
   ctx.beginPath();
-  ctx.arc(c.width/2 + width/4, c.height/2-y+height-radius, radius, Math.PI/2 - angle, Math.PI/2 + angle);
+  ctx.arc(Math.abs(c.width/2 + width/4, c.height/2-y+height-radius, radius, Math.PI/2 - angle, Math.PI/2 + angle));
   ctx.stroke();
   ctx.beginPath();
-  ctx.arc(c.width/2 - width/4, c.height/2-y+height-radius, radius, Math.PI/2 - angle, Math.PI/2 + angle);
+  ctx.arc(Math.abs(c.width/2 - width/4, c.height/2-y+height-radius, radius, Math.PI/2 - angle, Math.PI/2 + angle));
   ctx.stroke();
 
 
@@ -101,7 +101,7 @@ function drawmouth(y, width, height, c, ctx) {
 //basically just circle drawing but with centered coords
 function draweye(x, y, radius, c, ctx) {
   ctx.beginPath();
-  ctx.arc(c.width/2 + x, c.height/2 - y, radius, 0, 2 * Math.PI);
+  ctx.arc(Math.abs(c.width/2 + x, c.height/2 - y, radius, 0, 2 * Math.PI));
   ctx.fillStyle = "black";
   ctx.fill();
 }
