@@ -78,7 +78,8 @@
 	  }
 	
 	function goBack() {
-	    document.getElementById("main").innerHTML = beforeMain;
+	    document.getElementById("main").innerHTML = "";
+	    document.getElementById("main").appendChild(beforeMain);
 	}
     </script>							  
   </body>
