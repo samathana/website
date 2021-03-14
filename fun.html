@@ -80,6 +80,7 @@
 	
 	function goBack() {
 	    document.getElementsByClassName("flex_design")[0].removeChild(main);
+	    document.head.removeChild(gameScript);
 	    document.getElementById("nav").insertAdjacentElement("afterend", beforeMain);
 	}
     </script>							  
