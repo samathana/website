@@ -66,13 +66,13 @@
     </footer>
 	<script>
 	  //copy current main and its style, so we can go back later
-	    var beforeMain = document.getElementById("main");
-            var beforeMain = beforeMain.cloneNode(true);
+	    var main = document.getElementById("main");
+            var beforeMain = main.cloneNode(true);
 	    var beforeStyle = document.getElementById("intStyle");
             var beforeStyle = beforeStyle.cloneNode(true);
 								  
 	  function loadGame(gameId) {
-	    document.getElementById("main").innerHTML = '<button type="button" onclick="goBack()">back</button><canvas id="canvas" width="600" height="600"></canvas>';
+	    main.innerHTML = '<button type="button" onclick="goBack()">back</button><canvas id="canvas" width="600" height="600"></canvas>';
 	    var gameScript = document.createElement('script');
 	    //the game's id is the same as the directory and js file name; this.id gets the id of the clicked element
 	    gameScript.setAttribute('src','games/'+gameId+'/'+gameId+'.js');
@@ -81,7 +81,7 @@
 	  }
 	
 	function goBack() {
-	    document.getElementById("main").parentNode.removeChild();
+	    document.getElementsByClassName("flex_design")[0].removeChild(main);
 	    document.getElementById("nav").insertAdjacentElement("afterend", beforeMain);
 	    document.getElementById("intStyle").appendChild(beforeStyle);
 	}
