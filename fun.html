@@ -34,9 +34,9 @@
       <h2>fun stuff!</h2>
     </header>
     <div class="flex_design">
-	<nav>
+	<nav id="nav">
 	  <ul>
-    <li><a href="home.html">about!</a></li>
+  		<li><a href="home.html">about!</a></li>
 		<li><a href="theme.html">theme changer!</a></li>
 		<li><a href="poll.html">poll n stats!</a></li>
 		<li><a href="math.html">math!</a></li>
@@ -81,8 +81,8 @@
 	  }
 	
 	function goBack() {
-	    document.getElementById("main").innerHTML = "";
-	    document.getElementById("main").appendChild(beforeMain);
+	    document.getElementById("main").remove();
+	    document.getElementById("nav").insertAdjacentElement("afterend", beforeMain);
 	    document.getElementById("intStyle").appendChild(beforeStyle);
 	}
     </script>							  
