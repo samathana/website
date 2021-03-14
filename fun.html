@@ -44,12 +44,12 @@
 	  </ul>
 	</nav>
 	<main id="main">
-     		<div id="sheepy" onclick="loadGame()">
+     		<div onclick="loadGame(sheepy)">
 			<img src="games/sheepy/sheepy.png" width="180">
 			<p><strong>Random Sheep Generator</strong></p>
 			<p>Generates a random sheep!</p>
 		</div>
-		<div id="sheppy" onclick="loadGame()">
+		<div onclick="loadGame(sheppy)">
 			<img src="games/sheppy/sheppy.jpeg" width="180">
 			<p><strong>Surreal Sheep Generator</strong></p>
 			<p>The random sheep generator, but wacky</p>
@@ -68,11 +68,11 @@
 	    var beforeMain = document.getElementById("main");
             var beforeMain = beforeMain.cloneNode(true);
 								  
-	  function loadGame() {
+	  function loadGame(gameId) {
 	    document.getElementById("main").innerHTML = '<button type="button" onclick="goBack">back</button><canvas id="canvas" width="600" height="600"></canvas>';
 	    var gameScript = document.createElement('script');
 	    //the game's id is the same as the directory and js file name; this.id gets the id of the clicked element
-	    gameScript.setAttribute('src','games/'+this.id+'/'+this.id+'.js');
+	    gameScript.setAttribute('src','games/'+gameId+'/'+gameId+'.js');
 	    gameScript.setAttribute('onload','init()');
 	    document.head.appendChild(gameScript);
 	  }
