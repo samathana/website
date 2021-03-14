@@ -75,11 +75,13 @@
 	    //the game's id is the same as the directory and js file name; this.id gets the id of the clicked element
 	    gameScript.setAttribute('src','games/'+gameId+'/'+gameId+'.js');
 	    gameScript.setAttribute('onload','init()');
+	    gameScript.setAttribute('id','gameScript');
 	    document.head.appendChild(gameScript);
 	  }
 	
 	function goBack() {
 	    document.getElementsByClassName("flex_design")[0].removeChild(main);
+	    var gameScript = document.getElementById("gameScript");
 	    document.head.removeChild(gameScript);
 	    document.getElementById("nav").insertAdjacentElement("afterend", beforeMain);
 	}
