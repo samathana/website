@@ -16,7 +16,7 @@
     <link href="themes/frog.css" rel="stylesheet" id="themeSheet"'/>
     <link href="style.css" rel="stylesheet"/>
     <script src="script.js"></script>
-    <style id="intStyle">
+    <style>
 	main {
 	  display: flex;
 	}
@@ -68,8 +68,6 @@
 	  //copy current main and its style, so we can go back later
 	    var main = document.getElementById("main");
             var beforeMain = main.cloneNode(true);
-	    var beforeStyle = document.getElementById("intStyle");
-            var beforeStyle = beforeStyle.cloneNode(true);
 								  
 	  function loadGame(gameId) {
 	    main.innerHTML = '<button type="button" onclick="goBack()">back</button><canvas id="canvas" width="600" height="600"></canvas>';
@@ -83,7 +81,6 @@
 	function goBack() {
 	    document.getElementsByClassName("flex_design")[0].removeChild(main);
 	    document.getElementById("nav").insertAdjacentElement("afterend", beforeMain);
-	    document.getElementById("intStyle").appendChild(beforeStyle);
 	}
     </script>							  
   </body>
