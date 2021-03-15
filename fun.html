@@ -71,6 +71,7 @@
 								  
 	  function loadGame(gameId) {
 	    main.innerHTML = '<button type="button" onclick="goBack()">back</button><canvas id="canvas" width="600" height="600"></canvas>';
+	    var gameScript = "";
 	    var gameScript = document.createElement('script');
 	    //the game's id is the same as the directory and js file name; this.id gets the id of the clicked element
 	    gameScript.setAttribute('src','games/'+gameId+'/'+gameId+'.js');
