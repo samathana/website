@@ -83,7 +83,8 @@
 	function goBack() {
 	    var main = document.getElementById("main");
 	    document.getElementsByClassName("flex_design")[0].removeChild(main);
-	    document.body.removeChild(document.body.lastChild);
+	    var gameScript = document.getElementById("gameScript");
+	    document.body.removeChild(gameScript);
 	    document.getElementById("nav").insertAdjacentElement("afterend", beforeMain);
 	}
     </script>							  
