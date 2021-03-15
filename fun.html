@@ -76,13 +76,13 @@
 	    gameScript.setAttribute('src','games/'+gameId+'/'+gameId+'.js');
 	    gameScript.setAttribute('onload','init()');
 	    gameScript.setAttribute('id','gameScript');
-	    document.head.appendChild(gameScript);
+	    document.body.appendChild(gameScript);
 	  }
 	
 	function goBack() {
 	    document.getElementsByClassName("flex_design")[0].removeChild(main);
 	    var gameScript = document.getElementById("gameScript");
-	    document.head.removeChild(gameScript);
+	    document.body.removeChild(gameScript);
 	    document.getElementById("nav").insertAdjacentElement("afterend", beforeMain);
 	}
     </script>							  
