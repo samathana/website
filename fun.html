@@ -71,7 +71,7 @@
 								  
 	  function loadGame(gameId) {
 	    //add game script to page
-	    var gameScript = document.createElement('script');
+	    window.gameScript = document.createElement('script');
 	    //the game's id is the same as the directory and js file name
 	    gameScript.setAttribute('src','games/'+gameId+'/'+gameId+'.js');
 	    gameScript.setAttribute('onload','init()');
@@ -80,10 +80,10 @@
 	  
 	    //change main content
 	    var main = document.getElementById("main");
-	    main.innerHTML = '<button type="button" onclick="goBack('+gameScript+')">back</button><canvas id="canvas" width="600" height="600"></canvas>';
+	    main.innerHTML = '<button type="button" onclick="goBack()">back</button><canvas id="canvas" width="600" height="600"></canvas>';
 	  }
 	
-	function goBack(gameScript) {
+	function goBack() {
 	    var main = document.getElementById("main");
 	    document.getElementsByClassName("flex_design")[0].removeChild(main);
 	    document.body.removeChild(gameScript);
