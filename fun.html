@@ -85,10 +85,9 @@
 	
 	function goBack() {
 	    var main = document.getElementById("main");
-	    main.innerHTML = "get erred please";
 	    document.getElementsByClassName("flex_design")[0].removeChild(main);
 	    document.getElementById("nav").insertAdjacentElement("afterend", beforeMain);
-	    document.body.removeChild(gameScript);
+	    document.body.removeChild(window.gameScript);
 	  }
     </script>							  
   </body>
