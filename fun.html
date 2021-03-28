@@ -70,14 +70,17 @@
             var beforeMain = main.cloneNode(true);
 								  
 	  function loadGame(gameId) {
-	    var main = document.getElementById("main");
-	    main.innerHTML = '<button type="button" onclick="goBack(gameScript)">back</button><canvas id="canvas" width="600" height="600"></canvas>';
+	    //add game script to page
 	    var gameScript = document.createElement('script');
 	    //the game's id is the same as the directory and js file name
 	    gameScript.setAttribute('src','games/'+gameId+'/'+gameId+'.js');
 	    gameScript.setAttribute('onload','init()');
 	    gameScript.setAttribute('id','gameScript');
 	    document.body.appendChild(gameScript);
+	  
+	    //change main content
+	    var main = document.getElementById("main");
+	    main.innerHTML = '<button type="button" onclick="goBack(gameScript)">back</button><canvas id="canvas" width="600" height="600"></canvas>';
 	  }
 	
 	function goBack(gameScript) {
