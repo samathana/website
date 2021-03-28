@@ -33,7 +33,7 @@
     <header>
       <h2>fun stuff!</h2>
     </header>
-    <div id="flexDesign">
+    <div class="flex_design">
 	<nav id="nav">
 	  <ul>
   		<li><a href="home.html">about!</a></li>
@@ -71,11 +71,11 @@
 								  
 	  function loadGame(gameId) {
 	    //add game script to page
-	    window.gameScript = document.createElement('script');
+	    gameScript = document.createElement('script');
 	    //the game's id is the same as the directory and js file name
-	    window.gameScript.setAttribute('src','games/'+gameId+'/'+gameId+'.js');
-	    window.gameScript.setAttribute('onload','init()');
-	    window.gameScript.setAttribute('id','gameScript');
+	    gameScript.setAttribute('src','games/'+gameId+'/'+gameId+'.js');
+	    gameScript.setAttribute('onload','init()');
+	    gameScript.setAttribute('id','gameScript');
 	    document.body.appendChild(gameScript);
 	  
 	    //change main content
@@ -85,9 +85,9 @@
 	
 	function goBack() {
 	    var main = document.getElementById("main");
-	    document.getElementById("flexDesign").removeChild(main);
+	    document.getElementsByClassName("flexDesign")[0].removeChild(main);
 	    document.getElementById("nav").insertAdjacentElement("afterend", beforeMain);
-	    document.body.removeChild(window.gameScript);
+	    document.body.removeChild(gameScript);
 	  }
     </script>							  
   </body>
