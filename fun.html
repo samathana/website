@@ -86,9 +86,9 @@
 	function goBack() {
 	    var main = document.getElementById("main");
 	    document.getElementsByClassName("flex_design")[0].removeChild(main);
-	    document.body.removeChild(gameScript);
 	    document.getElementById("nav").insertAdjacentElement("afterend", beforeMain);
-	}
+	    document.body.removeChild(gameScript);
+	  }
     </script>							  
   </body>
 </html>
