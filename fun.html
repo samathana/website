@@ -71,19 +71,18 @@
 								  
 	  function loadGame(gameId) {
 	    var main = document.getElementById("main");
-	    main.innerHTML = '<button type="button" onclick="goBack()">back</button><canvas id="canvas" width="600" height="600"></canvas>';
+	    main.innerHTML = '<button type="button" onclick="goBack(gameScript)">back</button><canvas id="canvas" width="600" height="600"></canvas>';
 	    var gameScript = document.createElement('script');
-	    //the game's id is the same as the directory and js file name; this.id gets the id of the clicked element
+	    //the game's id is the same as the directory and js file name
 	    gameScript.setAttribute('src','games/'+gameId+'/'+gameId+'.js');
 	    gameScript.setAttribute('onload','init()');
 	    gameScript.setAttribute('id','gameScript');
 	    document.body.appendChild(gameScript);
 	  }
 	
-	function goBack() {
+	function goBack(gameScript) {
 	    var main = document.getElementById("main");
 	    document.getElementsByClassName("flex_design")[0].removeChild(main);
-	    var gameScript = document.getElementById("gameScript");
 	    document.body.removeChild(gameScript);
 	    document.getElementById("nav").insertAdjacentElement("afterend", beforeMain);
 	}
