@@ -81,15 +81,17 @@
 	    //change main content
 	    var main = document.getElementById("main");
 	    main.innerHTML = '<button type="button" onclick="goBack()">back</button><canvas id="canvas" width="600" height="600"></canvas>';
-	  }
+	  };
 	
 	function goBack() {
 	    var main = document.getElementById("main");
-	                var beforeMain = main.cloneNode(true);
-
 	    document.getElementsByClassName("flex_design")[0].removeChild(main);
 	    document.getElementById("nav").insertAdjacentElement("afterend", beforeMain);
-	  }
+	  };
+	  
+	  function er() {
+	  console.log("get erred");
+	  };
     </script>							  
   </body>
 </html>
