@@ -71,7 +71,7 @@
 								  
 	  function loadGame(gameId) {
 	    //add game script to page
-	    gameScript = document.createElement('script');
+	    var gameScript = document.createElement('script');
 	    //the game's id is the same as the directory and js file name
 	    gameScript.setAttribute('src','games/'+gameId+'/'+gameId+'.js');
 	    gameScript.setAttribute('onload','init()');
@@ -85,8 +85,9 @@
 	
 	function goBack() {
 	    var main = document.getElementById("main");
+	    var gameScript = document.getElementById("gameScript");
 	    main.innerHTML = beforeMain;
-	    console.log("get erred");
+	    document.body.removeChild(gameScript);
 	  };
     </script>							  
   </body>
