@@ -67,7 +67,7 @@
 	<script>
 	  //copy current main and its style, so we can go back later
 	    var main = document.getElementById("main");
-            var beforeMain = main.cloneNode(true);
+            var beforeMain = main.innerHTML;
 								  
 	  function loadGame(gameId) {
 	    //add game script to page
@@ -85,8 +85,7 @@
 	
 	function goBack() {
 	    var main = document.getElementById("main");
-	    document.getElementsByClassName("flex_design")[0].removeChild(main);
-	    document.getElementById("nav").insertAdjacentElement("afterend", beforeMain);
+	    main.innerHTML = beforeMain;
 	    console.log("get erred");
 	  };
     </script>							  
