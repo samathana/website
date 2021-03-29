@@ -85,7 +85,8 @@
 	
 	function goBack() {
 	    var main = document.getElementById("main");
-	    document.getElementsByClassName("flex_design")[0].removeChild(main);
+	    var flexDiv = document.getElementsByClassName("flex_design")[0];
+	    flexDiv.removeChild(main);
 	    document.getElementById("nav").insertAdjacentElement("afterend", beforeMain);
 	    document.body.removeChild(gameScript);
 	  }
