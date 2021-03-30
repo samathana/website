@@ -80,11 +80,85 @@ main section img {
 
 footer {
   border: 2px;
-  text-align: right;
-  line-height: 10vh;
   margin: 15px;
   height: 10vh;
+  display: flex;
+}
+
+footer p {
+  width: 50%;
+  line-height: 10vh;
+  margin: 0;  
+  margin-left: 15px;
+}
+
+footer h5 {
+  width: 50%;
+  line-height: 10vh;
   padding-right: 20px;
+  text-align: right;
+  margin: 0;
+}
+
+#frogBtn {
+  cursor: url('/cursors/frog/link1.png'), auto;
+  -webkit-animation: froglink 400ms infinite;
+  animation: froglink 400ms infinite;
+  transition-duration: 0.2s;
+}
+
+#frogBtn:hover {
+  background: linear-gradient(to right, #0ecca2, #0dbab1);
+  color: black;
+}
+
+@-webkit-keyframes froglink {
+  0% {cursor: url('cursors/frog/link1.png'), auto;}
+  20% {cursor: url('cursors/frog/link2.png'), auto;}
+  40% {cursor: url('cursors/frog/link3.png'), auto;}
+  60% {cursor: url('cursors/frog/link4.png'), auto;}
+  80% {cursor: url('cursors/frog/link5.png'), auto;}
+  100% {cursor: url('cursors/frog/link6.png'), auto;}
+} 
+
+@keyframes froglink {
+  0% {cursor: url('cursors/frog/link1.png'), auto;}
+  20% {cursor: url('cursors/frog/link2.png'), auto;}
+  40% {cursor: url('cursors/frog/link3.png'), auto;}
+  60% {cursor: url('cursors/frog/link4.png'), auto;}
+  80% {cursor: url('cursors/frog/link5.png'), auto;}
+  100% {cursor: url('cursors/frog/link6.png'), auto;}
+}
+
+#sheepBtn {
+  cursor: url('../cursors/sheep/sheplink.png'), auto;
+  -webkit-animation: sheplink 400ms infinite;
+  animation: sheplink 400ms infinite;
+}
+
+#sheepBtn:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #c0808a;
+  box-shadow: 0 0 20px white;
+  transition-duration: 0.2s;
+}
+
+@-webkit-keyframes sheplink {
+  0% {cursor: url('cursors/sheep/sheplink.png'), auto;}
+  20% {cursor: url('cursors/sheep/sheplink1.png'), auto;}
+  40% {cursor: url('cursors/sheep/sheplink2.png'), auto;}
+  60% {cursor: url('cursors/sheep/sheplink3.png'), auto;}
+  80% {cursor: url('cursors/sheep/sheplink4.png'), auto;}
+  100% {cursor: url('cursors/sheep/sheplink5.png'), auto;}
+} 
+
+@keyframes sheplink {
+  0% {cursor: url('cursors/sheep/sheplink.png'), auto;}
+  20% {cursor: url('cursors/sheep/sheplink1.png'), auto;}
+  40% {cursor: url('cursors/sheep/sheplink2.png'), auto;}
+  60% {cursor: url('cursors/sheep/sheplink3.png'), auto;}
+  80% {cursor: url('cursors/sheep/sheplink4.png'), auto;}
+  100% {cursor: url('cursors/sheep/sheplink5.png'), auto;}
 }
 
 /*phone styling*/
