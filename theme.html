@@ -18,15 +18,14 @@
     <script src="script.js"></script> 
     <style>
     	main {
-	      display: flex;
-	    }
-	    main div {
-	      border: 1px outset;
-        width: 200px;
-	      margin: auto;
-	      padding: 10px;
-        background-color: transparent;
-	    }
+		display: flex;
+	}
+	main img {
+		border: 1px outset;
+        	width: 200px;
+		margin: auto;
+	  	padding: 10px;
+	}
     </style>
   </head>
   <body>
@@ -45,14 +44,8 @@
 	  </ul>
 	</nav>
 	<main>
-     		<div onclick="changeTheme('frog')">
-     			<img src="https://cdn.pixabay.com/photo/2014/11/21/17/27/frog-540812_960_720.jpg" width="180">
-	    		<p>frog</p>
-	    	</div>
-	    	<div onclick="changeTheme('sheep')">
-	    		<img src="https://images.unsplash.com/photo-1472718888560-1a1292f1cccb" width="180">
-		    	<p>sheep</p>
-		    </div>
+     		<img id="frog" onclick="changeTheme('frog')" src="https://cdn.pixabay.com/photo/2014/11/21/17/27/frog-540812_960_720.jpg">
+	    	<img id="sheep" onclick="changeTheme('sheep')" src="https://images.unsplash.com/photo-1472718888560-1a1292f1cccb">
 	</main>
 	    <div id="imgWrap">
 		<div id="Img">
