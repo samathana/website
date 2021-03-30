@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- favicon stuff :3 -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#f9b0ff">
+    <title>theme changer!</title>
+    <link href="themes/frog.css" rel="stylesheet" id="themeSheet"'/>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="script.js"></script> 
+    <style>
+    	main {
+	      display: flex;
+	    }
+	    main div {
+	      border: 1px outset;
+        width: 200px;
+	      margin: auto;
+	      padding: 10px;
+        background-color: transparent;
+	    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>theme changer!</h2>
+    </header>
+    <div class="flex_design">
+	<nav>
+	  <ul>
+		<li>about!</li>
+		<li><a href="theme.html">theme changer!</a></li>
+		<li><a href="poll.html">poll n stats!</a></li>
+		<li><a href="math.html">math!</a></li>
+		<li><a href="fun.html">fun stuff!</a></li>
+		<li><a href="merch.html">merch?</a></li>
+	  </ul>
+	</nav>
+	<main>
+     		<div onclick="changeTheme('frog')">
+     			<img src="https://cdn.pixabay.com/photo/2014/11/21/17/27/frog-540812_960_720.jpg" width="180">
+	    		<p>frog</p>
+	    	</div>
+	    	<div onclick="changeTheme('sheep')">
+	    		<img src="https://images.unsplash.com/photo-1472718888560-1a1292f1cccb" width="180">
+		    	<p>sheep</p>
+		    </div>
+	</main>
+	    <div id="imgWrap">
+		<div id="Img">
+		</div>
+	    </div>
+	</div>
+    <footer>
+      <h5>Website by me<span id="attrib"></span> :3</h5>
+    </footer>
+  </body>
+</html>
