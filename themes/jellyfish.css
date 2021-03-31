@@ -1,12 +1,14 @@
 body {
   background: linear-gradient(to bottom, #00000a, #010f51);
   color: #05d0fe;
+   height: 100%;
+   background-attachment: fixed;
 }
 
 header, main, nav, #Img, footer {
   background: rgb(2 150 241 / 10%);
   border: 1px solid #24a1f2;
-  box-shadow: inset 0 0 30px #24a1f2;
+  box-shadow: inset 0 0 20px #24a1f2;
   border-radius: 5px;
 }
 
@@ -39,6 +41,7 @@ a:hover {
 #Img {
   background-image: url(https://www.ecomagazine.com/images/Newsletter/0_2020/Week_1-27-20/marat-gilyadzinov-MYadhrkenNg-unsplash.jpg);
   background-position: center;
+  background-size: auto 100%;
 }
 
 /*mobile formatting*/
