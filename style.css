@@ -214,6 +214,7 @@ footer h5 {
 
   footer {
     margin-bottom: 50px;
+    display: block;
   }
   
   footer h5 {
