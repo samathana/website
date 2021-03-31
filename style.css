@@ -202,7 +202,7 @@ footer h5 {
     padding: 10px 10px 30px 50px;
   }
 
-  header, footer, nav, #imgWrap, #Img {
+  header, nav, #imgWrap, #Img {
     height: 150px;
     line-height: 150px;
   }
@@ -215,10 +215,14 @@ footer h5 {
   footer {
     margin-bottom: 50px;
     display: block;
+    height: 200px;
   }
   
-  footer h5 {
-    margin-top: 0;
+  footer h5, footer p {
+    padding-top: 50px;
+    line-height: 20px;
+    width: 100%;
+    text-align: center;
   }
 }
 
