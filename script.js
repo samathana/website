@@ -11,6 +11,7 @@ window.onload = function () {
   //change theme when theme buttons are clicked
   var frogBtn = document.getElementById("frogBtn");
   var sheepBtn = document.getElementById("sheepBtn");
+  var jellyfishBtn = document.getElementById("jellyfishBtn");
   frogBtn.onclick = function() {
    setTheme("frog");
    document.cookie = "frog";
@@ -18,6 +19,10 @@ window.onload = function () {
   sheepBtn.onclick = function() {
    setTheme("sheep");
    document.cookie = "sheep";
+  };
+  jellyfishBtn.onclick = function() {
+   setTheme("jellyfish");
+   document.cookie = "jellyfish";
   };
   //end onload function
 };
@@ -39,6 +44,7 @@ function setTheme(theme) {
     case "frog":
       document.getElementById("attrib").innerHTML = ", cursor by <a href='http://www.rw-designer.com/user/90488'>dingdongdie</a>"
       break;
+    case "jellyfish":
     case "sheep":
       document.getElementById("attrib").innerHTML = ""
       break;
