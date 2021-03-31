@@ -1,0 +1,85 @@
+body {
+  background-color: black;
+}
+
+header, main, #Img, footer {
+  background: linear-gradient(to right, #0ecca2, #0dbab1);
+}
+
+nav {
+  background-color: #0ecca2;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: lightblue;
+}
+
+a:hover {
+    color: black;
+}
+
+.link {
+  border: 1px solid white;
+  color: white;
+}
+
+.link:visited {
+  color: white;
+}
+
+.link:hover {
+  background-color: white;
+  color: #0ecca2;
+}
+
+#Img {
+  background-image: url(https://www.ecomagazine.com/images/Newsletter/0_2020/Week_1-27-20/marat-gilyadzinov-MYadhrkenNg-unsplash.jpg);
+}
+
+/*mobile formatting*/
+@media only screen and (orientation: portrait) {
+
+/*cursors*/
+@-webkit-keyframes cursor {
+  0% {cursor: url('../cursors/frog/select1.png'), auto;}
+  100% {cursor: url('../cursors/frog/select2.png'), auto;}
+} 
+
+@keyframes cursor {
+  0% {cursor: url('../cursors/frog/select1.png'), auto;}
+  100% {cursor: url('../cursors/frog/select2.png'), auto;}
+}
+
+html {
+  cursor: url('../cursors/frog/select1.png'), auto;
+  -webkit-animation: cursor 400ms infinite;
+  animation: cursor 400ms infinite;
+}
+
+@-webkit-keyframes link {
+  0% {cursor: url('../cursors/frog/link1.png'), auto;}
+  20% {cursor: url('../cursors/frog/link2.png'), auto;}
+  40% {cursor: url('../cursors/frog/link3.png'), auto;}
+  60% {cursor: url('../cursors/frog/link4.png'), auto;}
+  80% {cursor: url('../cursors/frog/link5.png'), auto;}
+  100% {cursor: url('../cursors/frog/link6.png'), auto;}
+} 
+
+@keyframes link {
+  0% {cursor: url('../cursors/frog/link1.png'), auto;}
+  20% {cursor: url('../cursors/frog/link2.png'), auto;}
+  40% {cursor: url('../cursors/frog/link3.png'), auto;}
+  60% {cursor: url('../cursors/frog/link4.png'), auto;}
+  80% {cursor: url('../cursors/frog/link5.png'), auto;}
+  100% {cursor: url('../cursors/frog/link6.png'), auto;}
+}
+
+a {
+  cursor: url('../cursors/frog/link1.png'), auto;
+  -webkit-animation: link 400ms infinite;
+  animation: link 400ms infinite;
+}
