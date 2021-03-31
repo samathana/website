@@ -32,5 +32,8 @@ function setTheme(theme) {
     case "frog":
       document.getElementById("attrib").innerHTML = ", cursor by <a href='http://www.rw-designer.com/user/90488'>dingdongdie</a>"
       break;
+    case "sheep":
+      document.getElementById("attrib").innerHTML = ""
+      break;
   };
 };
