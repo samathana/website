@@ -1,5 +1,15 @@
 //set theme to frog by default
-var theme = "sheep";
+var theme = "frog";
+
+//change theme when theme buttons are clicked
+var frogBtn = document.getElementById("frogBtn");
+var sheepBtn = document.getElementById("sheepBtn");
+frogBtn.onclick = function() {
+ theme = "frog";
+};
+sheepBtn.onclick = function() {
+ theme = "sheep";
+};
 
 //set stylesheet to theme
 var link = document.getElementById("themeSheet");
@@ -7,11 +17,11 @@ link.setAttribute("href", "themes/" + theme + ".css");
 
 //load JS after the page is loaded, to avoid issues with selecting elements that don't exist
 window.onload = function () {
-
+ 
 //avoid cursor attribution on mobile (where cursors don't exist)
 if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
  theme = "mobile";
-}
+};
   
 //set attribution in footer
 switch (theme) {
@@ -21,7 +31,7 @@ switch (theme) {
   case "frog":
     document.getElementById("attrib").innerHTML = ", cursor by <a href='http://www.rw-designer.com/user/90488'>dingdongdie</a>"
     break;
-}
+};
 
 //end onload function
-}
+};
