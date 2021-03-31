@@ -8,8 +8,11 @@ body {
 header, main, nav, #Img, footer {
   background: rgb(2 150 241 / 10%);
   border: 1px solid #24a1f2;
-  box-shadow: inset 0 0 20px #24a1f2;
-  border-radius: 5px;
+  box-shadow: inset 0 0 20px #034b9b, 0 0 20px #034b9b;
+}
+
+header h2 {
+  margin: 0;
 }
 
 a:link {
