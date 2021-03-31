@@ -4,7 +4,7 @@ window.onload = function () {
   setTheme("frog");
   
   //set the theme according to cookie if it exists
-  if !(document.cookie = "") {
+  if (!(document.cookie = "")) {
     setTheme(document.cookie) {
   }
  
