@@ -1,8 +1,7 @@
-//set theme to frog by default
-setTheme("frog");
-
 //load JS after the page is loaded, to avoid issues with selecting elements that don't exist
 window.onload = function () {
+  //set theme to frog by default
+  setTheme("frog");
  
   //change theme when theme buttons are clicked
   var frogBtn = document.getElementById("frogBtn");
