@@ -1,11 +1,11 @@
 //load JS after the page is loaded, to avoid issues with selecting elements that don't exist
 window.onload = function () {
-  
+
   //set the theme according to cookie if it exists
-  if (document.cookie !== "") {
-    setTheme(document.cookie);
-  } else {
+  if (document.cookie == "") {
     setTheme("frog");
+  } else {
+    setTheme(document.cookie);
   };
  
   //change theme when theme buttons are clicked
