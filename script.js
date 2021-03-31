@@ -1,20 +1,25 @@
-//set the theme according to cookie if it exists
-if (document.cookie == "") {
-  setTheme("frog");
-} else {
-  setTheme(document.cookie);
-};
+  //set the theme according to cookie if it exists
+  if (document.cookie == "") {
+    setTheme("frog");
+  } else {
+    setTheme(document.cookie);
+  };
+
+//load JS after the page is loaded, to avoid issues with selecting elements that don't exist
+window.onload = function () {
  
-//change theme when theme buttons are clicked
-var frogBtn = document.getElementById("frogBtn");
-var sheepBtn = document.getElementById("sheepBtn");
-frogBtn.onclick = function() {
- setTheme("frog");
- document.cookie = "frog";
-};
-sheepBtn.onclick = function() {
- setTheme("sheep");
- document.cookie = "sheep";
+  //change theme when theme buttons are clicked
+  var frogBtn = document.getElementById("frogBtn");
+  var sheepBtn = document.getElementById("sheepBtn");
+  frogBtn.onclick = function() {
+   setTheme("frog");
+   document.cookie = "frog";
+  };
+  sheepBtn.onclick = function() {
+   setTheme("sheep");
+   document.cookie = "sheep";
+  };
+  //end onload function
 };
 
 function setTheme(theme) {
