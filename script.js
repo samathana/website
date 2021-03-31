@@ -5,7 +5,7 @@ window.onload = function () {
   
   //set the theme according to cookie if it exists
   if (document.cookie !== "") {
-    setTheme(document.cookie) {
+    setTheme(document.cookie);
   }
  
   //change theme when theme buttons are clicked
