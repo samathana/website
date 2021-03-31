@@ -2,15 +2,22 @@
 window.onload = function () {
   //set theme to frog by default
   setTheme("frog");
+  
+  //set the theme according to cookie if it exists
+  if !(document.cookie = "") {
+    setTheme(document.cookie) {
+  }
  
   //change theme when theme buttons are clicked
   var frogBtn = document.getElementById("frogBtn");
   var sheepBtn = document.getElementById("sheepBtn");
   frogBtn.onclick = function() {
    setTheme("frog");
+   document.cookie = "frog";
   };
   sheepBtn.onclick = function() {
    setTheme("sheep");
+   document.cookie = "sheep";
   };
   //end onload function
 };
