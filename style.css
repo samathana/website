@@ -14,20 +14,16 @@ nav {
   border: 2px;
   margin: 15px;
   height: 58vh;
-  overflow-x: visible;
   width: 450px;
-  overflow-y: auto;
 }
 
 nav ul {
-  width: 150px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 0px;
 }
 
 nav ul li {
-  width: 100px;
   list-style: none;
   text-align: center;
   margin: 10px auto;
