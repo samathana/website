@@ -24,7 +24,7 @@ a:visited {
 }
 
 a:hover {
-    color: white;
+    color: #ffffff;
 }
 
 .link {
@@ -76,8 +76,8 @@ a:hover {
 
 html {
   cursor: url('../cursors/jellyfish/jelly.png'), auto;
-  -webkit-animation: cursor 400ms infinite;
-  animation: cursor 400ms infinite;
+  -webkit-animation: cursor 800ms infinite;
+  animation: cursor 800ms infinite;
 }
 
 @-webkit-keyframes link {
