@@ -39,17 +39,13 @@ a:hover {
 #Img {
   background-image: url(https://cdn.pixabay.com/photo/2014/11/21/17/27/frog-540812_960_720.jpg);
   background-position: left center;
-  background-size: auto 100%;
+  background-size: cover;
 }
 
 /*mobile formatting*/
 @media only screen and (orientation: portrait) {
   nav {
     background: linear-gradient(to right, #0ecca2, #0dbab1);
-  }
-
-  #Img {
-    background-size: 100% auto;
   }
 }
 
