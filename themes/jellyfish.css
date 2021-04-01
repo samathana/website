@@ -76,8 +76,8 @@ a:hover {
 
 html {
   cursor: url('../cursors/jellyfish/jelly.png'), auto;
-  -webkit-animation: cursor 800ms infinite;
-  animation: cursor 800ms infinite;
+  -webkit-animation: cursor 1.5s infinite;
+  animation: cursor 1.5s infinite;
 }
 
 @-webkit-keyframes link {
