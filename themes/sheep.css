@@ -39,6 +39,8 @@ a:hover {
 
 #Img {
   background-image: url(https://images.unsplash.com/photo-1472718888560-1a1292f1cccb);
+  background-position: center;
+  background-size: auto 100%;
 }
 
 /*cursors*/
@@ -80,4 +82,11 @@ a {
   cursor: url('../cursors/sheep/sheplink.png'), auto;
   -webkit-animation: link 400ms infinite;
   animation: link 400ms infinite;
+}
+
+/*phone styling*/
+@media only screen and (orientation: portrait) {
+  #Img {
+    background-size: 100% auto;
+  }
 }
