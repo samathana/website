@@ -157,6 +157,38 @@ footer h5 {
   100% {cursor: url('cursors/sheep/sheplink5.png'), auto;}
 }
 
+#jellyfishBtn {
+  cursor: url('../cursors/jellyfish/jellyLink.png'), auto;
+  -webkit-animation: jellylink 400ms infinite;
+  animation: jellylink 400ms infinite;
+}
+
+#jellyfishBtn:hover {
+  background: rgb(2 150 241 / 10%);
+  border: 1px solid #24a1f2;
+  box-shadow: inset 0 0 20px #034b9b, 0 0 20px #034b9b;
+  color: #24a1f2;
+  transition-duration: 0.2s;
+}
+
+@-webkit-keyframes jellylink {
+  0% {cursor: url('../cursors/jellyfish/jellyLink.png'), auto;}
+  20% {cursor: url('../cursors/jellyfish/jellyLink1.png'), auto;}
+  40% {cursor: url('../cursors/jellyfish/jellyLink2.png'), auto;}
+  60% {cursor: url('../cursors/jellyfish/jellyLink3.png'), auto;}
+  80% {cursor: url('../cursors/jellyfish/jellyLink4.png'), auto;}
+  100% {cursor: url('../cursors/jellyfish/jellyLink5.png'), auto;}
+} 
+
+@keyframes jellylink {
+  0% {cursor: url('../cursors/jellyfish/jellyLink.png'), auto;}
+  20% {cursor: url('../cursors/jellyfish/jellyLink1.png'), auto;}
+  40% {cursor: url('../cursors/jellyfish/jellyLink2.png'), auto;}
+  60% {cursor: url('../cursors/jellyfish/jellyLink3.png'), auto;}
+  80% {cursor: url('../cursors/jellyfish/jellyLink4.png'), auto;}
+  100% {cursor: url('../cursors/jellyfish/jellyLink5.png'), auto;}
+}
+
 /*phone styling*/
 @media only screen and (orientation: portrait) {
   .flex_design {
