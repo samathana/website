@@ -8,9 +8,6 @@ header, nav, main, #Img, footer {
   box-shadow: 0 0 20px white;
 }
 
-footer {
-}
-
 a:link {
     color: #869F77;
 }
@@ -40,7 +37,7 @@ a:hover {
 #Img {
   background-image: url(https://images.unsplash.com/photo-1472718888560-1a1292f1cccb);
   background-position: center;
-  background-size: auto 100%;
+  background-size: cover;
 }
 
 /*cursors*/
@@ -82,11 +79,4 @@ a {
   cursor: url('../cursors/sheep/sheplink.png'), auto;
   -webkit-animation: link 400ms infinite;
   animation: link 400ms infinite;
-}
-
-/*phone styling*/
-@media only screen and (orientation: portrait) {
-  #Img {
-    background-size: 100% auto;
-  }
 }
