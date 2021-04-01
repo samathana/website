@@ -52,6 +52,15 @@ a:hover {
   #Img {
     background-size: 100% auto;
   }
+  header {
+    margin-top: 20px;
+  }
+  main {
+    width: auto;
+  }
+  nav ul {
+    margin: 0px;
+  }
 }
 
 /*cursors*/
