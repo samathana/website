@@ -49,6 +49,10 @@ a:hover {
 
 /*mobile formatting*/
 @media only screen and (orientation: portrait) {
+  #Img {
+    background-size: 100% auto;
+  }
+}
 
 /*cursors*/
 @-webkit-keyframes cursor {
