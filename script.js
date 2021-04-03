@@ -12,6 +12,7 @@ window.onload = function () {
   var frogBtn = document.getElementById("frogBtn");
   var sheepBtn = document.getElementById("sheepBtn");
   var jellyfishBtn = document.getElementById("jellyfishBtn");
+  var snailBtn = document.getElementById("snailBtn");
   frogBtn.onclick = function() {
    setTheme("frog");
    document.cookie = "frog";
@@ -23,6 +24,10 @@ window.onload = function () {
   jellyfishBtn.onclick = function() {
    setTheme("jellyfish");
    document.cookie = "jellyfish";
+  };
+  snailBtn.onclick = function() {
+   setTheme("snail");
+   document.cookie = "snail";
   };
   //end onload function
 };
@@ -44,6 +49,7 @@ function setTheme(theme) {
     case "frog":
       document.getElementById("attrib").innerHTML = ", cursor by <a href='http://www.rw-designer.com/user/90488'>dingdongdie</a>"
       break;
+    case "snail":
     case "jellyfish":
     case "sheep":
       document.getElementById("attrib").innerHTML = ""
