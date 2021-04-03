@@ -1,0 +1,82 @@
+body {
+  background: background-image: url(https://image.freepik.com/free-photo/abstract-background-cement-wall-shadow-light-concept_53876-30241.jpg);
+}
+
+header, nav, main, #Img, footer {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  color: #c0808a;
+  box-shadow: 0 0 5px white;
+}
+
+a:link {
+    color: #869F77;
+}
+
+a:visited {
+    color: #8891a2;
+}
+
+a:hover {
+    color: #570029;
+}
+
+.link {
+  border: 1px solid #869F77;
+  color: #869F77;
+}
+
+.link:visited {
+  color: #869F77;
+}
+
+.link:hover {
+  background-color: #869F77;
+  color: white;
+}
+
+#Img {
+  background-image: url(https://images.unsplash.com/photo-1598588414774-4bb069dbc05d);
+  background-position: center;
+  background-size: cover;
+}
+
+/*cursors*/
+@-webkit-keyframes cursor {
+  0% {cursor: url('../cursors/sheep/shep1.png'), auto;}
+  100% {cursor: url('../cursors/sheep/shep2.png'), auto;}
+} 
+
+@keyframes cursor {
+  0% {cursor: url('../cursors/sheep/shep1.png'), auto;}
+  100% {cursor: url('../cursors/sheep/shep2.png'), auto;}
+}
+
+html {
+  cursor: url('../cursors/sheep/shep1.png'), auto;
+  -webkit-animation: cursor 400ms infinite;
+  animation: cursor 400ms infinite;
+}
+
+@-webkit-keyframes link {
+  0% {cursor: url('../cursors/sheep/sheplink.png'), auto;}
+  20% {cursor: url('../cursors/sheep/sheplink1.png'), auto;}
+  40% {cursor: url('../cursors/sheep/sheplink2.png'), auto;}
+  60% {cursor: url('../cursors/sheep/sheplink3.png'), auto;}
+  80% {cursor: url('../cursors/sheep/sheplink4.png'), auto;}
+  100% {cursor: url('../cursors/sheep/sheplink5.png'), auto;}
+} 
+
+@keyframes link {
+  0% {cursor: url('../cursors/sheep/sheplink.png'), auto;}
+  20% {cursor: url('../cursors/sheep/sheplink1.png'), auto;}
+  40% {cursor: url('../cursors/sheep/sheplink2.png'), auto;}
+  60% {cursor: url('../cursors/sheep/sheplink3.png'), auto;}
+  80% {cursor: url('../cursors/sheep/sheplink4.png'), auto;}
+  100% {cursor: url('../cursors/sheep/sheplink5.png'), auto;}
+}
+
+a {
+  cursor: url('../cursors/sheep/sheplink.png'), auto;
+  -webkit-animation: link 400ms infinite;
+  animation: link 400ms infinite;
+}
