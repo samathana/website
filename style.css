@@ -196,7 +196,7 @@ footer h5 {
 }
 
 #snailBtn:hover {
-  background: rgb(122 91 67 / 60%);
+  background: rgb(122 91 67);
   box-shadow: inset 0 0 5px white;
   color: #4a3820;
   transition-duration: 0.2s;
