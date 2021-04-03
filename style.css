@@ -189,6 +189,37 @@ footer h5 {
   100% {cursor: url('../cursors/jellyfish/jellyLink5.png'), auto;}
 }
 
+#snailBtn {
+  cursor: url('../cursors/snail/snailLink.png'), auto;
+  -webkit-animation: snaillink 400ms infinite;
+  animation: snaillink 400ms infinite;
+}
+
+#snailBtn:hover {
+  background: rgb(122 91 67 / 60%);
+  box-shadow: inset 0 0 5px white;
+  color: #4a3820;
+  transition-duration: 0.2s;
+}
+
+@-webkit-keyframes snaillink {
+  0% {cursor: url('../cursors/snail/snailLink.png'), auto;}
+  20% {cursor: url('../cursors/snail/snailLink1.png'), auto;}
+  40% {cursor: url('../cursors/snail/snailLink2.png'), auto;}
+  60% {cursor: url('../cursors/snail/snailLink3.png'), auto;}
+  80% {cursor: url('../cursors/snail/snailLink4.png'), auto;}
+  100% {cursor: url('../cursors/snail/snailLink5.png'), auto;}
+} 
+
+@keyframes snaillink {
+  0% {cursor: url('../cursors/snail/snailLink.png'), auto;}
+  20% {cursor: url('../cursors/snail/snailLink1.png'), auto;}
+  40% {cursor: url('../cursors/snail/snailLink2.png'), auto;}
+  60% {cursor: url('../cursors/snail/snailLink3.png'), auto;}
+  80% {cursor: url('../cursors/snail/snailLink4.png'), auto;}
+  100% {cursor: url('../cursors/snail/snailLink5.png'), auto;}
+}
+
 /*phone styling*/
 @media only screen and (orientation: portrait) {
   .flex_design {
