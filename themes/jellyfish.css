@@ -9,6 +9,7 @@ header, main, nav, #Img, footer {
   background: rgb(2 150 241 / 10%);
   border: 1px solid #24a1f2;
   box-shadow: 0 0 20px #034b9b;
+  border-radius: 5px;
 }
 
 header h2 {
