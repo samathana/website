@@ -46,41 +46,41 @@ a:hover {
 
 /*cursors*/
 @-webkit-keyframes cursor {
-  0% {cursor: url('../cursors/sheep/shep1.png'), auto;}
-  100% {cursor: url('../cursors/sheep/shep2.png'), auto;}
+  0% {cursor: url('../cursors/snail/snail.png'), auto;}
+  100% {cursor: url('../cursors/snail/snail1.png'), auto;}
 } 
 
 @keyframes cursor {
-  0% {cursor: url('../cursors/sheep/shep1.png'), auto;}
-  100% {cursor: url('../cursors/sheep/shep2.png'), auto;}
+  0% {cursor: url('../cursors/snail/snail.png'), auto;}
+  100% {cursor: url('../cursors/snail/snail1.png'), auto;}
 }
 
 html {
-  cursor: url('../cursors/sheep/shep1.png'), auto;
+  cursor: url('../cursors/snail/snail.png'), auto;
   -webkit-animation: cursor 400ms infinite;
   animation: cursor 400ms infinite;
 }
 
 @-webkit-keyframes link {
-  0% {cursor: url('../cursors/sheep/sheplink.png'), auto;}
-  20% {cursor: url('../cursors/sheep/sheplink1.png'), auto;}
-  40% {cursor: url('../cursors/sheep/sheplink2.png'), auto;}
-  60% {cursor: url('../cursors/sheep/sheplink3.png'), auto;}
-  80% {cursor: url('../cursors/sheep/sheplink4.png'), auto;}
-  100% {cursor: url('../cursors/sheep/sheplink5.png'), auto;}
+  0% {cursor: url('../cursors/snail/snailLink.png'), auto;}
+  20% {cursor: url('../cursors/snail/snailLink1.png'), auto;}
+  40% {cursor: url('../cursors/snail/snailLink2.png'), auto;}
+  60% {cursor: url('../cursors/snail/snailLink3.png'), auto;}
+  80% {cursor: url('../cursors/snail/snailLink4.png'), auto;}
+  100% {cursor: url('../cursors/snail/snailLink5.png'), auto;}
 } 
 
 @keyframes link {
-  0% {cursor: url('../cursors/sheep/sheplink.png'), auto;}
-  20% {cursor: url('../cursors/sheep/sheplink1.png'), auto;}
-  40% {cursor: url('../cursors/sheep/sheplink2.png'), auto;}
-  60% {cursor: url('../cursors/sheep/sheplink3.png'), auto;}
-  80% {cursor: url('../cursors/sheep/sheplink4.png'), auto;}
-  100% {cursor: url('../cursors/sheep/sheplink5.png'), auto;}
+  0% {cursor: url('../cursors/snail/snailLink.png'), auto;}
+  20% {cursor: url('../cursors/snail/snailLink1.png'), auto;}
+  40% {cursor: url('../cursors/snail/snailLink2.png'), auto;}
+  60% {cursor: url('../cursors/snail/snailLink3.png'), auto;}
+  80% {cursor: url('../cursors/snail/snailLink4.png'), auto;}
+  100% {cursor: url('../cursors/snail/snailLink5.png'), auto;}
 }
 
 a {
-  cursor: url('../cursors/sheep/sheplink.png'), auto;
+  cursor: url('../cursors/snail/snailLink.png'), auto;
   -webkit-animation: link 400ms infinite;
   animation: link 400ms infinite;
 }
