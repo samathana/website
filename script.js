@@ -1,5 +1,5 @@
   //set the theme according to cookie if it exists
-  if (document.cookie.length == 0) {
+  if (document.cookie.length < 2) {
     document.write("get erred");
   } else {
     setTheme(document.cookie);
