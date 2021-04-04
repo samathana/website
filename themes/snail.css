@@ -44,6 +44,13 @@ a:hover {
   background-size: cover;
 }
 
+/*mobile formatting*/
+@media only screen and (orientation: portrait) {
+  main, nav {
+    width: auto;
+  }
+}
+
 /*cursors*/
 @-webkit-keyframes cursor {
   0% {cursor: url('../cursors/snail/snail.png'), auto;}
