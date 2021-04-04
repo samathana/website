@@ -1,4 +1,23 @@
 document.write(document.cookie);
+
+//are we on mobile?
+if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  isMobile = true;
+  if (document.cookie.split("=").length == 3) {
+    setTheme("frog");
+  } else {
+    setTheme(document.cookie.split("=")[0]);
+  };
+} else {
+  isMobile = false;
+    //set the theme according to cookie if it exists
+  if (document.cookie == "") {
+    setTheme("frog");
+  } else {
+    setTheme(document.cookie);
+  };
+}
+
 //set the theme according to cookie if it exists
   if (document.cookie == "snail=; jellyfish=; sheep=") {
     setTheme("frog");
@@ -38,7 +57,7 @@ function setTheme(theme) {
   var link = document.getElementById("themeSheet");
   link.setAttribute("href", "themes/" + theme + ".css");
   //avoid cursor attribution on mobile (where cursors don't exist)
-  if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  if (isMobile == true) {
   theme = "mobile";
   };
   
