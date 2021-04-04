@@ -1,5 +1,9 @@
-
-    setTheme("frog");
+  //set the theme according to cookie if it exists
+  if (document.cookie == "") {
+    document.write("get erred");
+  } else {
+    setTheme(document.cookie);
+  };
 
 //load JS after the page is loaded, to avoid issues with selecting elements that don't exist
 window.onload = function () {
