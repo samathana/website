@@ -1,7 +1,6 @@
-document.write(document.cookie); 
 //set the theme according to cookie if it exists
   if (document.cookie == "snail=; jellyfish=; sheep=") {
-    document.write("get erred");
+    setTheme("frog");
   } else {
     setTheme(document.cookie);
   };
