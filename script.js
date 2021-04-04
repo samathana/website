@@ -3,7 +3,7 @@ document.write(document.cookie);
 //are we on mobile?
 if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   isMobile = true;
-  if (document.cookie.split("=").length == 3) {
+  if (document.cookie == "") {
     setTheme("frog");
   } else {
     setTheme(document.cookie.split("=")[0]);
