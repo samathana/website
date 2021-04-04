@@ -3,7 +3,7 @@ document.write(document.cookie);
   if (document.cookie == "snail=; jellyfish=; sheep=") {
     setTheme("frog");
   } else {
-    setTheme(document.cookie.split(" ")[0]);
+    setTheme(document.cookie.split("=")[0]);
   };
 
 //load JS after the page is loaded, to avoid issues with selecting elements that don't exist
