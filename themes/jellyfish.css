@@ -56,7 +56,7 @@ a:hover {
   header {
     margin-top: 20px;
   }
-  main {
+  main, nav {
     width: auto;
   }
   nav ul {
