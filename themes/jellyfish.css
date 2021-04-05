@@ -1,3 +1,7 @@
+html {
+  background: linear-gradient(to bottom, #00000a, #010f51);
+}
+
 body {
   background-color: #00000a;
   background: linear-gradient(to bottom, #00000a, #010f51);
