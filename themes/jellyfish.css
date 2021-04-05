@@ -1,7 +1,8 @@
 body {
+  background-color: #00000a;
   background: linear-gradient(to bottom, #00000a, #010f51);
   color: #24a1f2;
-   height: 200%;
+   height: 100%;
    background-attachment: fixed;
 }
 
