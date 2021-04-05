@@ -2,6 +2,10 @@
   display: flex;
 }
 
+body {
+  height: 200%;
+}
+
 header {
   border: 2px;
   text-align: center;
