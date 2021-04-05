@@ -1,5 +1,3 @@
-document.write(document.cookie);
-
 //are we on mobile?
 var isMobile = "";
 var cookieSet = "";
