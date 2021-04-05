@@ -6,8 +6,11 @@ body {
   background-image: url(https://image.freepik.com/free-photo/abstract-background-cement-wall-shadow-light-concept_53876-30241.jpg);
   background-position: center;
   background-size: cover; 
-  height: 100%;
   background-attachment: fixed; 
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 header, nav, main, #Img, footer {
