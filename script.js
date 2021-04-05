@@ -17,7 +17,7 @@ if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini
   } else {
     setTheme(document.cookie);
   };
-}
+};
 
 //set the theme according to cookie if it exists
   if (document.cookie == "snail=; jellyfish=; sheep=") {
