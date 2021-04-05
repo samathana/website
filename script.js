@@ -1,30 +1,22 @@
 document.write(document.cookie);
-var isMobile = "";
 
 //are we on mobile?
+var isMobile = "";
+var cookieSet = "";
 if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   isMobile = true;
-  if (document.cookie == "") {
-    setTheme("frog");
-  } else {
-    setTheme(document.cookie.split("=")[0]);
-  };
+  cookieSet = document.cookie.split("=")[0];
 } else {
-  isMobile = false;
-    //set the theme according to cookie if it exists
-  if (document.cookie == "") {
-    setTheme("frog");
-  } else {
-    setTheme(document.cookie);
-  };
+  ismobile = false;
+  cookieSet = document.cookie;
 };
 
-//set the theme according to cookie if it exists
-  if (document.cookie == "snail=; jellyfish=; sheep=") {
+//set theme to cookie if it exists
+if (document.cookie == "") {
     setTheme("frog");
-  } else {
-    setTheme(document.cookie.split("=")[0]);
-  };
+} else {
+    setTheme(cookieSet);
+};
 
 //load JS after the page is loaded, to avoid issues with selecting elements that don't exist
 window.onload = function () {
