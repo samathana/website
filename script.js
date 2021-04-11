@@ -9,6 +9,15 @@ if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini
   cookieSet = document.cookie;
 };
 
+//where are we? add as many ../s are needed to get to the stylesheet
+var url = window.location.href;
+var direcNum = url.split("/").length - 4;
+var i;
+var path = "";
+for (i = 0,; i < direcNum; i++) {
+  path = path + "../";
+};
+
 //set theme to cookie if it exists
 if (document.cookie == "") {
     setTheme("frog");
@@ -46,7 +55,7 @@ window.onload = function () {
 function setTheme(theme) {
   //set stylesheet to theme
   var link = document.getElementById("themeSheet");
-  link.setAttribute("href", "themes/" + theme + ".css");
+  link.setAttribute("href", "themes/" + path + theme + ".css");
   //avoid cursor attribution on mobile (where cursors don't exist)
   if (isMobile == true) {
   theme = "mobile";
