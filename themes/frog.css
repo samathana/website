@@ -27,7 +27,7 @@ a:hover {
   color: white;
 }
 
-.link:visited {
+.link:visited, nav ul li a:visited {
   color: white;
 }
 
