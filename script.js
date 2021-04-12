@@ -14,7 +14,7 @@ var url = window.location.href;
 var direcNum = url.split("/").length - 4;
 var i;
 var path = "";
-for (i = 0,; i < direcNum; i++) {
+for (i = 0; i < direcNum; i++) {
   path = path + "../";
 };
 
