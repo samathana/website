@@ -32,7 +32,7 @@ a:visited {
   color: #0ecca2;
 }
 
-a:hover {
+nav ul li a:hover, a:hover {
     color: black;
 }
 
