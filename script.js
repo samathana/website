@@ -55,7 +55,7 @@ window.onload = function () {
 function setTheme(theme) {
   //set stylesheet to theme
   var link = document.getElementById("themeSheet");
-  link.setAttribute("href", "themes/" + path + theme + ".css");
+  link.setAttribute("href", path + "themes/" + theme + ".css");
   //avoid cursor attribution on mobile (where cursors don't exist)
   if (isMobile == true) {
   theme = "mobile";
