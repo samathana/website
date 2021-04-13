@@ -34,7 +34,7 @@ a:visited {
   color: #99e3f5;
 }
 
-.link:visited nav ul li a:visited {
+.link:visited, nav ul li a:visited {
   color: #99e3f5;
 }
 
