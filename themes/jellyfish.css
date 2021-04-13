@@ -29,22 +29,22 @@ a:visited {
     color: #68b6cf;
 }
 
-a:hover {
-    color: #ffffff;
-}
-
 .link {
   border: 1px solid #99e3f5;
   color: #99e3f5;
 }
 
-.link:visited {
+.link:visited nav ul li a:visited {
   color: #99e3f5;
 }
 
 .link:hover {
   background-color: #99e3f5;
   color: #010f51;
+}
+
+a:hover {
+    color: #ffffff;
 }
 
 #Img {
