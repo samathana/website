@@ -243,11 +243,12 @@ footer h5 {
   .flex_design {
     display: block;
     overflow: hidden;
-    margin: 0 20px;
+    margin: 0 15px;
   }
   
   body {
     height: auto;
+    margin: 0px 15px;
   }
 
   header, footer {
