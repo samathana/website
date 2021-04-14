@@ -243,16 +243,12 @@ footer h5 {
   .flex_design {
     display: block;
     overflow: hidden;
-    margin: 0 20px;
   }
   
   body {
     height: auto;
     font-size: 25pt;
-  }
-
-  header, footer {
-    margin: 0 20px;
+    padding: 20px;
   }
 
   nav, main, #imgWrap, #Img {
