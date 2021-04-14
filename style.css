@@ -49,6 +49,9 @@ a, .open {
 .open {
   font: georgia;
   font-size: 12px;
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 main {
