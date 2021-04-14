@@ -6,7 +6,7 @@ if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini
   cookieSet = document.cookie.split("=")[0];
 } else {
   ismobile = false;
-  cookieSet = document.cookie;
+  cookieSet = document.cookie.split(";")[0];
 };
 
 //where are we? add as many ../s are needed to get to the stylesheet
@@ -35,23 +35,19 @@ window.onload = function () {
   var snailBtn = document.getElementById("snailBtn");
   frogBtn.onclick = function() {
    setTheme("frog");
-   document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-   document.cookie = "frog";
+   document.cookie = "frog; path=" + path;
   };
   sheepBtn.onclick = function() {
    setTheme("sheep");
-   document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-   document.cookie = "sheep";
+   document.cookie = "sheep; path=" + path;
   };
   jellyfishBtn.onclick = function() {
    setTheme("jellyfish");
-   document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-   document.cookie = "jellyfish";
+   document.cookie = "jellyfish; path=" + path;
   };
   snailBtn.onclick = function() {
    setTheme("snail");
-   document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-   document.cookie = "snail";
+   document.cookie = "snail; path=" + path;
   };
   //end onload function
 };
