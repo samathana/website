@@ -12,6 +12,10 @@ header, nav, main, #Img, footer {
   box-shadow: 0 0 20px white;
 }
 
+main {
+  width: auto;
+}
+
 a:link {
     color: #869F77;
 }
