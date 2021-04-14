@@ -9,7 +9,7 @@ body {
   width: 100%;
   height: 100%;
   font: georgia;
-  font-size: 12pt;
+  font-size: 15pt;
 }
 
 header {
@@ -48,7 +48,7 @@ a, .open {
 
 .open {
   font: georgia;
-  font-size: 12pt;
+  font-size: 15pt;
   background: none;
   border: none;
   padding: 0;
