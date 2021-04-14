@@ -46,6 +46,11 @@ a, .open {
     transition-duration: 0.4s;
 }
 
+.open {
+  font: georgia;
+  font-size: 12px;
+}
+
 main {
   border: 2px;
   padding: 10px;
