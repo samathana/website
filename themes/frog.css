@@ -6,6 +6,10 @@ header, main, #Img, footer {
   background: linear-gradient(to right, #0ecca2, #0dbab1);
 }
 
+main {
+  width: auto;
+}
+
 nav {
   background-color: #0ecca2;
 }
