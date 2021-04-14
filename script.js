@@ -35,18 +35,22 @@ window.onload = function () {
   var snailBtn = document.getElementById("snailBtn");
   frogBtn.onclick = function() {
    setTheme("frog");
+   document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
    document.cookie = "frog";
   };
   sheepBtn.onclick = function() {
    setTheme("sheep");
+   document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
    document.cookie = "sheep";
   };
   jellyfishBtn.onclick = function() {
    setTheme("jellyfish");
+   document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
    document.cookie = "jellyfish";
   };
   snailBtn.onclick = function() {
    setTheme("snail");
+   document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
    document.cookie = "snail";
   };
   //end onload function
