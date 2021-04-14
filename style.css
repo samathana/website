@@ -47,8 +47,8 @@ a, .open {
 }
 
 .open {
-  font: georgia;
-  font-size: 15pt;
+  font-family: inherit;
+  font-size: 1em;
   background: none;
   border: none;
   padding: 0;
