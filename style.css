@@ -39,7 +39,7 @@ nav ul li {
   padding: 10px 0px;
 }
 
-a {
+a, .open {
     text-decoration: none;
     transition-duration: 0.4s;
 }
