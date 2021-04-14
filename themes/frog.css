@@ -88,7 +88,7 @@ html {
   100% {cursor: url('../cursors/frog/link6.png'), auto;}
 }
 
-a {
+a, .open {
   cursor: url('../cursors/frog/link1.png'), auto;
   -webkit-animation: link 400ms infinite;
   animation: link 400ms infinite;
