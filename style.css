@@ -9,7 +9,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: georgia;
-  font-size: 15pt;
+  font-size: 12pt;
 }
 
 header {
@@ -255,7 +255,7 @@ footer h5 {
   }
 
   header, footer, nav, main {
-    font-size: 40pt;
+    font-size: 30pt;
   }
 
   nav, main, #imgWrap, #Img {
