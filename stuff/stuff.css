@@ -1,9 +1,8 @@
 /* the background */
 #openImg {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 1;
-  padding: 0;
   left: 0;
   top: 0;
   width: 100%;
@@ -14,8 +13,11 @@
 
 /* the image */
 #theImg {
-  position: fixed;
-  padding: 0;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  transform: translate(-50%);
   max-width: 90%;
   max-height: 90%;
 }
