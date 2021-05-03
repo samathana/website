@@ -1,5 +1,5 @@
 function open(imgNum) {
-  document.write("er");
+  console.log("er");
 }
 
 // Close the Modal
