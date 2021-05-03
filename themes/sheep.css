@@ -16,7 +16,7 @@ main {
   width: auto;
 }
 
-a:link {
+a:link, .open {
     color: #869F77;
 }
 
@@ -38,7 +38,7 @@ a:visited {
   color: white;
 }
 
-a:hover {
+a:hover, .open:hover {
     color: #570029;
 }
 
