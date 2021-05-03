@@ -1,4 +1,4 @@
-function open() {
+function openImg() {
   console.log("er");
 };
 
