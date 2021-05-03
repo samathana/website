@@ -1,4 +1,4 @@
-function open(imgNum) {
+function open() {
   console.log("er");
 }
 
