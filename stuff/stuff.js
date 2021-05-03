@@ -1,7 +1,5 @@
 function open(imgNum) {
-  document.getElementById("openImg").style.display = "block";
-  var imgPath = "proof/" + imgNum + ".jpeg";
-  document.getElementById("theImg").setAttribute(src, imgPath);
+  document.write("er");
 }
 
 // Close the Modal
