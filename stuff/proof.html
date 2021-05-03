@@ -45,7 +45,7 @@
 		<h3>you need proof? I got it</h3>
 		<p>note: "CPCTC" stands for "congruent parts of congruent triangles are congruent", and "POE" stands for "property of equality".</p>
 		<div class="proof">
-			<button class="open" type="button" onclick="openImg()">vertical angles theorem</button>
+			<button class="open" type="button" onclick="openImg(1)">vertical angles theorem</button>
 			<p>two column</p>
 		</div>
 		<div class="proof">
@@ -233,7 +233,7 @@
 			<p>two column</p>
 		</div>
 		<img src="proof/qed.png">
-		<div id="openImg">
+		<div id="openImg" onclick="close()">
 			<img id="theImg" alt="proof">
 			<a id="prev" onclick="changeImg(-1)">&#10094;</a>
     			<a id="next" onclick="changeImg(1)">&#10095;</a>
