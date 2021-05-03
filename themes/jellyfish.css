@@ -21,7 +21,7 @@ header h2 {
   margin: 0;
 }
 
-a:link {
+a:link, .open {
     color: #99e3f5;
 }
 
@@ -43,7 +43,7 @@ a:visited {
   color: #010f51;
 }
 
-a:hover {
+a:hover, .open {
     color: #ffffff;
 }
 
