@@ -52,6 +52,7 @@ a, .open {
   background: none;
   border: none;
   padding: 0;
+  text-align: left;
 }
 
 main {
