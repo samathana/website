@@ -5,7 +5,7 @@ function openImg(imgNum) {
 };
 
 // Close the Modal
-function close(imgNum) {
+function closeImg(imgNum) {
   document.getElementById("openImg").style.display = "none";
 };
 
