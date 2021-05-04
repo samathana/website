@@ -5,14 +5,13 @@ function openImg(imgNum) {
 };
 
 // Close the Modal
-function closeImg() {
-  closeImg.stopPropagation();
+function closeImg(event) {
+  event.stopPropagation();
   document.getElementById("openImg").style.display = "none";
 };
 
 // Next/previous controls
 function changeImg(n) {
-  changeImg.stopPropagation();
   //find current img num
   imgNum = document.getElementById("theImg").src;
   imgNum = imgNum.split("/")[1];
