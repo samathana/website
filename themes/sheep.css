@@ -38,7 +38,7 @@ a:visited {
   color: white;
 }
 
-a:hover, .open:hover {
+a:hover, .open:hover, nav ul li a:hover {
     color: #570029;
 }
 
@@ -83,7 +83,7 @@ html {
   100% {cursor: url('../cursors/sheep/sheplink5.png'), auto;}
 }
 
-a {
+a, .open {
   cursor: url('../cursors/sheep/sheplink.png'), auto;
   -webkit-animation: link 400ms infinite;
   animation: link 400ms infinite;
