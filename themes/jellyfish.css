@@ -43,7 +43,7 @@ a:visited {
   color: #010f51;
 }
 
-a:hover, .open {
+a:hover, .open:hover, nav ul li a:hover {
     color: #ffffff;
 }
 
@@ -104,7 +104,7 @@ html {
   100% {cursor: url('../cursors/jellyfish/jellyLink5.png'), auto;}
 }
 
-a {
+a, .open {
   cursor: url('../cursors/jellyfish/jellyLink.png'), auto;
   -webkit-animation: link 400ms infinite;
   animation: link 400ms infinite;
