@@ -35,19 +35,19 @@ window.onload = function () {
   var snailBtn = document.getElementById("snailBtn");
   frogBtn.onclick = function() {
    setTheme("frog");
-   document.cookie = "frog; path=" + path;
+   document.cookie = "frog; path=/";
   };
   sheepBtn.onclick = function() {
    setTheme("sheep");
-   document.cookie = "sheep; path=" + path;
+   document.cookie = "sheep; path=/";
   };
   jellyfishBtn.onclick = function() {
    setTheme("jellyfish");
-   document.cookie = "jellyfish; path=" + path;
+   document.cookie = "jellyfish; path=/";
   };
   snailBtn.onclick = function() {
    setTheme("snail");
-   document.cookie = "snail; path=" + path;
+   document.cookie = "snail; path=/";
   };
   //end onload function
 };
