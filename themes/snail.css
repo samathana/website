@@ -37,7 +37,7 @@ a:visited {
   color: #a68a71;
 }
 
-a:hover, .open {
+a:hover, .open:hover {
     color: #570029;
 }
 
