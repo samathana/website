@@ -37,7 +37,7 @@ a:visited {
   color: #a68a71;
 }
 
-a:hover, .open:hover {
+a:hover, .open:hover, nav ul li a:hover {
     color: #570029;
 }
 
