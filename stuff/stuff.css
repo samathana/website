@@ -1,7 +1,7 @@
 /* the background */
 #openImg {
   display: none;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   left: 0;
   top: 0;
@@ -14,10 +14,9 @@
 /* the image */
 #theImg {
   left: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  transform: translate(-50%);
+  top: 50%;
+  transform: translateY(-50%) translate(-50%);
+  position: fixed;
   max-width: 90%;
   max-height: 90%;
 }
@@ -27,14 +26,12 @@
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
   padding: 16px;
   margin-top: -50px;
   color: white;
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
   z-index: 2;
@@ -43,11 +40,9 @@
 /* Position the "next button" to the right */
 #next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+#prev:hover,
+#next:hover {
+  background-color: rgb(0 0 0 / 45%);
 }
