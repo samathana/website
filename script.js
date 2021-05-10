@@ -5,7 +5,7 @@ if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini
   isMobile = true;
   cookieSet = document.cookie.split("=")[0];
 } else {
-  ismobile = false;
+  isMobile = false;
   cookieSet = document.cookie.split(";")[0];
 };
 
@@ -14,9 +14,11 @@ var url = window.location.href;
 var direcNum = url.split("/").length - 4;
 var i;
 var path = "";
-for (i = 0; i < direcNum; i++) {
-  path = path + "../";
-};
+if (isMobile == false) {
+  for (i = 0; i < direcNum; i++) {
+    path = path + "../";
+  };
+}
 
 //set theme to cookie if it exists
 if (document.cookie == "") {
