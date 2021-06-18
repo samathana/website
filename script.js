@@ -41,22 +41,22 @@ if (document.cookie == "") {
    document.cookie = "frog";
   };
   sheepBtn.onclick = function() {
-   setTheme("sheep");
+   setTheme("sheep", path);
    document.cookie = "sheep";
   };
   jellyfishBtn.onclick = function() {
-   setTheme("jellyfish");
+   setTheme("jellyfish", path);
    document.cookie = "jellyfish";
   };
   snailBtn.onclick = function() {
-   setTheme("snail");
+   setTheme("snail", path);
    document.cookie = "snail";
   };
   console.log(document.cookie);
   //end onload function
 };
 
-function setTheme(theme) {
+function setTheme(theme, path) {
   //set stylesheet to theme
   var link = document.getElementById("themeSheet");
   link.setAttribute("href", path + "themes/" + theme + ".css");
