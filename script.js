@@ -1,3 +1,7 @@
+
+//load JS after the page is loaded, to avoid issues with selecting elements that don't exist
+window.onload = function () {
+  
 //are we on mobile?
 var isMobile = "";
 var cookieSet = "";
@@ -26,9 +30,6 @@ if (document.cookie == "") {
 } else {
     setTheme(cookieSet);
 };
-
-//load JS after the page is loaded, to avoid issues with selecting elements that don't exist
-window.onload = function () {
   
   //change theme when theme buttons are clicked
   var frogBtn = document.getElementById("frogBtn");
