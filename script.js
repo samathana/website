@@ -37,19 +37,19 @@ window.onload = function () {
   var snailBtn = document.getElementById("snailBtn");
   frogBtn.onclick = function() {
    setTheme("frog");
-   document.cookie = "frog; path=" + path;
+   document.cookie = "frog";
   };
   sheepBtn.onclick = function() {
    setTheme("sheep");
-   document.cookie = "sheep; path=" + path;
+   document.cookie = "sheep";
   };
   jellyfishBtn.onclick = function() {
    setTheme("jellyfish");
-   document.cookie = "jellyfish; path=" + path;
+   document.cookie = "jellyfish";
   };
   snailBtn.onclick = function() {
    setTheme("snail");
-   document.cookie = "snail; path=" + path;
+   document.cookie = "snail";
   };
   console.log(document.cookie);
   //end onload function
