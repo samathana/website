@@ -51,6 +51,7 @@ window.onload = function () {
    setTheme("snail");
    document.cookie = "snail; path=" + path;
   };
+  document.write(document.cookie);
   //end onload function
 };
 
