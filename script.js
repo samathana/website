@@ -37,7 +37,7 @@ if (document.cookie == "") {
   var jellyfishBtn = document.getElementById("jellyfishBtn");
   var snailBtn = document.getElementById("snailBtn");
   frogBtn.onclick = function() {
-   setTheme("frog");
+   setTheme("frog", path);
    document.cookie = "frog";
   };
   sheepBtn.onclick = function() {
