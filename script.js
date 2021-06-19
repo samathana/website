@@ -1,7 +1,3 @@
-
-//load JS after the page is loaded, to avoid issues with selecting elements that don't exist
-window.onload = function () {
-  
 //are we on mobile?
 var isMobile = "";
 var cookieSet = "";
@@ -30,6 +26,9 @@ if (document.cookie == "") {
 } else {
     setTheme(cookieSet);
 };
+
+//load JS after the page is loaded, to avoid issues with selecting elements that don't exist
+window.onload = function () {
   
   //change theme when theme buttons are clicked
   var frogBtn = document.getElementById("frogBtn");
@@ -37,26 +36,25 @@ if (document.cookie == "") {
   var jellyfishBtn = document.getElementById("jellyfishBtn");
   var snailBtn = document.getElementById("snailBtn");
   frogBtn.onclick = function() {
-   setTheme("frog", path);
-   document.cookie = "frog";
+   setTheme("frog");
+   document.cookie = "frog; path=/";
   };
   sheepBtn.onclick = function() {
-   setTheme("sheep", path);
-   document.cookie = "sheep";
+   setTheme("sheep");
+   document.cookie = "sheep; path=/";
   };
   jellyfishBtn.onclick = function() {
-   setTheme("jellyfish", path);
-   document.cookie = "jellyfish";
+   setTheme("jellyfish");
+   document.cookie = "jellyfish; path=/";
   };
   snailBtn.onclick = function() {
-   setTheme("snail", path);
-   document.cookie = "snail";
+   setTheme("snail");
+   document.cookie = "snail; path=/";
   };
-  console.log(document.cookie);
   //end onload function
 };
 
-function setTheme(theme, path) {
+function setTheme(theme) {
   //set stylesheet to theme
   var link = document.getElementById("themeSheet");
   link.setAttribute("href", path + "themes/" + theme + ".css");
