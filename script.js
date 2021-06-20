@@ -2,6 +2,7 @@
 var isMobile = "";
 var cookieSet = "";
 var cookie = document.cookie.split(";");
+cookie = cookie.replace(/[0-9%]/, '');
 if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   isMobile = true;
   cookieSet = document.cookie.split("=")[0];
