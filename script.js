@@ -1,12 +1,13 @@
 //are we on mobile?
 var isMobile = "";
 var cookieSet = "";
+var cookie = document.cookie.split(";");
 if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   isMobile = true;
   cookieSet = document.cookie.split("=")[0];
 } else {
   isMobile = false;
-  cookieSet = document.cookie.split(";")[0];
+  cookieSet = cookie[cookie.length - 1];
 };
 
 //where are we? add as many ../s are needed to get to the stylesheet
@@ -41,15 +42,15 @@ window.onload = function () {
   };
   sheepBtn.onclick = function() {
    setTheme("sheep");
-   document.cookie = "sheep; path=/";
+   document.cookie[cookie.length - 1] = "sheep; path=/";
   };
   jellyfishBtn.onclick = function() {
    setTheme("jellyfish");
-   document.cookie = "jellyfish; path=/";
+   document.cookie[cookie.length - 1] = "jellyfish; path=/";
   };
   snailBtn.onclick = function() {
    setTheme("snail");
-   document.cookie = "snail; path=/";
+   document.cookie[cookie.length - 1] = "snail; path=/";
   };
   //end onload function
 };
