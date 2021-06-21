@@ -1,15 +1,25 @@
-var aroClicked = 0;
-
 function openImg(imgNum) {
   document.getElementById("openImg").style.display = "block";
   var imgPath = "proof/" + imgNum + ".jpeg";
   document.getElementById("theImg").setAttribute("src", imgPath);
-  aroClicked = 0;
 };
 
 // Next/previous controls
+document.getElementById("prev").addEventListener("click", function( e ){
+    e = window.event || e; 
+    if(this === e.target) {
+        changeImg(-1);
+    }
+});
+
+document.getElementById("next").addEventListener("click", function( e ){
+    e = window.event || e; 
+    if(this === e.target) {
+        changeImg(1);
+    }
+});
+
 function changeImg(n) {
-  aroClicked = 1;
   //find current img num
   var imgNum = document.getElementById("theImg").src;
   imgNum = imgNum.split("/")[5];
@@ -18,12 +28,9 @@ function changeImg(n) {
   imgNum = imgNum + n;
   var imgPath = "proof/" + imgNum + ".jpeg";
   document.getElementById("theImg").setAttribute("src", imgPath);
-  aroClicked = 0;
 };
 
 // Close modal
-function closeImg(event) {
-  if (aroClicked == 0) {
+function closeImg() {
     document.getElementById("openImg").style.display = "none";
-  }
 };
