@@ -13,7 +13,7 @@ if (isMobile == false) {
 }
 
 //set theme to cookie if it exists
-if (localStorage.getItem("theme") == "") {
+if (localStorage.getItem("theme") == null) {
     setTheme("frog");
 } else {
     setTheme(localStorage.getItem("theme"));
