@@ -1,10 +1,3 @@
-//are we on mobile?
-var isMobile = "";
-var cookieSet = "";
-var cookie = document.cookie.split(";");
-cookie = cookie[cookie.length - 1];
-cookie = cookie.trim();
-alert(document.cookie);
 //where are we? add as many ../s are needed to get to the stylesheet
 var url = window.location.href;
 var direcNum = url.split("/").length - 4;
@@ -17,10 +10,10 @@ if (isMobile == false) {
 }
 
 //set theme to cookie if it exists
-if (document.cookie == "") {
+if (localStorage.getItem("theme") == "") {
     setTheme("frog");
 } else {
-    setTheme(cookie);
+    setTheme(localStorage.getItem("theme"));
 };
 
 //load JS after the page is loaded, to avoid issues with selecting elements that don't exist
@@ -33,19 +26,19 @@ window.onload = function () {
   var snailBtn = document.getElementById("snailBtn");
   frogBtn.onclick = function() {
    setTheme("frog");
-   document.cookie = "frog; path=/";
+  localStorage.setItem("theme", "frog");
   };
   sheepBtn.onclick = function() {
    setTheme("sheep");
-   document.cookie[cookie.length - 1] = "sheep; path=/";
+  localStorage.setItem("theme", "sheep");
   };
   jellyfishBtn.onclick = function() {
    setTheme("jellyfish");
-   document.cookie[cookie.length - 1] = "jellyfish; path=/";
+  localStorage.setItem("theme", "jellyfish");
   };
   snailBtn.onclick = function() {
    setTheme("snail");
-   document.cookie[cookie.length - 1] = "snail; path=/";
+  localStorage.setItem("theme", "snail");
   };
   //end onload function
 };
