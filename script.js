@@ -1,7 +1,7 @@
 //are we on mobile?
 var isMobile = "";
 var cookieSet = "";
-var cookie = document.cookie.split(";");
+var cookie = document.cookie.split(",");
 cookie = cookie.toString().replace(/[0-9%]/g, '');
 if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   isMobile = true;
