@@ -1,9 +1,9 @@
 //are we on mobile?
 var isMobile = "";
 var cookieSet = "";
-var cookie = document.cookie.split(",");
+var cookie = document.cookie.split(";");
 cookie = cookie[cookie.length - 1];
-cookie = cookie.replace(/[0-9%]/g, '');
+cookie = cookie.trim();
 if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   isMobile = true;
   cookieSet = document.cookie.split("=")[0];
@@ -27,7 +27,7 @@ if (isMobile == false) {
 if (document.cookie == "") {
     setTheme("frog");
 } else {
-    setTheme(cookieSet);
+    setTheme(cookie);
 };
 
 //load JS after the page is loaded, to avoid issues with selecting elements that don't exist
