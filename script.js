@@ -4,13 +4,6 @@ var cookieSet = "";
 var cookie = document.cookie.split(";");
 cookie = cookie[cookie.length - 1];
 cookie = cookie.trim();
-if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  isMobile = true;
-  cookieSet = document.cookie.split("=")[0];
-} else {
-  isMobile = false;
-  cookieSet = cookie[cookie.length - 1];
-};
 
 //where are we? add as many ../s are needed to get to the stylesheet
 var url = window.location.href;
