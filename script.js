@@ -4,7 +4,7 @@ var cookieSet = "";
 var cookie = document.cookie.split(";");
 cookie = cookie[cookie.length - 1];
 cookie = cookie.trim();
-
+alert(document.cookie);
 //where are we? add as many ../s are needed to get to the stylesheet
 var url = window.location.href;
 var direcNum = url.split("/").length - 4;
