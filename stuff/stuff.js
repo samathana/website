@@ -1,8 +1,10 @@
+var aroClicked = 0;
+
 function openImg(imgNum) {
   document.getElementById("openImg").style.display = "block";
   var imgPath = "proof/" + imgNum + ".jpeg";
   document.getElementById("theImg").setAttribute("src", imgPath);
-  var aroClicked = 0;
+  aroClicked = 0;
 };
 
 // Next/previous controls
