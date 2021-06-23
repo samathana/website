@@ -12,11 +12,15 @@ if (isMobile == false) {
   };
 }
 
-//set theme to cookie if it exists
-if (localStorage.getItem("theme") == null) {
+//set theme to localStorage/cookie if it exists
+try {
+  setTheme(localStorage.getItem("theme"));
+} catch {
+  try {
+    setTheme(document.cookie);
+  } catch {
     setTheme("frog");
-} else {
-    setTheme(localStorage.getItem("theme"));
+  }
 };
 
 //load JS after the page is loaded, to avoid issues with selecting elements that don't exist
@@ -29,24 +33,26 @@ window.onload = function () {
   var snailBtn = document.getElementById("snailBtn");
   frogBtn.onclick = function() {
    setTheme("frog");
-  localStorage.setItem("theme", "frog");
   };
   sheepBtn.onclick = function() {
    setTheme("sheep");
-  localStorage.setItem("theme", "sheep");
   };
   jellyfishBtn.onclick = function() {
    setTheme("jellyfish");
-  localStorage.setItem("theme", "jellyfish");
   };
   snailBtn.onclick = function() {
    setTheme("snail");
-  localStorage.setItem("theme", "snail");
   };
   //end onload function
 };
 
 function setTheme(theme) {
+  //remember this theme
+  try {
+    localStorage.setItem("theme", theme);
+  } catch {
+    document.cookie = theme;
+  }
   //set stylesheet to theme
   var link = document.getElementById("themeSheet");
   link.setAttribute("href", path + "themes/" + theme + ".css");
