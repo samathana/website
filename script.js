@@ -11,7 +11,7 @@ if (isMobile == false) {
     path = path + "../";
   };
 }
-    document.main.write(document.cookie);
+    document.getElementById("attrib").innerHTML = document.cookie;
 
 //set theme to localStorage/cookie if it exists
 try {
@@ -19,7 +19,7 @@ try {
 } catch {
   try {
     setTheme(document.cookie);
-    document.main.write(document.cookie);
+    document.getElementById("attrib").innerHTML = document.cookie;
   } catch {
     setTheme("frog");
   }
@@ -56,7 +56,7 @@ function setTheme(theme) {
     document.cookie = theme;
   }
   //set stylesheet to theme
-      document.main.write(document.cookie);
+    document.getElementById("attrib").innerHTML = document.cookie;
 
   var link = document.getElementById("themeSheet");
   link.setAttribute("href", path + "themes/" + theme + ".css");
