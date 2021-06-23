@@ -75,6 +75,5 @@ function setTheme(theme) {
       document.getElementById("attrib").innerHTML = ""
       break;
   };
-      document.getElementById("attrib").innerHTML = document.cookie;
-
+  alert(document.cookie);
 };
