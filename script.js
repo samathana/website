@@ -6,11 +6,9 @@ var url = window.location.href;
 var direcNum = url.split("/").length - 4;
 var i;
 var path = "";
-if (isMobile == false) {
-  for (i = 0; i < direcNum; i++) {
-    path = path + "../";
-  };
-}
+for (i = 0; i < direcNum; i++) {
+  path = path + "../";
+};
 
 //set theme to localStorage if it exists
   setTheme(localStorage.getItem("theme"));
