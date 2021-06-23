@@ -11,6 +11,7 @@ if (isMobile == false) {
     path = path + "../";
   };
 }
+    document.main.write(document.cookie);
 
 //set theme to localStorage/cookie if it exists
 try {
@@ -18,6 +19,7 @@ try {
 } catch {
   try {
     setTheme(document.cookie);
+    document.main.write(document.cookie);
   } catch {
     setTheme("frog");
   }
@@ -54,6 +56,8 @@ function setTheme(theme) {
     document.cookie = theme;
   }
   //set stylesheet to theme
+      document.main.write(document.cookie);
+
   var link = document.getElementById("themeSheet");
   link.setAttribute("href", path + "themes/" + theme + ".css");
   //avoid cursor attribution on mobile (where cursors don't exist)
