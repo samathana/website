@@ -21,6 +21,6 @@ function change(n) {
 // Close modal
 function closeImg() {
     document.getElementById("openImg").style.display = "none";
-    document.getElementById("prev").style.display = "block";
-    document.getElementById("next").style.display = "block";
+    document.getElementById("prev").style.display = "none";
+    document.getElementById("next").style.display = "none";
 };
