@@ -12,17 +12,8 @@ if (isMobile == false) {
   };
 }
 
-//set theme to localStorage/cookie if it exists
-try {
+//set theme to localStorage if it exists
   setTheme(localStorage.getItem("theme"));
-} catch {
-  try {
-    setTheme(document.cookie);
-  } catch {
-    setTheme("frog");
-  }
-};
-
 //load JS after the page is loaded, to avoid issues with selecting elements that don't exist
 window.onload = function () {
   
@@ -48,11 +39,7 @@ window.onload = function () {
 
 function setTheme(theme) {
   //remember this theme
-  try {
     localStorage.setItem("theme", theme);
-  } catch {
-    document.cookie = theme;
-  }
   //set stylesheet to theme
   var link = document.getElementById("themeSheet");
   link.setAttribute("href", path + "themes/" + theme + ".css");
@@ -75,5 +62,4 @@ function setTheme(theme) {
       document.getElementById("attrib").innerHTML = ""
       break;
   };
-  alert(document.cookie);
 };
