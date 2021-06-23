@@ -1,11 +1,13 @@
 function openImg(imgNum) {
   document.getElementById("openImg").style.display = "block";
+  document.getElementById("theImg").style.display = "block";
   if (imgNum !== 48) 
     document.getElementById("next").style.display = "block";
   if (imgNum !== 1) 
     document.getElementById("prev").style.display = "block";
   var imgPath = "proof/" + imgNum + ".jpeg";
   document.getElementById("theImg").setAttribute("src", imgPath);
+  document.getElementById("imgLink").setAttribute("href", imgPath);
 };
 
 // Next/previous controls
@@ -23,6 +25,7 @@ function change(n) {
 // Close modal
 function closeImg() {
     document.getElementById("openImg").style.display = "none";
+    document.getElementById("theImg").style.display = "none";
     document.getElementById("prev").style.display = "none";
     document.getElementById("next").style.display = "none";
 };
