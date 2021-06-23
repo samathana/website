@@ -24,3 +24,8 @@ function closeImg() {
     document.getElementById("prev").style.display = "none";
     document.getElementById("next").style.display = "none";
 };
+
+//go to image page when image is clicked
+function leave() {
+    location.href = imgPath;
+};
