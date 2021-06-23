@@ -20,6 +20,14 @@ function change(n) {
   imgNum = parseInt(imgNum) + n;
   var imgPath = "proof/" + imgNum + ".jpeg";
   document.getElementById("theImg").setAttribute("src", imgPath);
+  if (imgNum !== 48) 
+    document.getElementById("next").style.display = "block";
+  else
+    document.getElementById("next").style.display = "none";
+  if (imgNum !== 1) 
+    document.getElementById("prev").style.display = "block";
+  else
+    document.getElementById("prev").style.display = "none";
 };
 
 // Close modal
