@@ -38,7 +38,10 @@
   display: none;
 }
 
-/* Position the "next button" to the right */
+#prev {
+  left: 0;
+}
+
 #next {
   right: 0;
 }
