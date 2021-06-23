@@ -1,7 +1,9 @@
 function openImg(imgNum) {
   document.getElementById("openImg").style.display = "block";
-  document.getElementById("next").style.display = "block";
-  document.getElementById("prev").style.display = "block";
+  if (imgNum !== 48) 
+    document.getElementById("next").style.display = "block";
+  if (imgNum !== 1) 
+    document.getElementById("prev").style.display = "block";
   var imgPath = "proof/" + imgNum + ".jpeg";
   document.getElementById("theImg").setAttribute("src", imgPath);
 };
