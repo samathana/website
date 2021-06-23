@@ -8,7 +8,7 @@ function openImg(imgNum) {
   var imgPath = "proof/" + imgNum + ".jpeg";
   document.getElementById("theImg").setAttribute("src", imgPath);
   document.getElementById("imgLink").setAttribute("href", imgPath);
-  document.querySelector("body").style.overflow = 'hidden';
+  document.ontouchmove = (e) => e.preventDefault();
 };
 
 // Next/previous controls
@@ -38,7 +38,7 @@ function closeImg() {
   document.getElementById("theImg").style.display = "none";
   document.getElementById("prev").style.display = "none";
   document.getElementById("next").style.display = "none";
-  document.querySelector("body").style.overflow = 'visible';
+  document.ontouchmove = (e) => true;
 };
 
 //go to image page when image is clicked
