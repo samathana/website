@@ -20,6 +20,7 @@ function change(n) {
   imgNum = parseInt(imgNum) + n;
   var imgPath = "proof/" + imgNum + ".jpeg";
   document.getElementById("theImg").setAttribute("src", imgPath);
+  document.getElementById("imgLink").setAttribute("href", imgPath);
   if (imgNum !== 48) 
     document.getElementById("next").style.display = "block";
   else
