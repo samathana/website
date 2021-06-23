@@ -19,6 +19,7 @@
   position: fixed;
   max-width: 90%;
   max-height: 90%;
+  display: none;
 }
 
 /* Next & previous buttons */
