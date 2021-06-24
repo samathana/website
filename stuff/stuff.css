@@ -52,3 +52,17 @@
 #next:hover {
   background-color: rgb(0 0 0 / 45%);
 }
+
+/*phone styling*/
+@media only screen and (orientation: portrait) {
+  #prev, #next {
+    font-size: 100px;
+    width: 100px;
+    height: 200px;
+    line-height: 200px;
+    position: fixed;
+  }
+  #next {
+    text-align: right;
+  }
+}
