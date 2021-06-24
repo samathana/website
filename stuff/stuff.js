@@ -1,5 +1,5 @@
 function openImg(imgNum) {
-  document.ontouchmove = (e) => e.preventDefault();
+  document.body.ontouchmove = (e) => e.preventDefault();
   document.getElementById("openImg").style.display = "block";
   document.getElementById("theImg").style.display = "block";
   if (imgNum !== 48) 
@@ -38,7 +38,7 @@ function closeImg() {
   document.getElementById("theImg").style.display = "none";
   document.getElementById("prev").style.display = "none";
   document.getElementById("next").style.display = "none";
-  document.ontouchmove = (e) => true;
+  document.body.ontouchmove = (e) => true;
 };
 
 //go to image page when image is clicked
