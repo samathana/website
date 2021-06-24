@@ -21,6 +21,7 @@
   max-height: 90%;
   display: none;
   z-index: 1;
+  background-color: beige;
 }
 
 /* Next & previous buttons */
@@ -61,8 +62,16 @@
     height: 200px;
     line-height: 200px;
     position: fixed;
+    top: 50vh;
+
   }
   #next {
     text-align: right;
+  }
+  #theImg {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    right: 5%;
   }
 }
