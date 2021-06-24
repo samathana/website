@@ -1,4 +1,5 @@
 function openImg(imgNum) {
+  document.ontouchmove = (e) => e.preventDefault();
   document.getElementById("openImg").style.display = "block";
   document.getElementById("theImg").style.display = "block";
   if (imgNum !== 48) 
@@ -8,7 +9,6 @@ function openImg(imgNum) {
   var imgPath = "proof/" + imgNum + ".jpeg";
   document.getElementById("theImg").setAttribute("src", imgPath);
   document.getElementById("imgLink").setAttribute("href", imgPath);
-  document.ontouchmove = (e) => e.preventDefault();
 };
 
 // Next/previous controls
