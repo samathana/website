@@ -11,6 +11,9 @@ for (i = 0; i < direcNum; i++) {
 };
 
 //set theme to localStorage if it exists
+if (localStorage.getItem("theme") == null)
+  setTheme("frog");
+else
   setTheme(localStorage.getItem("theme"));
 //load JS after the page is loaded, to avoid issues with selecting elements that don't exist
 window.onload = function () {
