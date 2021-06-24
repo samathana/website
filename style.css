@@ -31,7 +31,7 @@ nav ul {
   margin-left: auto;
   margin-right: auto;
   padding-top: auto;
-  padding-left: 0;
+  padding-left: 1vh;
 }
 
 nav ul li {
