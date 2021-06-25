@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- favicon stuff :3 -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#f9b0ff">
+    <title>undercover nyan</title>
+    <link href="style.css" rel="stylesheet"/> 
+    <link href="" rel="stylesheet" id="themeSheet"'/>
+  <style>
+    div span {
+      color: #7f7f7f;
+    }
+    main div {
+      margin: 20px 0;
+    }
+  </style>
+  <script>
+    function showOnly(filter) {
+      if (filter == "none") {
+        for (let element of document.getElementsByClassName("funni")){
+          element.style.display="block";
+        }
+        for (let element of document.getElementsByClassName("unfunni")){
+          element.style.display="block";
+        }
+      } else {
+        for (let element of document.getElementsByClassName(filter)){
+          element.style.display="none";
+        }
+      }
+    }
+  </script>
+  </head>
+  <body>
+    <header>
+      <h2>nyanthoughts!</h2>
+    </header>
+    <div class="flex_design">
+	<nav>
+	  <ul>
+		<li>about!</li>
+		<li><a href="poll.html">poll n stats!</a></li>
+		<li><a href="stuff.html">stuff!</a></li>
+		<li><a href="thot.html">nyanthoughts!</a></li>
+		<li><a href="fun.html">fun stuff!</a></li>
+		<li><a href="merch.html">merch?</a></li>
+	  </ul>
+	</nav>
+	<main>
+        <p>did I just reinvent twitter?</p>
+        <p>filter by mood: <a onclick="hide('none')">all</a> | <a onclick="hide('unfunni')">funni</a> | <a onclick="hide('funni')">unfunni</a></p>
+
+     		<div class="funni">
+           <p>would cat BL be called myaoi?</p>
+           <span class="date">6/24/21</span>
+        </div>
+        <div class="unfunni">
+           <p>the game</p>
+           <span class="date">6/24/21</span>
+        </div>
+	</main>
+	    <div id="imgWrap">
+		<div id="Img">
+		</div>
+	    </div>
+	</div>
+    <footer>
+	<p>theme: <span id="frogBtn">frog</span> | <span id="sheepBtn">sheep</span> | <span id="jellyfishBtn">jellyfish</span> | <span id="snailBtn">snail</span></p>
+	<h5>Website by me<span id="attrib"></span> :3</h5>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
