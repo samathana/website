@@ -18,13 +18,15 @@
   <style>
     div span {
       color: #7f7f7f;
+      padding-bottom: 5px;
+      border-bottom: 1px solid white;
     }
     main div {
       margin: 20px 0;
     }
   </style>
   <script>
-    function showOnly(filter) {
+    function hide(filter) {
       if (filter == "none") {
         for (let element of document.getElementsByClassName("funni")){
           element.style.display="block";
@@ -59,7 +61,7 @@
         <p>did I just reinvent twitter?</p>
         <p>filter by mood: <a onclick="hide('none')">all</a> | <a onclick="hide('unfunni')">funni</a> | <a onclick="hide('funni')">unfunni</a></p>
 
-     		<div class="funni">
+     	<div class="funni">
            <p>would cat BL be called myaoi?</p>
            <span class="date">6/24/21</span>
         </div>
