@@ -24,20 +24,17 @@
     main div {
       margin: 20px 0;
     }
+    main p {
+      margin-bottom: 0;
+    }
   </style>
   <script>
-    function hide(filter) {
-      if (filter == "none") {
-        for (let element of document.getElementsByClassName("funni")){
-          element.style.display="block";
-        }
-        for (let element of document.getElementsByClassName("unfunni")){
-          element.style.display="block";
-        }
-      } else {
-        for (let element of document.getElementsByClassName(filter)){
-          element.style.display="none";
-        }
+    function filter(funni, unfunni) {
+      for (let element of document.getElementsByClassName("funni")){
+        element.style.display = funni;
+      }
+      for (let element of document.getElementsByClassName("unfunni")){
+        element.style.display = unfunni;
       }
     }
   </script>
@@ -59,7 +56,7 @@
 	</nav>
 	<main>
         <p>did I just reinvent twitter?</p>
-        <p>filter by mood: <a onclick="hide('none')">all</a> | <a onclick="hide('unfunni')">funni</a> | <a onclick="hide('funni')">unfunni</a></p>
+        <p>filter by mood: <a onclick="filter('block', 'block')">all</a> | <a onclick="filter('block', 'none')">funni</a> | <a onclick="filter('none', 'block')">unfunni</a></p>
 
      	<div class="funni">
            <p>would cat BL be called myaoi?</p>
