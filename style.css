@@ -241,7 +241,7 @@ footer h5 {
 
 /*phone styling*/
 @media only screen and (orientation: portrait) {
-  .flex_design {
+  .flexDesign {
     display: block;
     overflow: hidden;
   }
