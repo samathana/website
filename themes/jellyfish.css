@@ -64,6 +64,9 @@ a:hover, .open:hover, nav ul li a:hover {
   main, nav {
     width: auto;
   }
+  nav {
+    margin-top: 15px;
+  }
   nav ul {
     margin: 0px;
   }
