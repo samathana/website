@@ -1,4 +1,4 @@
-.flex_design {
+.flexDesign {
   display: flex;
 }
 
@@ -24,7 +24,7 @@ nav {
   border: 2px;
   margin: 15px;
   height: 58vh;
-  width: 450px;
+  width: 600px;
 }
 
 nav ul {
@@ -62,8 +62,7 @@ main {
   margin: 15px;
   overflow: auto;
   height: 55vh;
-  min-width: 300px;
-  width: 100%;
+  width: 150vw;
 }
 
 .link {
