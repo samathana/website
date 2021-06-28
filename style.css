@@ -280,6 +280,7 @@ footer h5 {
     padding: 10px 30px 30px 50px;
     height: auto;
     min-height: 50vh;
+    width: auto;
   }
 
   header, #imgWrap, #Img {
