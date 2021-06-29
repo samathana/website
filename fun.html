@@ -33,12 +33,12 @@
 	</nav>
 	<main id="main">
      		<div onclick="loadGame('sheepy')" class="stuffDiv">
-			<img src="games/sheepy/sheepy.png" width="180">
+			<img src="games/sheepy/sheepy.png">
 			<p><strong>Random Sheep Generator</strong></p>
 			<p>Generates a random sheep!</p>
 		</div>
 		<div onclick="loadGame('sheppy')" class="stuffDiv">
-			<img src="games/sheppy/sheppy.jpeg" width="180">
+			<img src="games/sheppy/sheppy.jpeg">
 			<p><strong>Surreal Sheep Generator</strong></p>
 			<p>The random sheep generator, but wacky</p>
 		</div>
@@ -68,7 +68,7 @@
 	  
 	    //change main content
 	    var main = document.getElementById("main");
-	    main.innerHTML = '<button type="button" onclick="goBack()">back</button><canvas id="canvas" width="600" height="600"></canvas>';
+	    main.innerHTML = '<button type="button" onclick="goBack()">back</button><canvas id="canvas"></canvas>';
 	  };
 	
 	function goBack() {
