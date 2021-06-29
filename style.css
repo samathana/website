@@ -65,6 +65,9 @@ main {
   overflow: auto;
   height: 55vh;
   width: 150vw;
+  display: table;
+  white-space: nowrap
+
 }
 
 .link {
@@ -239,6 +242,21 @@ footer h5 {
   60% {cursor: url('../cursors/snail/snailLink3.png'), auto;}
   80% {cursor: url('../cursors/snail/snailLink4.png'), auto;}
   100% {cursor: url('../cursors/snail/snailLink5.png'), auto;}
+}
+
+/*stuff and funStuff pages*/
+.stuffDiv {
+  width: 100px;
+  margin: auto;
+  padding: 10px;
+  background-color: transparent;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.stuffDiv img {
+  width: 100px;
 }
 
 /*phone styling*/
