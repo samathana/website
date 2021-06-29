@@ -15,18 +15,6 @@
     <title>fun stuff!</title>
     <link href="style.css" rel="stylesheet"/> 
     <link href="" rel="stylesheet" id="themeSheet"'/>
-    <style>
-	main {
-	  display: flex;
-	}
-	main div {
-	  border: 1px outset;
-          width: 200px;
-	  margin: auto;
-	  padding: 10px;
-          background-color: transparent;
-	}
-    </style>
   </head>
   <body>
     <header>
@@ -44,12 +32,12 @@
 	  </ul>
 	</nav>
 	<main id="main">
-     		<div onclick="loadGame('sheepy')">
+     		<div onclick="loadGame('sheepy')" class="stuffDiv">
 			<img src="games/sheepy/sheepy.png" width="180">
 			<p><strong>Random Sheep Generator</strong></p>
 			<p>Generates a random sheep!</p>
 		</div>
-		<div onclick="loadGame('sheppy')">
+		<div onclick="loadGame('sheppy')" class="stuffDiv">
 			<img src="games/sheppy/sheppy.jpeg" width="180">
 			<p><strong>Surreal Sheep Generator</strong></p>
 			<p>The random sheep generator, but wacky</p>
