@@ -305,6 +305,7 @@ footer h5 {
 
   header, #imgWrap, #Img {
     height: 150px;
+    min-height: 150px;
     line-height: 150px;
   }
 
