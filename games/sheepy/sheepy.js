@@ -1,4 +1,6 @@
 function init() {
+  //get text color
+  let textColor = window.getComputedStyle(document.querySelector('main')).color;
   let c = document.getElementById("canvas");
   let ctx = c.getContext("2d");
   c.setAttribute("tabindex", 0);
@@ -13,6 +15,7 @@ function init() {
 
   //click to reload text
   ctx.font = "10px Times New Roman";
+  ctx.fillStyle = textColor;
   ctx.fillText("click for new sheep", 10, canvas.height-10);
   
   //weirdness
@@ -87,9 +90,11 @@ function drawmouth(y, width, height, c, ctx) {
   //draw the two things
 
   ctx.beginPath();
+  ctx.strokeStyle = textColor;
   ctx.arc(c.width/2 + width/4, c.height/2-y+height-radius, radius, Math.PI/2 - angle, Math.PI/2 + angle);
   ctx.stroke();
   ctx.beginPath();
+  ctx.strokeStyle = textColor;
   ctx.arc(c.width/2 - width/4, c.height/2-y+height-radius, radius, Math.PI/2 - angle, Math.PI/2 + angle);
   ctx.stroke();
 
@@ -101,8 +106,9 @@ function drawmouth(y, width, height, c, ctx) {
 //basically just circle drawing but with centered coords
 function draweye(x, y, radius, c, ctx) {
   ctx.beginPath();
+  ctx.strokeStyle = textColor;
   ctx.arc(c.width/2 + x, c.height/2 - y, radius, 0, 2 * Math.PI);
-  ctx.fillStyle = "black";
+  ctx.fillStyle = textColor;
   ctx.fill();
 }
 
@@ -220,6 +226,7 @@ function drawfloof(alt, height, width, numpoints, floofnum, floofheight, floofpr
 
 function connect(ctx,x1,y1,x2,y2) {           //draw line between two points
   ctx.beginPath();
+  ctx.strokeStyle = textColor;
   ctx.moveTo(x1, y1);
   ctx.lineTo(x2, y2);
   ctx.stroke(); 
