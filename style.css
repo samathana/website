@@ -248,11 +248,14 @@ footer h5 {
 
 /*stuff and funStuff page*/
 .stuffLink {
-  
+  margin: auto 10px;
+  text-align: center;
+  width: 15vw;
+  height: fit-content;
 }
 
 .stuffLink img {
-  width: 200px;
+  width: 12vw;
 }
 /*phone styling*/
 @media only screen and (orientation: portrait) {
