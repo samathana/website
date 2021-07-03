@@ -246,6 +246,14 @@ footer h5 {
   100% {cursor: url('../cursors/snail/snailLink5.png'), auto;}
 }
 
+/*stuff and funStuff page*/
+.stuffLink {
+  
+}
+
+.stuffLink img {
+  width: 200px;
+}
 /*phone styling*/
 @media only screen and (orientation: portrait) {
   .flexDesign {
