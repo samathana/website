@@ -257,6 +257,7 @@ footer h5 {
 .stuffLink img {
   width: 12vw;
 }
+
 /*phone styling*/
 @media only screen and (orientation: portrait) {
   .flexDesign {
@@ -277,6 +278,7 @@ footer h5 {
     overflow: hidden;
     width: 100%;
     height: 150px;
+    min-height: 150px;
     margin-top: 20px;
     padding-top: 0;
   }
@@ -328,5 +330,12 @@ footer h5 {
     width: 100%;
     text-align: center;
   }
+  
+  /*stuff and funStuff page*/
+  .stuffLink img {
+    width: 40%;
+    margin-top: 20px;
+  }
+
 }
 
