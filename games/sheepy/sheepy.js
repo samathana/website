@@ -59,28 +59,28 @@ function init() {
   let mouthheight = controlRandom(randomlimit)*mouthwidth/4; //cannot be more than 1/4 the width
 
   //outer floof
-  let floofinfo = drawfloof(0, height, width, floofpoints, floofnum, floofheight, floofprogress, c, ctx);
+  let floofinfo = drawfloof(0, height, width, floofpoints, floofnum, floofheight, floofprogress, c, ctx, textColor);
   //head
-  let headinfo = drawfloof(headaltitude, headheight, headwidth, headpoints, 20, 0, 0, c, ctx);
+  let headinfo = drawfloof(headaltitude, headheight, headwidth, headpoints, 20, 0, 0, c, ctx, textColor);
   //feet
   drawfoot(frontfoot, footwidth, footlength, footpoints, floofinfo, c, ctx);
-  drawfoot(frontfoot*-1 - footwidth, footwidth, footlength, footpoints, floofinfo, c, ctx);
+  drawfoot(frontfoot*-1 - footwidth, footwidth, footlength, footpoints, floofinfo, c, ctx, textColor);
   drawfoot(backfoot, footwidth, footlength, footpoints, floofinfo, c, ctx);
-  drawfoot(backfoot*-1 - footwidth, footwidth, footlength, footpoints, floofinfo, c, ctx);
+  drawfoot(backfoot*-1 - footwidth, footwidth, footlength, footpoints, floofinfo, c, ctx, textColor);
   //ears
   drawfoot(eardist+0.5, earwidth, earlength, earpoints, headinfo, c, ctx);
-  drawfoot(0.5-eardist-earwidth, earwidth, earlength, earpoints, headinfo, c, ctx);
+  drawfoot(0.5-eardist-earwidth, earwidth, earlength, earpoints, headinfo, c, ctx, textColor);
   //eyes
-  draweye(eyedist, eyeheight + headaltitude, eyesize, c, ctx);
-  draweye(-eyedist, eyeheight + headaltitude, eyesize, c, ctx);
+  draweye(eyedist, eyeheight + headaltitude, eyesize, c, ctx, textColor);
+  draweye(-eyedist, eyeheight + headaltitude, eyesize, c, ctx, textColor);
   //mouth
-  drawmouth(headaltitude - mouthlow, mouthwidth, mouthheight, c, ctx);
+  drawmouth(headaltitude - mouthlow, mouthwidth, mouthheight, c, ctx, textColor);
 
   //reload button
   c.onclick = init;
 }
 
-function drawmouth(y, width, height, c, ctx) {
+function drawmouth(y, width, height, c, ctx, textColor) {
   //find radius of circles
   let radius = (width**2/16/height + height)/2;
 
@@ -104,7 +104,7 @@ function drawmouth(y, width, height, c, ctx) {
 
 
 //basically just circle drawing but with centered coords
-function draweye(x, y, radius, c, ctx) {
+function draweye(x, y, radius, c, ctx, textColor) {
   ctx.beginPath();
   ctx.strokeStyle = textColor;
   ctx.arc(c.width/2 + x, c.height/2 - y, radius, 0, 2 * Math.PI);
@@ -114,7 +114,7 @@ function draweye(x, y, radius, c, ctx) {
 
 
 
-function drawfoot(pos, width, length, points, floof, c, ctx) {
+function drawfoot(pos, width, length, points, floof, c, ctx, textColor) {
   //find how many floofs there are in the floof
   let numfloofs = Math.ceil(floof[floof.length-1][2]);
   
@@ -170,7 +170,7 @@ function drawfoot(pos, width, length, points, floof, c, ctx) {
 
 
 
-function drawfloof(alt, height, width, numpoints, floofnum, floofheight, floofprogress, c, ctx) {
+function drawfloof(alt, height, width, numpoints, floofnum, floofheight, floofprogress, c, ctx, textColor) {
   //sheep calculations
   let floofpoints = [];   //points in the sheep floof
   for (let i=0; i<numpoints; i++) {
