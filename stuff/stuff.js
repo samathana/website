@@ -1,3 +1,7 @@
+function setPath(stuffPath) {
+  var stuffPath = stuffPath;
+}
+
 function openImg(imgNum) {
   document.body.ontouchmove = (e) => e.preventDefault();
   document.getElementById("openImg").style.display = "block";
