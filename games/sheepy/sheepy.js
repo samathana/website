@@ -163,7 +163,7 @@ function drawfoot(pos, width, length, points, floof, c, ctx, textColor) {
 
   //draw the foot
   for (let i=0; i<points-1; i++) {
-    connect(ctx, footpoints[i][0], footpoints[i][1], footpoints[i+1][0], footpoints[i+1][1]);
+    connect(ctx, footpoints[i][0], footpoints[i][1], footpoints[i+1][0], footpoints[i+1][1], textColor);
   }
   
 }
@@ -216,15 +216,15 @@ function drawfloof(alt, height, width, numpoints, floofnum, floofheight, floofpr
 
   //draw sheep floof
   for (let i=0; i<numpoints-1; i++) {
-    connect(ctx, floofpoints[i][0], floofpoints[i][1], floofpoints[i+1][0], floofpoints[i+1][1]);
+    connect(ctx, floofpoints[i][0], floofpoints[i][1], floofpoints[i+1][0], floofpoints[i+1][1], textColor);
   }
-  connect(ctx, floofpoints[0][0], floofpoints[0][1], floofpoints[numpoints-1][0], floofpoints[numpoints-1][1]);
+  connect(ctx, floofpoints[0][0], floofpoints[0][1], floofpoints[numpoints-1][0], floofpoints[numpoints-1][1], textColor);
 
   return floofpoints;
 }
 
 
-function connect(ctx,x1,y1,x2,y2) {           //draw line between two points
+function connect(ctx,x1,y1,x2,y2, textColor) {           //draw line between two points
   ctx.beginPath();
   ctx.strokeStyle = textColor;
   ctx.moveTo(x1, y1);
