@@ -1,7 +1,9 @@
 var stuffDirec;
+var stuffEnd;
 
-function setPath(stuffPath) {
+function setPathAndLimit(stuffPath, stuffLimit) {
   stuffDirec = stuffPath;
+  stuffEnd = stuffLimit;
 }
 
 function openImg(imgNum) {
@@ -28,7 +30,7 @@ function change(n) {
   var imgPath = stuffDirec + "/" + imgNum + ".jpeg";
   document.getElementById("theImg").setAttribute("src", imgPath);
   document.getElementById("imgLink").setAttribute("href", imgPath);
-  if (imgNum !== 48) 
+  if (imgNum !== stuffEnd) 
     document.getElementById("next").style.display = "block";
   else
     document.getElementById("next").style.display = "none";
