@@ -1,5 +1,7 @@
+var stuffDirec;
+
 function setPath(stuffPath) {
-  var stuffPath = stuffPath;
+  stuffDirec = stuffPath;
 }
 
 function openImg(imgNum) {
@@ -10,7 +12,7 @@ function openImg(imgNum) {
     document.getElementById("next").style.display = "block";
   if (imgNum !== 1) 
     document.getElementById("prev").style.display = "block";
-  var imgPath = stuffPath + "/" + imgNum + ".jpeg";
+  var imgPath = stuffDirec + "/" + imgNum + ".jpeg";
   document.getElementById("theImg").setAttribute("src", imgPath);
   document.getElementById("imgLink").setAttribute("href", imgPath);
 };
@@ -23,7 +25,7 @@ function change(n) {
   imgNum = imgNum.split(".")[0];
   //add n (add or subtract 1)
   imgNum = parseInt(imgNum) + n;
-  var imgPath = stuffPath + "/" + imgNum + ".jpeg";
+  var imgPath = stuffDirec + "/" + imgNum + ".jpeg";
   document.getElementById("theImg").setAttribute("src", imgPath);
   document.getElementById("imgLink").setAttribute("href", imgPath);
   if (imgNum !== 48) 
