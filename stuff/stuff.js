@@ -19,7 +19,7 @@ function change(n) {
   imgNum = imgNum.split(".")[0];
   //add n (add or subtract 1)
   imgNum = parseInt(imgNum) + n;
-  var imgPath = "proof/" + imgNum + ".jpeg";
+  var imgPath = stuffPath + "/" + imgNum + ".jpeg";
   document.getElementById("theImg").setAttribute("src", imgPath);
   document.getElementById("imgLink").setAttribute("href", imgPath);
   if (imgNum !== 48) 
