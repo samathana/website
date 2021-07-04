@@ -1,4 +1,6 @@
 function init() {
+  //get text color
+  let textColor = window.getComputedStyle(document.querySelector('main')).color;
   let c = document.getElementById("canvas");
   let ctx = c.getContext("2d");
   c.setAttribute("tabindex", 0);
@@ -13,6 +15,7 @@ function init() {
 
   //click to reload text
   ctx.font = "10px Times New Roman";
+  ctx.fillStyle = textColor;
   ctx.fillText("click for new \"sheep\"", 10, canvas.height-10);
   
   //weirdness
@@ -56,28 +59,28 @@ function init() {
   let mouthheight = controlRandom(randomlimit)*mouthwidth/4; //cannot be more than 1/4 the width
 
   //outer floof
-  let floofinfo = drawfloof(0, height, width, floofpoints, floofnum, floofheight, floofprogress, c, ctx);
+  let floofinfo = drawfloof(0, height, width, floofpoints, floofnum, floofheight, floofprogress, c, ctx, textColor);
   //head
-  let headinfo = drawfloof(headaltitude, headheight, headwidth, headpoints, 20, 0, 0, c, ctx);
+  let headinfo = drawfloof(headaltitude, headheight, headwidth, headpoints, 20, 0, 0, c, ctx, textColor);
   //feet
-  drawfoot(frontfoot, footwidth, footlength, footpoints, floofinfo, c, ctx);
-  drawfoot(frontfoot*-1 - footwidth, footwidth, footlength, footpoints, floofinfo, c, ctx);
-  drawfoot(backfoot, footwidth, footlength, footpoints, floofinfo, c, ctx);
-  drawfoot(backfoot*-1 - footwidth, footwidth, footlength, footpoints, floofinfo, c, ctx);
+  drawfoot(frontfoot, footwidth, footlength, footpoints, floofinfo, c, ctx, textColor);
+  drawfoot(frontfoot*-1 - footwidth, footwidth, footlength, footpoints, floofinfo, c, ctx, textColor);
+  drawfoot(backfoot, footwidth, footlength, footpoints, floofinfo, c, ctx, textColor);
+  drawfoot(backfoot*-1 - footwidth, footwidth, footlength, footpoints, floofinfo, c, ctx, textColor);
   //ears
-  drawfoot(eardist+0.5, earwidth, earlength, earpoints, headinfo, c, ctx);
-  drawfoot(0.5-eardist-earwidth, earwidth, earlength, earpoints, headinfo, c, ctx);
+  drawfoot(eardist+0.5, earwidth, earlength, earpoints, headinfo, c, ctx, textColor);
+  drawfoot(0.5-eardist-earwidth, earwidth, earlength, earpoints, headinfo, c, ctx, textColor);
   //eyes
-  draweye(eyedist, eyeheight + headaltitude, eyesize, c, ctx);
-  draweye(-eyedist, eyeheight + headaltitude, eyesize, c, ctx);
+  draweye(eyedist, eyeheight + headaltitude, eyesize, c, ctx, textColor);
+  draweye(-eyedist, eyeheight + headaltitude, eyesize, c, ctx, textColor);
   //mouth
-  drawmouth(headaltitude - mouthlow, mouthwidth, mouthheight, c, ctx);
+  drawmouth(headaltitude - mouthlow, mouthwidth, mouthheight, c, ctx, textColor);
 
   //reload button
   c.onclick = init;
 }
 
-function drawmouth(y, width, height, c, ctx) {
+function drawmouth(y, width, height, c, ctx, textColor) {
   //find radius of circles
   let radius = (width**2/16/height + height)/2;
 
@@ -87,9 +90,11 @@ function drawmouth(y, width, height, c, ctx) {
   //draw the two things
 
   ctx.beginPath();
+  ctx.strokeStyle = textColor;
   ctx.arc(Math.abs(c.width/2 + width/4), Math.abs(c.height/2-y+height-radius), Math.abs(radius), Math.abs(Math.PI/2 - angle), Math.abs(Math.PI/2 + angle));
   ctx.stroke();
   ctx.beginPath();
+  ctx.strokeStyle = textColor;
   ctx.arc(Math.abs(c.width/2 - width/4), Math.abs(c.height/2-y+height-radius), Math.abs(radius), Math.abs(Math.PI/2 - angle), Math.abs(Math.PI/2 + angle));
   ctx.stroke();
 
@@ -99,16 +104,17 @@ function drawmouth(y, width, height, c, ctx) {
 
 
 //basically just circle drawing but with centered coords
-function draweye(x, y, radius, c, ctx) {
+function draweye(x, y, radius, c, ctx, textColor) {
   ctx.beginPath();
+  ctx.strokeStyle = textColor;
   ctx.arc(Math.abs(c.width/2 + x), Math.abs(c.height/2 - y), Math.abs(radius), 0, Math.abs(2 * Math.PI));
-  ctx.fillStyle = "black";
+  ctx.fillStyle = textColor;
   ctx.fill();
 }
 
 
 
-function drawfoot(pos, width, length, points, floof, c, ctx) {
+function drawfoot(pos, width, length, points, floof, c, ctx, textColor) {
   //find how many floofs there are in the floof
   let numfloofs = Math.ceil(floof[floof.length-1][2]);
   
@@ -157,14 +163,14 @@ function drawfoot(pos, width, length, points, floof, c, ctx) {
 
   //draw the foot
   for (let i=0; i<points-1; i++) {
-    connect(ctx, footpoints[i][0], footpoints[i][1], footpoints[i+1][0], footpoints[i+1][1]);
+    connect(ctx, footpoints[i][0], footpoints[i][1], footpoints[i+1][0], footpoints[i+1][1], textColor);
   }
   
 }
 
 
 
-function drawfloof(alt, height, width, numpoints, floofnum, floofheight, floofprogress, c, ctx) {
+function drawfloof(alt, height, width, numpoints, floofnum, floofheight, floofprogress, c, ctx, textColor) {
   //sheep calculations
   let floofpoints = [];   //points in the sheep floof
   for (let i=0; i<numpoints; i++) {
@@ -210,16 +216,17 @@ function drawfloof(alt, height, width, numpoints, floofnum, floofheight, floofpr
 
   //draw sheep floof
   for (let i=0; i<numpoints-1; i++) {
-    connect(ctx, floofpoints[i][0], floofpoints[i][1], floofpoints[i+1][0], floofpoints[i+1][1]);
+    connect(ctx, floofpoints[i][0], floofpoints[i][1], floofpoints[i+1][0], floofpoints[i+1][1], textColor);
   }
-  connect(ctx, floofpoints[0][0], floofpoints[0][1], floofpoints[numpoints-1][0], floofpoints[numpoints-1][1]);
+  connect(ctx, floofpoints[0][0], floofpoints[0][1], floofpoints[numpoints-1][0], floofpoints[numpoints-1][1], textColor);
 
   return floofpoints;
 }
 
 
-function connect(ctx,x1,y1,x2,y2) {           //draw line between two points
+function connect(ctx,x1,y1,x2,y2, textColor) {           //draw line between two points
   ctx.beginPath();
+  ctx.strokeStyle = textColor;
   ctx.moveTo(x1, y1);
   ctx.lineTo(x2, y2);
   ctx.stroke(); 
