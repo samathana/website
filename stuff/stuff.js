@@ -6,7 +6,7 @@ function openImg(imgNum) {
     document.getElementById("next").style.display = "block";
   if (imgNum !== 1) 
     document.getElementById("prev").style.display = "block";
-  var imgPath = "proof/" + imgNum + ".jpeg";
+  var imgPath = stuffPath + "/" + imgNum + ".jpeg";
   document.getElementById("theImg").setAttribute("src", imgPath);
   document.getElementById("imgLink").setAttribute("href", imgPath);
 };
