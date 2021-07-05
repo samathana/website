@@ -17,6 +17,8 @@ function openImg(imgNum) {
   var imgPath = stuffDirec + "/" + imgNum + ".jpeg";
   document.getElementById("theImg").setAttribute("src", imgPath);
   document.getElementById("imgLink").setAttribute("href", imgPath);
+  //set caption
+  document.getElementById("caption").innerHTML = this.innerHTML;
 };
 
 // Next/previous controls
