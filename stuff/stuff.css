@@ -24,6 +24,13 @@
   background-color: white;
 }
 
+#caption {
+  z-index: 2;
+  bottom: 10px;
+  right: 10px;
+  position: fixed;
+}
+
 /* Next & previous buttons */
 #prev, #next {
   cursor: pointer;
