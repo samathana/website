@@ -1,5 +1,6 @@
 var stuffDirec;
 var stuffEnd;
+var caption;
 
 function setPathAndLimit(stuffPath, stuffLimit) {
   stuffDirec = stuffPath;
@@ -18,7 +19,8 @@ function openImg(imgNum) {
   document.getElementById("theImg").setAttribute("src", imgPath);
   document.getElementById("imgLink").setAttribute("href", imgPath);
   //set caption
-  document.getElementById("caption").innerHTML = this.innerHTML;
+  caption = document.querySelectorAll("button")[imgNum].innerHTML;
+  document.getElementById("caption").innerHTML = caption;
 };
 
 // Next/previous controls
