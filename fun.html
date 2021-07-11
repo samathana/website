@@ -100,8 +100,6 @@
 	<script>
 	  //set goBack color
 	    let textColor = window.getComputedStyle(document.querySelector('main')).color;
-	    document.querySelector('main button').style.borderColor = textColor;
-	    document.querySelector('main button span').style.borderColor = textColor;
 						     
 	  //copy current main and its style, so we can go back later
 	    var main = document.getElementById("main");
@@ -118,7 +116,9 @@
 	  
 	    //change main content
 	    var main = document.getElementById("main");
-	  main.innerHTML = '<button type="button" onclick="goBack()"><span></span></button><canvas id="canvas"></canvas>';
+	    main.innerHTML = '<button type="button" onclick="goBack()"><span></span></button><canvas id="canvas"></canvas>';
+	    document.querySelector('main button').style.borderColor = textColor;
+	    document.querySelector('main button span').style.borderColor = textColor;
 	  };
 	
 	function goBack() {
