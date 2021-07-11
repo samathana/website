@@ -19,7 +19,7 @@ function openImg(imgNum) {
   document.getElementById("theImg").setAttribute("src", imgPath);
   document.getElementById("imgLink").setAttribute("href", imgPath);
   //set caption
-  caption = document.querySelectorAll("button")[imgNum].innerHTML;
+  caption = document.querySelectorAll("button")[imgNum - 1].innerHTML;
   document.getElementById("caption").innerHTML = caption;
 };
 
@@ -42,6 +42,8 @@ function change(n) {
     document.getElementById("prev").style.display = "block";
   else
     document.getElementById("prev").style.display = "none";
+  caption = document.querySelectorAll("button")[imgNum - 1].innerHTML;
+  document.getElementById("caption").innerHTML = caption;
 };
 
 // Close modal
@@ -51,6 +53,7 @@ function closeImg() {
   document.getElementById("prev").style.display = "none";
   document.getElementById("next").style.display = "none";
   document.body.ontouchmove = (e) => true;
+  document.getElementById("caption").style.display = "none";
 };
 
 //go to image page when image is clicked
