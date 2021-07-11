@@ -21,6 +21,7 @@ function openImg(imgNum) {
   //set caption
   caption = document.querySelectorAll("button")[imgNum - 1].innerHTML;
   document.getElementById("caption").innerHTML = caption;
+  document.getElementById("caption").style.display = "block";
 };
 
 // Next/previous controls
