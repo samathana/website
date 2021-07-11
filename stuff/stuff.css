@@ -76,4 +76,8 @@
   #next {
     text-align: right;
   }
+  #caption {
+    bottom: 50px;
+    right: 50px;
+  }
 }
