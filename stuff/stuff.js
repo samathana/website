@@ -11,7 +11,7 @@ function openImg(imgNum) {
   document.body.ontouchmove = (e) => e.preventDefault();
   document.getElementById("openImg").style.display = "block";
   document.getElementById("theImg").style.display = "block";
-  if (imgNum !== 48) 
+  if (imgNum !== stuffEnd) 
     document.getElementById("next").style.display = "block";
   if (imgNum !== 1) 
     document.getElementById("prev").style.display = "block";
