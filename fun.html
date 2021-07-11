@@ -97,10 +97,7 @@
 	<p>theme: <span id="frogBtn">frog</span> | <span id="sheepBtn">sheep</span> | <span id="jellyfishBtn">jellyfish</span> | <span id="snailBtn">snail</span></p>
 	<h5>Website by me<span id="attrib"></span> :3</h5>
     </footer>
-	<script>
-	  //set goBack color
-	    let textColor = window.getComputedStyle(document.querySelector('main')).color;
-						     
+	<script>				     
 	  //copy current main and its style, so we can go back later
 	    var main = document.getElementById("main");
             var beforeMain = main.innerHTML;
@@ -117,6 +114,8 @@
 	    //change main content
 	    var main = document.getElementById("main");
 	    main.innerHTML = '<button type="button" onclick="goBack()"><span></span></button><canvas id="canvas"></canvas>';
+	    //set goBack color
+	    let textColor = window.getComputedStyle(document.querySelector('main')).color;
 	    document.querySelector('main button').style.borderColor = textColor;
 	    document.querySelector('main button span').style.borderColor = textColor;
 	  };
