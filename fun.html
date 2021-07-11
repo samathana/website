@@ -30,7 +30,7 @@
       }
 
       main button span {
-        border: solid black;
+        border: solid;
         border-width: 0 3px 3px 0;
         display: inline-block;
         padding: 3px;
@@ -98,6 +98,11 @@
 	<h5>Website by me<span id="attrib"></span> :3</h5>
     </footer>
 	<script>
+	  //set goBack color
+	    let textColor = window.getComputedStyle(document.querySelector('main')).color;
+	    document.querySelector('main button').style.border-color = textColor;
+	    document.querySelector('main button span').style.border-color = textColor;
+						     
 	  //copy current main and its style, so we can go back later
 	    var main = document.getElementById("main");
             var beforeMain = main.innerHTML;
