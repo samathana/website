@@ -39,7 +39,7 @@ a:hover, .open:hover, nav ul li a:hover {
 }
 
 #Img {
-  background-image: url(https://images.unsplash.com/photo-1472718888560-1a1292f1cccb);
+  background-image: url("sheep.jpg");
   background-position: center;
   background-size: cover;
 }
