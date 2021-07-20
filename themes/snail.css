@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-image: "images/wall.jpg";
+  background-image: url("images/wall.jpg");
   background-position: center;
   background-size: cover; 
   background-attachment: fixed; 
@@ -42,7 +42,7 @@ a:hover, .open:hover, nav ul li a:hover {
 }
 
 #Img {
-  background-image: "images/snail.jpeg";
+  background-image: url("images/snail.jpeg");
   background-position: 80% 70%;
   background-size: cover;
 }
