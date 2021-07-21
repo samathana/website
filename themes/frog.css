@@ -37,7 +37,7 @@ nav ul li a:hover, a:hover, .open:hover {
 }
 
 #Img {
-  background-image: url(https://cdn.pixabay.com/photo/2014/11/21/17/27/frog-540812_960_720.jpg);
+  background-image: url(images/frog.jpg);
   background-position: left center;
   background-size: cover;
 }
