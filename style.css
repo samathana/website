@@ -27,6 +27,7 @@ nav {
   height: 55vh;
   width: 600px;
   min-height: 300px;
+  min-width: 150px;
   overflow: auto;
   overflow-x: hidden;
   padding: 10px 0;
@@ -260,6 +261,7 @@ footer h5 {
 
 /*phone styling*/
 @media only screen and (orientation: portrait) {
+@media (pointer:none), (pointer:coarse) {
   .flexDesign {
     display: block;
     overflow: hidden;
@@ -303,6 +305,10 @@ footer h5 {
     width: auto;
   }
 
+  h3 {
+    padding-top: 40px;
+  }
+  
   header, #imgWrap, #Img {
     height: 150px;
     min-height: 150px;
@@ -337,6 +343,6 @@ footer h5 {
     width: 40%;
     margin-top: 20px;
   }
-
+}
 }
 
