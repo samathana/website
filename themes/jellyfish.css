@@ -55,6 +55,7 @@ a:hover, .open:hover, nav ul li a:hover {
 
 /*mobile formatting*/
 @media only screen and (orientation: portrait) {
+@media (pointer:none), (pointer:coarse) {
   #Img {
     background-size: 100% auto;
   }
@@ -70,7 +71,7 @@ a:hover, .open:hover, nav ul li a:hover {
   nav ul {
     margin-top: 30px;
   }
-}
+}}
 
 /*cursors*/
 @-webkit-keyframes cursor {
