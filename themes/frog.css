@@ -38,16 +38,17 @@ nav ul li a:hover, a:hover, .open:hover {
 
 #Img {
   background-image: url(images/frog.jpg);
-  background-position: left center;
+  background-position: 20% 50%;
   background-size: cover;
 }
 
 /*mobile formatting*/
 @media only screen and (orientation: portrait) {
+@media (pointer:none), (pointer:coarse) {
   nav {
     background: linear-gradient(to right, #0ecca2, #0dbab1);
   }
-}
+ }}
 
 /*cursors*/
 @-webkit-keyframes cursor {
