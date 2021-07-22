@@ -18,7 +18,7 @@ function init() {
   //click to reload text
   ctx.font = "10px Times New Roman";
   if (isMobile)
-    ctx.font = "50px Times New Roman";
+    ctx.font = "25px Times New Roman";
   ctx.fillStyle = textColor;
   ctx.fillText("click for new sheep", 10, canvas.height-10);
   
