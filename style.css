@@ -273,7 +273,8 @@ footer h5 {
   }
   
   .open {
-    font-size: 25pt;
+    -webkit-text-size-adjust: 100%;
+    moz-text-size-adjust:100%;
   }
   nav, main, #imgWrap, #Img {
     margin: 40px 0;
