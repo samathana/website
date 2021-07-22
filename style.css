@@ -271,7 +271,10 @@ footer h5 {
     font-size: 25pt;
     padding: 40px;
   }
-
+  
+  .open {
+    font-size: 25pt;
+  }
   nav, main, #imgWrap, #Img {
     margin: 40px 0;
   }
