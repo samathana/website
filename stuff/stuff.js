@@ -8,13 +8,6 @@ function setPathAndLimit(stuffPath, stuffLimit) {
 }
 
 function openImg(imgNum) {
-  document.body.ontouchmove = (e) => e.preventDefault();
-  document.getElementById("openImg").style.display = "block";
-  document.getElementById("theImg").style.display = "block";
-  if (imgNum !== stuffEnd) 
-    document.getElementById("next").style.display = "block";
-  if (imgNum !== 1) 
-    document.getElementById("prev").style.display = "block";
   var imgPath = stuffDirec + "/" + imgNum + ".jpeg";
   document.getElementById("theImg").setAttribute("src", imgPath);
   document.getElementById("imgLink").setAttribute("href", imgPath);
@@ -22,6 +15,13 @@ function openImg(imgNum) {
   caption = document.querySelectorAll("button")[imgNum - 1].innerHTML;
   document.getElementById("caption").innerHTML = caption;
   document.getElementById("caption").style.display = "block";
+  document.body.ontouchmove = (e) => e.preventDefault();
+  document.getElementById("openImg").style.display = "block";
+  document.getElementById("theImg").style.display = "block";
+  if (imgNum !== stuffEnd) 
+    document.getElementById("next").style.display = "block";
+  if (imgNum !== 1) 
+    document.getElementById("prev").style.display = "block";
 };
 
 // Next/previous controls
