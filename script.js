@@ -1,5 +1,8 @@
 //Are we on mobile?
 var isMobile = /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+     isMobile = false;
+}
 
 //where are we? add as many ../s are needed to get to the stylesheet
 var url = window.location.href;
