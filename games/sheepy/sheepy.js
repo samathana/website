@@ -1,6 +1,4 @@
 function init() {
-  //are we on mobile?
-  let isMobile = /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   //get text color
   let textColor = window.getComputedStyle(document.querySelector('main')).color;
   let c = document.getElementById("canvas");
@@ -16,9 +14,7 @@ function init() {
   }
 
   //click to reload text
-  ctx.font = "10px Times New Roman";
-  if (isMobile)
-    ctx.font = "35px Times New Roman";
+  ctx.font = "30px Times New Roman";
   ctx.fillStyle = textColor;
   ctx.fillText("click for new sheep", 10, canvas.height-10);
   
