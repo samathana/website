@@ -239,16 +239,41 @@ footer h5 {
   50% {cursor: url('../cursors/duck/link2.png'), auto;}
 }
 
-/*stuff and funStuff page*/
-.stuffLink {
-  margin: auto 10px;
+
+.col {
+  flex: 1;
+  margin: 0 10px;
   text-align: center;
-  width: 15vw;
-  height: fit-content;
+  transition: transform 0.3s ease;
 }
 
-.stuffLink img {
-  width: 12vw;
+.col:hover {
+  transform: scale(1.05); /* Enlarge on hover */
+}
+
+.col > div {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.col img {
+  width: 100%; /* Make images fill their container */
+  height: auto;
+  max-width: 200px; /* Limit maximum image size */
+  display: block;
+  margin: 0 auto 10px; /* Center image and add space below */
+}
+
+.col h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.col p {
+  font-size: 0.9em;
+  line-height: 1.4;
 }
 
 /*phone styling*/
@@ -329,42 +354,6 @@ footer h5 {
     width: 100%;
     text-align: center;
   }
-  
-  .col {
-    flex: 1;
-    margin: 0 10px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.col:hover {
-    transform: scale(1.05); /* Enlarge on hover */
-}
-
-.col > div {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.col img {
-    width: 100%; /* Make images fill their container */
-    height: auto;
-    max-width: 200px; /* Limit maximum image size */
-    display: block;
-    margin: 0 auto 10px; /* Center image and add space below */
-}
-
-.col h3 {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.col p {
-    font-size: 0.9em;
-    line-height: 1.4;
-}
 }
 }
 
