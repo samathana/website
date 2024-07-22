@@ -70,6 +70,7 @@ main {
   width: 150vw;
   min-height: 300px;
   min-width: 300px;
+  display:flex;
 }
 
 .link {
@@ -245,6 +246,7 @@ footer h5 {
   margin: 0 10px;
   text-align: center;
   transition: transform 0.3s ease;
+  max-width: 500px;
 }
 
 .col:hover {
@@ -252,16 +254,14 @@ footer h5 {
 }
 
 .col > div {
-  background-color: #f0f0f0;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .col img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%; /* Make images fill their container */
   height: auto;
-  max-width: 200px; /* Limit maximum image size */
+  max-width: 300px; /* Limit maximum image size */
   display: block;
   margin: 0 auto 10px; /* Center image and add space below */
 }
