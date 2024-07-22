@@ -217,9 +217,9 @@ footer h5 {
 }
 
 #snailBtn {
-  cursor: url('../cursors/snail/snailLink.png'), auto;
-  -webkit-animation: snaillink 400ms infinite;
-  animation: snaillink 400ms infinite;
+  cursor: url('../cursors/duck/link1.png'), auto;
+  -webkit-animation: ducklink 400ms infinite;
+  animation: ducklink 400ms infinite;
 }
 
 #snailBtn:hover {
@@ -229,22 +229,14 @@ footer h5 {
   transition-duration: 0.2s;
 }
 
-@-webkit-keyframes snaillink {
-  0% {cursor: url('../cursors/snail/snailLink.png'), auto;}
-  20% {cursor: url('../cursors/snail/snailLink1.png'), auto;}
-  40% {cursor: url('../cursors/snail/snailLink2.png'), auto;}
-  60% {cursor: url('../cursors/snail/snailLink3.png'), auto;}
-  80% {cursor: url('../cursors/snail/snailLink4.png'), auto;}
-  100% {cursor: url('../cursors/snail/snailLink5.png'), auto;}
+@-webkit-keyframes ducklink {
+  0% {cursor: url('../cursors/duck/link1.png'), auto;}
+  50% {cursor: url('../cursors/duck/link2.png'), auto;}
 } 
 
-@keyframes snaillink {
-  0% {cursor: url('../cursors/snail/snailLink.png'), auto;}
-  20% {cursor: url('../cursors/snail/snailLink1.png'), auto;}
-  40% {cursor: url('../cursors/snail/snailLink2.png'), auto;}
-  60% {cursor: url('../cursors/snail/snailLink3.png'), auto;}
-  80% {cursor: url('../cursors/snail/snailLink4.png'), auto;}
-  100% {cursor: url('../cursors/snail/snailLink5.png'), auto;}
+@keyframes ducklink {
+  0% {cursor: url('../cursors/duck/link1.png'), auto;}
+  50% {cursor: url('../cursors/duck/link2.png'), auto;}
 }
 
 /*stuff and funStuff page*/

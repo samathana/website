@@ -1,0 +1,81 @@
+html {
+  background-color: #70767f;
+}
+
+body {
+  background-image: url("images/wall.jpg");
+  background-position: center;
+  background-size: cover; 
+  background-attachment: fixed; 
+}
+
+header, nav, main, #Img, footer {
+  background-image: linear-gradient(to right, rgba(122, 91, 67, .6), rgba(207, 169, 125, .6));
+  color: #4a3820;
+  box-shadow: inset 0 0 5px white;
+}
+
+a:link, .open {
+    color: #5d6600;
+}
+
+a:visited {
+    color: #5e6f47;
+}
+
+.link {
+  border: 1px solid #5d6600;
+  color: #5d6600;
+}
+
+.link:visited, nav ul li a:visited {
+  color: #5d6600;
+}
+
+.link:hover {
+  background-color: #5d6600;
+  color: #a68a71;
+}
+
+a:hover, .open:hover, nav ul li a:hover {
+    color: #570029;
+}
+
+#Img {
+  background-image: url("images/snail.jpeg");
+  background-position: 80% 70%;
+  background-size: cover;
+}
+
+/*cursors*/
+@-webkit-keyframes cursor {
+  0% {cursor: url('../cursors/duck/duck1.png'), auto;}
+  100% {cursor: url('../cursors/duck/duck2.png'), auto;}
+} 
+
+@keyframes cursor {
+  0% {cursor: url('../cursors/duck/duck1.png'), auto;}
+  100% {cursor: url('../cursors/duck/duck2.png'), auto;}
+}
+
+html {
+  cursor: url('../cursors/duck/duck1.png'), auto;
+  -webkit-animation: cursor 400ms infinite;
+  animation: cursor 400ms infinite;
+}
+
+@-webkit-keyframes link {
+  0% {cursor: url('../cursors/duck/link1.png'), auto;}
+  50% {cursor: url('../cursors/duck/link2.png'), auto;}
+} 
+
+@keyframes link {
+  0% {cursor: url('../cursors/duck/link1.png'), auto;}
+  50% {cursor: url('../cursors/duck/link2.png'), auto;}
+}
+
+a, .open {
+  cursor: url('../cursors/duck/link1.png'), auto;
+  -webkit-animation: link 400ms infinite;
+  animation: link 400ms infinite;
+}

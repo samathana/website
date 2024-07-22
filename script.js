@@ -30,7 +30,7 @@ window.onload = function () {
    setTheme("jellyfish");
   };
   snailBtn.onclick = function() {
-   setTheme("snail");
+   setTheme("duck");
   };
   //end onload function
 };
@@ -41,16 +41,4 @@ function setTheme(theme) {
   //set stylesheet to theme
   var link = document.getElementById("themeSheet");
   link.setAttribute("href", path + "themes/" + theme + ".css");
-  
-  //set attribution in footer
-  switch (theme) {
-    case "frog":
-      document.getElementById("attrib").innerHTML = ", cursor by <a href='http://www.rw-designer.com/user/90488'>dingdongdie</a>"
-      break;
-    case "snail":
-    case "jellyfish":
-    case "sheep":
-      document.getElementById("attrib").innerHTML = ""
-      break;
-  };
 };
