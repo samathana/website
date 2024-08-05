@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <title>Emscripten-Generated Code</title>
+    <link href="style.css" rel="stylesheet" />
+	<link href="" rel="stylesheet" id="themeSheet"'/>
     <style>
         .emscripten {
             padding-right: 0;
@@ -34,7 +36,7 @@
             border: 0 none;
             background-color: #000;
             width: 921px;
-            height: 500px;
+            height: 600px;
         }
 
         .spinner {
@@ -110,11 +112,10 @@
         <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex="-1"></canvas>
     </div>
     <div class="emscripten">
-        <input type="checkbox" id="resize"> Resize canvas
-        <input type="checkbox" id="pointerLock" checked> Lock/hide mouse pointer
-        <input type="button" onclick='Module.requestFullscreen(document.getElementById("pointerLock").checked, document.getElementById("resize").checked)' value="Fullscreen">
+       
     </div>
-    <textarea class="emscripten" id="output" rows="8"></textarea>
+    <h3>Portal Clone by Claire T.</h3>
+    <p>Created at USC as a four-week final project. I do not own any of the assets.</p>
     <script>
         var statusElement = document.getElementById("status"),
             progressElement = document.getElementById("progress"),
@@ -164,6 +165,7 @@
         }
     </script>
     <script async src="Lab12.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
