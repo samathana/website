@@ -13,7 +13,7 @@
 [[headers]]
   for = ";/Cat/Build/*.js"
   [headers.values]
-    Content-Encoding = "js"
+    Content-Encoding = ""
     Content-Type = "application/javascript"
 
 [[headers]]
