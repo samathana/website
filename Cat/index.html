@@ -6,8 +6,41 @@
     <title>Unity WebGL Player | Multipli-cat-ion</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <link href="../style.css" rel="stylesheet" />
+	<link href="" rel="stylesheet" id="themeSheet"'/>
+    <style>
+        #unity-container {
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-top: 20px;
+        }
+
+        nav, main {
+            height: 77vh;
+        }
+
+        #info {
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.29));
+            display: block;
+            padding: 20px;
+            height: 460px;
+            color: black;
+            margin: 20px 0 0 20px;
+        }
+    </style>
   </head>
   <body>
+    <div class="flexDesign">
+      <nav>
+          <ul>
+            <li><a href="../home.html">Portfolio</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../resume.html">Resume/Contact</a></li>
+          </ul>
+        </nav>
+      <main>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=550 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -23,6 +56,17 @@
         <div id="unity-build-title">Multipli-cat-ion</div>
       </div>
     </div>
+    <div id="info">
+      <h3>Multipli-CAT-ion by Claire T. and Alex Zhang</h3>
+      <p>Created as a personal project to practice Unity. I worked with the game engine and wrote the code, and Alex drew/generated the assets.</p>
+      <p>Game instructions: Click on the "?" icon for instructions. If the build does not work on your browser, play on <a href="https://froggn.itch.io/multipli-cat-ion">itch.io.</a></p>
+  </div>
+      </main>
+  </div>
+      <footer>
+          <p>theme: <span id="frogBtn">frog</span> | <span id="sheepBtn">sheep</span> | <span id="jellyfishBtn">jellyfish</span> | <span id="snailBtn">duck</span></p>
+          <h5>Website by me<span id="attrib"></span> :3</h5>
+          </footer>
     <script>
 
       var container = document.querySelector("#unity-container");
