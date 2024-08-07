@@ -48,27 +48,6 @@
             margin: 20px 0 0 20px;
         }
 
-        .spinner {
-            position: absolute; 
-            top: 50%;
-            left: 50%;
-            transform: translate(-100%, -50%); 
-            margin: 0;
-            z-index: 10; 
-            height: 50px;
-            width: 50px;
-            -webkit-animation: rotation .8s linear infinite;
-            -moz-animation: rotation .8s linear infinite;
-            -o-animation: rotation .8s linear infinite;
-            animation: rotation .8s linear infinite;
-            border-left: 10px solid #0096f0;
-            border-right: 10px solid #0096f0;
-            border-bottom: 10px solid #0096f0;
-            border-top: 10px solid #6400c8;
-            border-radius: 100%;
-            background-color: #c864fa;
-        }
-        
         #status {
             position: absolute; 
             top: 50%;
@@ -130,12 +109,6 @@
       </nav>
     <main>
     <div id="wrap">
-    <figure id="spinner" style="overflow:visible">
-        <div class="spinner"></div>
-        <center style="margin-top:.5em">
-            <strong>emscripten</strong>
-        </center>
-    </figure>
     <div class="emscripten" id="status">Downloading...</div>
     <div class="emscripten">
         <progress hidden id="progress" max="100" value="0"></progress>
@@ -158,7 +131,6 @@
     <script>
         var statusElement = document.getElementById("status"),
             progressElement = document.getElementById("progress"),
-            spinnerElement = document.getElementById("spinner"),
             Module = {
                 preRun: [],
                 postRun: [],
@@ -185,7 +157,7 @@
                         }), e !== Module.setStatus.last.text) {
                         var t = e.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/),
                             n = Date.now();
-                        t && n - Module.setStatus.last.time < 30 || (Module.setStatus.last.time = n, Module.setStatus.last.text = e, t ? (e = t[1], progressElement.value = 100 * parseInt(t[2]), progressElement.max = 100 * parseInt(t[4]), progressElement.hidden = !1, spinnerElement.hidden = !1) : (progressElement.value = null, progressElement.max = null, progressElement.hidden = !0, e || (spinnerElement.hidden = !0)), statusElement.innerHTML = e);
+                        t && n - Module.setStatus.last.time < 30 || (Module.setStatus.last.time = n, Module.setStatus.last.text = e, t ? (e = t[1], progressElement.value = 100 * parseInt(t[2]), progressElement.max = 100 * parseInt(t[4]), progressElement.hidden = !1) : (progressElement.value = null, progressElement.max = null, progressElement.hidden = !0, e), statusElement.innerHTML = e);
                     }
                 },
                 totalDependencies: 0,
@@ -197,7 +169,6 @@
         Module.setStatus("Downloading...");
         window.onerror = function () {
             Module.setStatus("Exception thrown, see JavaScript console");
-            spinnerElement.style.display = "none";
             Module.setStatus = function (e) {
                 e && console.error("[post-exception status] " + e);
             };
