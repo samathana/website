@@ -245,11 +245,14 @@ footer h5 {
   flex: 1;
   margin: 0 10px;
   text-align: center;
-  transition: transform 0.3s ease;
   max-width: 500px;
 }
 
-.col:hover {
+.item {
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
   transform: scale(1.05); /* Enlarge on hover */
 }
 
