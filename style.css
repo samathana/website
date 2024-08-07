@@ -253,6 +253,7 @@ footer h5 {
 }
 
 .item:hover {
+  display: block;
   transform: scale(1.05); /* Enlarge on hover */
 }
 
