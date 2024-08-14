@@ -23,8 +23,8 @@ header {
 
 nav {
   border: 2px;
-  margin: 15px;
-  height: 60vh;
+  margin: 15px 0;
+  height: 64vh;
   width: 300px;
   min-height: 300px;
   min-width: 150px;
@@ -64,9 +64,9 @@ a, .open {
 main {
   border: 2px;
   padding: 10px 30px;
-  margin: 15px;
+  margin: 15px 0;
   overflow: auto;
-  height: 62vh;
+  height: 64vh;
   width: 150vw;
   min-height: 300px;
   min-width: 300px;
