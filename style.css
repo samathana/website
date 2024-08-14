@@ -64,7 +64,7 @@ a, .open {
 main {
   border: 2px;
   padding: 10px 30px;
-  margin: 0;
+  margin-right: 15px;
   overflow: auto;
   height: 66vh;
   width: 150vw;
