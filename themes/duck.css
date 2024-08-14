@@ -10,7 +10,7 @@ body {
 }
 
 header, nav, main, #Img, footer {
-  background-image: linear-gradient(to right, rgba(122, 91, 67, .6), rgba(207, 169, 125, .6));
+  background-image: linear-gradient(to right, rgba(122, 91, 67, .4), rgba(207, 169, 125, .4));
   color: #4a3820;
 }
 
