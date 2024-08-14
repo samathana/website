@@ -24,7 +24,7 @@ header {
 nav {
   border: 2px;
   margin: 0 15px;
-  height: 65vh;
+  height: 66vh;
   width: 300px;
   min-height: 300px;
   min-width: 150px;
@@ -64,9 +64,9 @@ a, .open {
 main {
   border: 2px;
   padding: 10px 30px;
-  margin: 0 15px;
+  margin: 0;
   overflow: auto;
-  height: 65vh;
+  height: 66vh;
   width: 150vw;
   min-height: 300px;
   min-width: 300px;
