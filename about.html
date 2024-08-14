@@ -14,11 +14,10 @@
 	}
     main {
         display: block;
-        box-sizing: border-box;
     }
 
     #images, #captions {
-        width: 100%;
+        width: calc(100% - 20px); 
         margin: 10px; 
         box-sizing: border-box;
     }
@@ -39,6 +38,9 @@
 
     #captions {
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #captions p {
