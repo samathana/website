@@ -218,6 +218,11 @@ img:hover {
   transform: scale(1.05); /* Enlarge on hover */
 }
 
+.col {
+  padding: 0px;
+  margin: 0;
+}
+
 .col > div {
   height: 40vh;
 }
@@ -226,6 +231,7 @@ img:hover {
   height: 40vh;
   display: flex;
   align-items: center;
+  justify-content: right;
 }
 
 .col img {
@@ -244,6 +250,18 @@ img:hover {
 .col p {
   font-size: 0.9em;
   line-height: 1.4;
+}
+
+#col0 {
+  text-align: right;
+  align-content: right;
+  padding-right: 20px;
+}
+
+#col3 {
+  text-align: left;
+  align-content: left;
+  padding-left: 20px;
 }
 
 /*phone styling*/
