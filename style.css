@@ -24,7 +24,7 @@ header {
 nav {
   border: 2px;
   margin: 0 15px;
-  height: 66vh;
+  height: 80vh;
   width: 300px;
   min-height: 300px;
   min-width: 150px;
@@ -66,7 +66,7 @@ main {
   padding: 10px 30px;
   margin-right: 15px;
   overflow: auto;
-  height: 66vh;
+  height: 80vh;
   width: 150vw;
   min-height: 300px;
   min-width: 300px;
@@ -245,29 +245,32 @@ footer h5 {
   flex: 1;
   margin: 0 10px;
   text-align: center;
-  max-width: 500px;
+  max-width: 1000px;
 }
 
-.item {
+img {
   display: block;
   transition: transform 0.3s ease;
 }
 
-.item:hover {
+img:hover {
   transform: scale(1.05); /* Enlarge on hover */
 }
 
 .col > div {
-  padding: 20px;
+  height: 40vh;
+}
+
+.text {
+  display: block;
+  /*height: 40vh;*/
 }
 
 .col img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Make images fill their container */
-  height: auto;
-  max-width: 300px; /* Limit maximum image size */
+  height: 35vh;
   display: block;
-  margin: 0 auto 10px; /* Center image and add space below */
+  position: fixed;
 }
 
 .col h3 {
