@@ -1,7 +1,3 @@
-.flexDesign {
-  display: flex;
-}
-
 body {
   position: absolute;
   height: auto;
@@ -19,30 +15,22 @@ header {
   margin: 15px 15px 0 15px;
   line-height: 10vh;
   height: 10vh;
+  display: flex;
 }
 
 header div {
-  border: 2px;
-  margin: 0 15px;
-  width: 300px;
-  min-width: 150px;
-  overflow: auto;
-  overflow-x: hidden;
-  padding: 10px 0;
+  
 }
 
  ul {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
+   margin: 0;
+   padding: 0;
 }
 
  ul li {
   list-style: none;
-  text-align: center;
-  margin: 10px auto;
-  list-style-position: inside;
-  padding: 10px 0px;
+   height: 10px;
+   padding: 0;
 }
 
 a, .open {
