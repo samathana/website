@@ -16,7 +16,7 @@ body {
 header {
   border: 2px;
   text-align: center;
-  margin: 15px;
+  margin: 15px 15px 0 15px;
   line-height: 10vh;
   height: 10vh;
 }
@@ -66,7 +66,7 @@ main {
   padding: 10px 30px;
   margin-right: 15px;
   overflow: auto;
-  height: 80vh;
+  height: 82vh;
   width: 150vw;
   min-height: 300px;
   min-width: 300px;
@@ -78,28 +78,6 @@ main {
   margin: 2px;
   padding: 5px;
   line-height: 250%;
-}
-
-main section img {
-  width: 60%;
-  margin-top: 20px;
-  margin-bottom: 0px;
-}
-
-#imgWrap {
-  overflow: hidden;
-  width: 100%;
-}
-
-#Img {
-  border: 2px;
-  padding: 10px;
-  margin: 15px;
-  background-repeat: no-repeat;
-  background-position: left center; 
-  background-size: cover;
-  height: 60vh;
-  min-height: 300px;
 }
 
 footer {
@@ -263,14 +241,15 @@ img:hover {
 
 .text {
   display: block;
-  /*height: 40vh;*/
+  height: 40vh;
 }
 
 .col img {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  height: 35vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 37vh;
+  width: 60vh;
   display: block;
-  position: fixed;
+  margin: 10px;
 }
 
 .col h3 {
