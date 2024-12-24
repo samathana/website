@@ -223,8 +223,9 @@ img:hover {
 }
 
 .text {
-  display: block;
   height: 40vh;
+  display: flex;
+  align-items: center;
 }
 
 .col img {
