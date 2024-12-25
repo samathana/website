@@ -220,18 +220,13 @@ img:hover {
 
 .col {
   padding: 0px;
-  margin: 0;
-}
-
-.col > div {
-  height: 40vh;
+  margin: 0px;
 }
 
 .text {
   height: 40vh;
   display: flex;
   align-items: center;
-  justify-content: right;
 }
 
 .col img {
@@ -252,16 +247,18 @@ img:hover {
   line-height: 1.4;
 }
 
-#col0 {
+#col0 a {
   text-align: right;
   align-content: right;
   padding-right: 20px;
+  justify-content: right;
 }
 
 #col3 {
   text-align: left;
   align-content: left;
   padding-left: 20px;
+  justify-content: left;
 }
 
 /*phone styling*/
