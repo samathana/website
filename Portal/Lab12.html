@@ -88,19 +88,58 @@
                 transform: rotate(360deg);
             }
         }
+
+        #images {
+            display: flex;
+            width: 100%;
+            margin: 10px 0; 
+            box-sizing: border-box;
+            align-items: flex-start; 
+            overflow: hidden;
+        }
+
+        #images > div {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 5px; 
+            box-sizing: border-box;
+        }
+
+        #images img {
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
 <body>
-    <div class="flexDesign">
-    <nav>
-        <ul>
-          <li><a href="../home.html">Portfolio</a></li>
-          <li><a href="../about.html">About</a></li>
-          <li><a href="../resume.html">Resume/Contact</a></li>
-        </ul>
-      </nav>
+    <header>
+		<div>
+			<a href="home">Portfolio</a> | <a href="About">About</a> | <a href="Resume">Resume/Contact</a>
+		</div>
+    	<div><h2>Portfolio [Claire Thananopavarn]</h2></div>
+		<div>
+			Theme: <span id="frogBtn">frog</span> | <span id="sheepBtn">sheep</span> | <span id="jellyfishBtn">jellyfish</span> | <span id="snailBtn">duck</span>
+		</div>
+    </header>
     <main>
+        <div id="images">
+            <div>
+                <img src="images/p.gif">
+            </div>
+            <div>
+                <img src="images/s.gif">
+            </div>
+            <div>
+                <img src="images/t.gif">
+            </div>
+        </div>
+        <hr>
     <div id="wrap">
     <div class="emscripten" id="status"><center style="margin-top:.5em">Downloading...</center></div>
     <div class="emscripten">
@@ -116,11 +155,6 @@
     <p>Game instructions: Click on the game canvas to capture your mouse inside the game, and click escape to release it. The initial door opens after the first dialogue sequence is complete. Use WASD to move, space to jump, and left/right click to create portals once you have picked up the gun.</p>
 </div>
     </main>
-</div>
-    <footer>
-        <p>theme: <span id="frogBtn">frog</span> | <span id="sheepBtn">sheep</span> | <span id="jellyfishBtn">jellyfish</span> | <span id="snailBtn">duck</span></p>
-        <h5>Website by me<span id="attrib"></span> :3</h5>
-        </footer>
     <script>
         var statusElement = document.getElementById("status"),
             progressElement = document.getElementById("progress"),
