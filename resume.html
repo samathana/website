@@ -1,50 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-us">
 
 <head>
-	<meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/png" href="duck.png">
-	<title>Claire Thananopavarn</title>
-	<link href="style.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link rel="shortcut icon" type="image/png" href="duck.png">
+    <title>Claire Thananopavarn</title>
+    <link href="style.css" rel="stylesheet" />
 	<link href="" rel="stylesheet" id="themeSheet"'/>
     <style>
-	h3 {
-	  margin-top: 20px;
-	  margin-bottom: 5px;
-	}
+        nav, main {
+            height: 80vh;
+        }
 
-	/*phone styling*/
-	@media only screen and (orientation: portrait) {
-	@media (pointer:none), (pointer:coarse) {
-	  h3 {
-	    margin-top: 80px;
-	  }
-	  main {
-	    padding-top: 0px;
-	  }
-	}}
+        .pdf {
+            border: 0 none;
+            margin-top: 20px;
+            width: 100vh;
+            height: 60vh;
+        }
+
+        #info {
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.29));
+            display: block;
+            padding: 20px;
+            height: 60vh;
+            color: black;
+            margin: 18px 0 0 20px;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <h2>Resume/Contact</h2>
+		<div>
+			<a href="home">Portfolio</a> | <a href="About">About</a> | Resume/Contact
+		</div>
+    	<div><h2>Resume</h2></div>
+		<div>
+			Theme: <span id="frogBtn">frog</span> | <span id="sheepBtn">sheep</span> | <span id="jellyfishBtn">jellyfish</span> | <span id="snailBtn">duck</span>
+		</div>
     </header>
-    <div class="flexDesign">
-	<nav>
-	  <ul>
-		<li><a href="Home">Portfolio</a></li>
-		<li><a href="About">About</a></li>
-		<li>Resume/Contact</li>
-	  </ul>
-	</nav>
-	<main>
-        page under construction! my email is cthanano@usc.edu if you need to contact me in the meantime
-	</main>
-	</div>
-    <footer>
-	<p>theme: <span id="frogBtn">frog</span> | <span id="sheepBtn">sheep</span> | <span id="jellyfishBtn">jellyfish</span> | <span id="snailBtn">duck</span></p>
-	<h5>Website by me<span id="attrib"></span> :3</h5>
-    </footer>
+    <main>
+        <div class="pdf">
+          <iframe src="https://clairethan.com/Thananopavarn-Resume.pdf" width="100%"; height="100%";></iframe>
+        </div>
+    <div id="info">
+    <h3>Resume</h3>
+    <p>This is my resume! If you need to contact me, use the email or LinkedIn at the top of the page. I do not have a contact form on this website because I must verify the sender's identity.</p>
+    <p>I look forward to working together!</p>
+</div>
+    </main>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
