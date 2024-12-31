@@ -1,3 +1,5 @@
+// This is code controlling the portals in Portal. C++
+
 #include "Portal.h"
 #include "Game.h"
 #include "PortalMeshComponent.h"

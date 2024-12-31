@@ -1,3 +1,5 @@
+// This is code for the turret head in Portal. C++
+
 #include "Actor.h"
 #include "TurretHead.h"
 #include "Game.h"

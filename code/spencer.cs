@@ -1,3 +1,5 @@
+// This is the code controlling the eraser character that follows you in Drawn Together. Unity C#
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

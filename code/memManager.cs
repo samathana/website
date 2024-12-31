@@ -1,3 +1,5 @@
+// This is the code for Echoes of Memory's hacking sequence. Unity C#
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
