@@ -163,7 +163,13 @@
             progressElement = document.getElementById("progress"),
             Module = {
                 preRun: [],
-                postRun: [],
+                postRun: [function () {
+                    if (Module.setStatus.last && Module.setStatus.last.text.includes("exception")) {
+                        document.getElementById("canvas").style.display = "none";
+                    } else {
+                        document.getElementById("video").style.display = "none";
+                    }
+                }],
                 print: function () {
                     var e = document.getElementById("output");
                     return e && (e.value = ""), function (t) {
@@ -188,11 +194,6 @@
                         var t = e.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/),
                             n = Date.now();
                         t && n - Module.setStatus.last.time < 30 || (Module.setStatus.last.time = n, Module.setStatus.last.text = e, t ? (e = t[1], progressElement.value = 100 * parseInt(t[2]), progressElement.max = 100 * parseInt(t[4]), progressElement.hidden = !1) : (progressElement.value = null, progressElement.max = null, progressElement.hidden = !0, e), statusElement.innerHTML = e);
-                    }
-                    if (e.includes("All downloads complete")) {
-                        document.getElementById("video").style.display = "none";
-                    } else if (e.includes("Exception thrown")) {
-                        document.getElementById("canvas").style.display = "none";
                     }
                 },
                 totalDependencies: 0,
