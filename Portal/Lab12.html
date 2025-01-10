@@ -190,9 +190,9 @@
                         t && n - Module.setStatus.last.time < 30 || (Module.setStatus.last.time = n, Module.setStatus.last.text = e, t ? (e = t[1], progressElement.value = 100 * parseInt(t[2]), progressElement.max = 100 * parseInt(t[4]), progressElement.hidden = !1) : (progressElement.value = null, progressElement.max = null, progressElement.hidden = !0, e), statusElement.innerHTML = e);
                     }
                     if (e.includes("All downloads complete")) {
-                        videoElement.style.display = "none";
+                        document.getElementById("video").style.display = "none";
                     } else if (e.includes("Exception thrown")) {
-                        canvasElement.style.display = "none";
+                        document.getElementById("canvas").style.display = "none";
                     }
                 },
                 totalDependencies: 0,
