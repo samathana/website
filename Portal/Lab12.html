@@ -164,7 +164,7 @@
             Module = {
                 preRun: [],
                 postRun: [function () {
-                    if (Module.setStatus.last && Module.setStatus.last.text.includes("All downloads")) {
+                    if (Module.setStatus.last.text.includes("All downloads")) {
                         document.getElementById("video").style.display = "none";
                     } else {
                         document.getElementById("canvas").style.display = "none";
