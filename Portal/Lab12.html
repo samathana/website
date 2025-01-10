@@ -194,6 +194,10 @@
                 monitorRunDependencies: function (e) {
                     this.totalDependencies = Math.max(this.totalDependencies, e);
                     Module.setStatus(e ? "Preparing... (" + (this.totalDependencies - e) + "/" + this.totalDependencies + ")" : "All downloads complete.");
+                    if (e)
+                        document.getElementById("canvas").style.display = "none";
+                    else
+                        document.getElementById("video").style.display = "none";
                 }
             };
         Module.setStatus("Downloading...");
@@ -202,9 +206,7 @@
             Module.setStatus = function (e) {
                 e && console.error("[post-exception status] " + e);
             };
-            document.getElementById("canvas").style.display = "none";
         }
-        document.getElementById("video").style.display = "none";
     </script>
     <script async src="Lab12.js"></script>
     <script src="../script.js"></script>
