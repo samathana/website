@@ -159,6 +159,7 @@
 </div>
     </main>
     <script>
+        try {
         var statusElement = document.getElementById("status"),
             progressElement = document.getElementById("progress"),
             Module = {
@@ -199,14 +200,13 @@
                 },
                 totalDependencies: 0,
                 monitorRunDependencies: function (e) {
-                    try {
-                        this.totalDependencies = Math.max(this.totalDependencies, e);
-                        Module.setStatus(e ? "Preparing... (" + (this.totalDependencies - e) + "/" + this.totalDependencies + ")" : "All downloads complete.");
-                     } catch {
-                        document.getElementById("canvas").style.display = "none";
-                    }
+                    this.totalDependencies = Math.max(this.totalDependencies, e);
+                    Module.setStatus(e ? "Preparing... (" + (this.totalDependencies - e) + "/" + this.totalDependencies + ")" : "All downloads complete.");
                 },
             };
+        } catch {
+            document.getElementById("canvas").style.display = "none";
+        }
         Module.setStatus("Downloading...");
         window.onerror = function () {
             Module.setStatus("Exception thrown, see JavaScript console");
