@@ -112,7 +112,7 @@
             margin-top: 20px;
             width: 100vh;
             height: 60vh;
-            
+            display: block;
         }
 
     </style>
@@ -202,8 +202,9 @@
             Module.setStatus = function (e) {
                 e && console.error("[post-exception status] " + e);
             };
-            Document.getElementById("video").style.display = "block";
+            Document.getElementById("canvas").style.display = "none";
         }
+        Document.getElementById("video").style.display = "none";
     </script>
     <script async src="Lab12.js"></script>
     <script src="../script.js"></script>
