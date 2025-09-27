@@ -1,0 +1,154 @@
+#canvasWrap {
+  position: absolute;
+  height: 90vh;
+  width: 120vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#myCanvas {
+  background-image: url(background.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+#input {
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  width: 8vh;
+  height: 5vh;
+  border: none;
+  font-size: 4vh;
+  background-color: aliceblue;
+}
+
+#btn {
+  position: absolute;
+  top: 10.75%;
+  left: 58%;
+  width: 6vh;
+  height: 6vh;
+  border: none;
+  background-color: #47e0419f;
+}
+
+#confettiCanvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90vh;
+  z-index: 1;
+  display: none;
+}
+
+#resetbtn {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  width: 15vh;
+  height: 15vh;
+  border: none;
+  display: none;
+  background-color: red;
+  background: url('btn.png');
+  background-size: 15vh 15vh;
+}
+
+#continuebtn {
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  width: 15vh;
+  height: 15vh;
+  border: none;
+  display: none;
+  background-color: blue;
+  background: url('btn2.png');
+  background-size: 15vh 15vh;
+}
+
+#smallResetBtn {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  width: 5vh;
+  height: 5vh;
+  border: none;
+  background-color: red;
+  background: url('btn.png');
+  background-size: 5vh 5vh;
+}
+
+#multbtn {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  width: 15vh;
+  height: 15vh;
+  border: none;
+  display: block;
+  background-color: red;
+  background: url('mult.png');
+  background-size: 15vh 15vh;
+}
+
+#divbtn {
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  width: 15vh;
+  height: 15vh;
+  border: none;
+  display: block;
+  background-color: blue;
+  background: url('div.png');
+  background-size: 15vh 15vh;
+}
+/*phone formatting*/
+@media only screen and (orientation: portrait) {
+  #canvasWrap, #myCanvas, #confettiCanvas {
+    width: 100%;
+    margin-top: 3vh;
+  }
+
+  #confettiCanvas {
+    height: 56vh;
+    position: absolute;
+    top: 10vh;
+  }
+
+  #input {
+    top: 7.5%;
+    width: 5%;
+    height: 2.5%;
+    font-size: 1.2vh;
+  }
+
+  #btn {
+    top: 7.25%;
+    width: 2%;
+    height: 3.5%;
+  }
+
+  #resetbtn, #multbtn {
+    top: 15%;
+    left: 6vh;
+  }
+
+  #continuebtn, #divbtn {
+    top: 15%;
+    right: 2vh;
+  }
+
+  #smallResetBtn {
+    top: 40%;
+    width: 5%;
+    height: 3.2%;
+    background-size: 100%;
+  }
+}

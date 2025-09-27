@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <title>Froggy Multiplication!</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="canvasWrap">
+    <canvas id="myCanvas" height=1500 width=2000></canvas>
+    <input id="input" type="number" autocomplete="off" autofocus></input>
+    <button onclick="GetInput()" id="btn">&check;</button>
+    <canvas id="confettiCanvas" height=1500 width=2000></canvas>
+
+    <button onclick="resetGame()" id="resetbtn"></button>
+    <button onclick="continueGame()" id="continuebtn"></button>
+
+    <button onclick="setMathType('multiplication')" id="multbtn"></button>
+    <button onclick="setMathType('division')" id="divbtn"></button>
+
+    <button onclick="resetGame()" id="smallResetBtn"></button>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+
+</html>
